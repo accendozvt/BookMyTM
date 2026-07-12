@@ -1,0 +1,330 @@
+{
+  "slug": "statutory-compliance__basic-compliances__gst-registration",
+  "title": "GST Registration Service in Kerala- BookMyTM - Trademark & ISO Services in KeralaGST Registration",
+  "h1": "What is GST Registration?",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "GST Registration"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "What is GST Registration?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Goods and Services Tax (GST) is an indirect tax (or consumption tax) used in India on the supply of goods and services. It is a comprehensive, multistage, destination-based tax: comprehensive because it has subsumed almost all the indirect taxes except a few state taxes. Multi-staged as it is, the GST is imposed at every step in the production process, but is meant to be refunded to all parties in the various stages of production other than the final consumer and as a destination-based tax, it is collected from point of consumption and not point of origin like previous taxes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Threshold Limit for GST Registration"
+    },
+    {
+      "type": "paragraph",
+      "text": "The GST registration is mandatory for the business entities based on the criteria of activities and turnover. The business dealing with goods have to apply for GST Registration if their aggregate turnover exceeds 40 Lacks and those in service industry have to apply for GST Registration if their aggregate turnover exceeds 20 Lacks. However, for business making supplies and providing services in the North Eastern States, the same is Rs. 20 lakhs and Rs. 10 lakhs respectively. To reap the benefits of GST Law, many dealers obtains voluntary GST Registration. A business having GST registration enjoys the rights of a registered supplier and by the registration the business affirms seamless flow of Input Tax Credit."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Register Online for Rs.2500"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "If Partners/ Directors more than 4 additional 500"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Get Expert Advice"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fill the details below for a callback."
+    },
+    {
+      "type": "paragraph",
+      "text": "Request Callback"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Benefits of GST Registration"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Input Tax Credit"
+    },
+    {
+      "type": "paragraph",
+      "text": "A business dealing with supply of goods after obtaining GST Registration, can take credit of the GST paid to the previous supplier concerning business activities hence the input tax rate decreases which benefits the pricing of the supplies. A consumer who purchases from a GST Registered supplier gets the benefit of Input Tax Credit."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Simple and One Time Registration"
+    },
+    {
+      "type": "paragraph",
+      "text": "The registration for GST is simple and permanent without any renewal requirement. On completion of registration, a registration certificate is issued to the vendor with GST Registration Number, which known as GSTIN."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Legally Recognized Business"
+    },
+    {
+      "type": "paragraph",
+      "text": "With a GST Registration, the supplier is eligible to collect the taxes legally, further can also pass on the credits. Even the voluntary registrant also gets equal status and responsibilities of tax payer registered under mandatory criteria. With a GST registration only a supplier can issue a proper invoice to the customer, which benefits the customer to take input tax credit if he is eligible to do so."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Documents Required for GST Registration"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Entity’s PAN"
+    },
+    {
+      "type": "paragraph",
+      "text": "A copy of PAN Card of the entity"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "PAN Card"
+    },
+    {
+      "type": "paragraph",
+      "text": "A copy of PAN of the Proprietor/ Partners/ Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "DSC"
+    },
+    {
+      "type": "paragraph",
+      "text": "Digital Signature of Partners or Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photograph"
+    },
+    {
+      "type": "paragraph",
+      "text": "Passport Size Photograph of Proprietor/ Partners/ Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Aadhaar Card"
+    },
+    {
+      "type": "paragraph",
+      "text": "A copy of Aadhaar Card of the proprietor/ Partners/ Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Business Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Electricity/ Telephone Bill"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Rental Agreement"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the place of business is rented, rental agreement is mandatory"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Bank Account Details"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Bank Statement/ Copy of Cancelled Cheque/ Copy of First page of passbook"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Certificate of Registration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Registration Certificate of the entity"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Structure of Goods and Service Tax Identification Number (GSTIN)"
+    },
+    {
+      "type": "paragraph",
+      "text": "GSTIN is a PAN based 15 digit number assigned to taxpayers registered under GST"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "First Two Digits: These digits represent the State Code",
+        "Next Ten Digits: These digits are the PAN of the concerned business entity",
+        "Thirteenth Digit: It is number of registration within a State",
+        "Fourteenth Digit: It is alphabet Z for all registrants",
+        "Fifteenth Digit: Alphabetic check digit generated automatically"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Apply for GST Registration in 3 Easy Steps"
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 01"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Register & Pay"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Provide details & upload documents required for GST Registration",
+        "Make payment through secure payment gateway."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 02"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "We Will Help"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Drafting of required documents",
+        "Receipt of signed documents required for apply for GST",
+        "Preparation and filing of application online by experts",
+        "Submitting necessary signed documents with GST Department"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 03"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Registration Complete"
+    },
+    {
+      "type": "paragraph",
+      "text": "Allotment of GSTIN. Your GST registration completed."
+    },
+    {
+      "type": "paragraph",
+      "text": "All this takes 5 – 8 working days*.*Subjected to Government Processing Time."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Process of GST Registration"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Day 1 – 2"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Collection of Information",
+        "Collection of required documents (Scanned copies)",
+        "Review of documents and information provided"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Day 3 – 4"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Discussion on the requirement of GST Registration",
+        "Drafting of required documents",
+        "Sending the documents required to get signed by the applicant"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Day 5 – 6"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Receipt of Signed Documents from the Applicant",
+        "Preparing and Filing of online application by experts",
+        "GST Registration Certificate*",
+        "*Subjected to Government Processing Time"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "Who is required to apply for GST number?",
+          "a": "Following are the general criteria of mandatory registration: • If the total business turnover exceeds INR 40 Lakh/20 Lakh in case of business of goods/providing service respectively in the concerned financial year (Threshold for North-eastern States is INR 20 Lakh/ 10 Lakh in case of business of goods/providing service respectively) • Casual taxable person / Non-Resident taxable person • Agents of a supplier & Input Service Distributor (ISD) • Electronic Commerce Aggregator • Person supplying through an E-commerce platform In addition to above, there are certain other criteria when registration is mandatory. Apart from compulsory registration, one can also apply for GST registration voluntarily."
+        },
+        {
+          "q": "Who is exempted for GST Registration in India?",
+          "a": "Following are the exclusions from the GST Registration: • An agriculturist – for the purpose of agriculture • Person exclusively supplying goods/ services not liable to tax or wholly exempted from Tax • Services by any Court or Tribunal established under the law • Services by an employee • Services of funeral, burial, crematorium or mortuary, including transportation of the deceased • Sale of land subject to Schedule 5 (ii)(b), sale of building • Actionable claims, other than lottery, betting and gambling • Person falling below threshold exemption limit prescribed"
+        },
+        {
+          "q": "What are the modes of payment for GST?",
+          "a": "Payment for the tax or any penalty, fees, etc. shall be made via any of these payment modes: • Internet Banking • NEFT or RTGS This amount shall be credited to the electronic cash ledger of the registered dealer."
+        },
+        {
+          "q": "What are taxable events under the GST Act?",
+          "a": "The event of supply of Goods and/or Services i.e. transactions such as the sale, transfer, barter, exchange, license, rental, lease or disposal made, or agreed to be made for a consideration of taxable goods or services, is to be considered a taxable event under the GST Act."
+        },
+        {
+          "q": "When the returns have to be filed after GST Registration?",
+          "a": "Registered dealers shall be required to file the following returns: • Monthly Return: Every registered taxable person shall be required to e-file a monthly return for inward and outward supplies of goods and/or services, input tax credit availed, tax payable, tax paid and other particulars within the due date prescribed for the respected month. • Return for composition scheme: Dealers paying tax under the composition scheme shall have to file a return for each quarter or part, thereof, electronically within 18 days after the end of such quarter. • TDS return: Every dealer who is required to deduct tax at source shall file a return electronically within 10 days after the end of the month in which the said deduction is made. • Return for input service distributor: Every input service distributor shall file an e-return for every calendar month or part thereof, within the 13 days after the end of the particular month. • First Return: Every registered taxable person paying the CGST/SGST on all intra-state supplies of goods and/or services shall have to file the first return from the date on which he/she became liable for registration till the end of the month in which the registration has been granted • Annual return: An annual return will have to be filed for each financial year by every registered taxable person. This needs to be done on or before the 31st day of December, following the end of the particular financial year. • Final return: Every registered taxable person who applies for a cancellation of his/her registration shall have to file a final return within 3 months of the date of cancellation or the date of cancellation order, whichever is later, in a prescribed form."
+        }
+      ]
+    }
+  ]
+}

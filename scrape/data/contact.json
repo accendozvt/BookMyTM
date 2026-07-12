@@ -1,0 +1,46 @@
+{
+  "slug": "contact",
+  "title": "Contact - BookMyTM - Trademark & ISO Services in Kerala",
+  "h1": "",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Contact"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Registered Office - Kochi, Kerala"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Plot No 207, Behind Onam Park, Mavelipuram, Kakkanad, Kochi, Kerala 682030"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "+91 809 809 0880, +91 809 809 0440"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "cc@bookmytm.com"
+      ]
+    },
+    {
+      "type": "map"
+    },
+    {
+      "type": "image",
+      "src": "https://bookmytm.com/wp-content/uploads/2025/09/smiling-happy-businesswoman-black-suit-pointing-hand-left-statistics-diagram-with-pleased-face-having-business-meeting-introduce-product-graph-standing-white-background-1024x940.webp",
+      "alt": ""
+    }
+  ]
+}

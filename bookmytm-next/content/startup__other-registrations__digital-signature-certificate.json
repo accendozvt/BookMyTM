@@ -1,0 +1,246 @@
+{
+  "slug": "startup__other-registrations__digital-signature-certificate",
+  "title": "Digital Signature Certificate Service in Kerala- BookMyTM - Trademark & ISO Services in KeralaModern Digital Signature Certificate",
+  "h1": "What is a Digital Signature Certificate?",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Digital Signature Certificate"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "What is a Digital Signature Certificate?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Digital Signature Certificate or DSC is an electronic format of a physical certificate. A DSC serves as an electronic proof of identity of an individual or an organization. It is used to sign documents electronically. It is one of the essential requirements for various online transactions, which includes e-filing of income tax returns, company incorporation, e-tendering etc."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Book Now for Rs.2000"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Get Expert Advice"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fill the details below for a callback."
+    },
+    {
+      "type": "paragraph",
+      "text": "Request Callback"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Benefits of Digital Signature Certificate other than authenticating certificate holder’s identity"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Time & Cost Saving"
+    },
+    {
+      "type": "paragraph",
+      "text": "Digital Signature is an effective way to sign documents online hence save travel to location of contract occurrence. With DSC, one can sign a document in a click of a button. The major attraction of a DSC is that, while a signer is in a different location, he/she doesn’t have to be present physically for signing a document."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Enhanced Security"
+    },
+    {
+      "type": "paragraph",
+      "text": "Security features in DSC prevents anybody else from use of the signature data and it is not possible to fake your signature, alter your document or tamper the data. Digital Signature Certificate ensures your signature is valid, verified and legitimate."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Valid in the eyes of Law"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Digitally Signed Document is accepted as evidence in any court of law in the same way of acceptance of any physically signed document as per Information Technology Act 2000."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Global Acceptance"
+    },
+    {
+      "type": "paragraph",
+      "text": "A DSC is accepted in Government bodies like Income Tax, Ministry of Corporate Affairs, GST etc., as well by most of the companies around the world considering its high security measures. For take part in government tenders you should have a DSC of your own."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Documents Required to DSC registration"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Documents for an Indian Citizen, Permanent Resident of India"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "ID Proof: Passport/ Driving License/ Voters Id or any other valid address proof issued by State/Central Governments.",
+        "PAN Card: PAN Card of the applicant",
+        "Address Proof: Voters ID/ Driving License / Aadhar of the applicant"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Documents for Indian Companies"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "PAN Card: Organizational PAN",
+        "Partnership Deed: If it’s a partnership firm",
+        "List of Authorities: List of Authorized Signatories which could be the list of Directors, Board members etc.",
+        "ID Proof: Authorized Signatories ID Proof",
+        "GST Certificate: GST Certificate of the firm",
+        "For Companies registered in India, the documents may differ depending up on the type of entity like proprietorship, Partnership, LLP, Pvt. Ltd, etc."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Type of Digital Signature Certificate"
+    },
+    {
+      "type": "paragraph",
+      "text": "There were three classes of Digital Signatures – Class 1, Class 2 and Class 3, out of which Class 1, Class 2 are outdated and only Class 3 Digital Certificate available as of now."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Class 3 Digital Signature Certificate"
+    },
+    {
+      "type": "paragraph",
+      "text": "Class 3 Digital Signature Certificate is an upgraded version of outdated Class 2 Certificate. It is issued to Organizations and individuals who wanted to form a new company or be a director in a company or to who wishes to participate in bidding or government tenders, online tenders and auctions. Sometimes the Certifying Authority may ask for the physical appearance of the applicant (cases like any issue in verification/ suspicious activity, etc.) for availing a class 3 DSC. Class 3 Digital Signature Certificate are prone to data theft, fraudulence and failure of security."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How DSCs Work?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Your digital signature provider will use a standard, accepted format called a Public Key Infrastructure (PKI) to create two mathematically linked keys for each signer – a private one and a public one. When you sign a document electronically, you use your private key to create that signature. You must keep your private key secure."
+    },
+    {
+      "type": "paragraph",
+      "text": "The algorithm used to create the keys acts as a code. It creates data that matching the signed document and then encrypts it. This data is called a hash, and the encrypted hash is your digital signature."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each signature also contains a timestamp for when the document was signed. If there is any change to the document after the time on that timestamp, it is considered invalid."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the recipient receives a document, they use a copy of the sender’s public key to decode the signature (using the code used to create the keys). If the public key cannot do so, it means that the signature does not belong to the sender, or the document was changed after it was signed. In either case, the document is considered to be invalid."
+    },
+    {
+      "type": "paragraph",
+      "text": "To further protect the digital signature’s reliability, the PKI that digital signature provider’s use mandates that keys be created, conducted, and saved securely. Digital signatures are especially used when you need to comply with particular regulations or need to conduct high risk or high-value transactions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Process of Registering for a DSC Online"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Day 1 – 2"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Collection of Information",
+        "Collection of Required Documents (Scanned Copies)",
+        "Review of Documents and information provided",
+        "Application for DSC"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Day 3 – 4"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Document verification by Certifying Authority (CA)",
+        "Personal Verification from CA by SMS and Video Link"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Day 5 – 8"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Dispatch of Digital Signature Certificate USB Token to the communication address given in the form",
+        "*Subjected to processing time of CA"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "What is a Digital Signature Certificate (DSC)?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A DSC is the electronic equivalent of a physical certificate and is used to sign documents electronically."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "What is the validity of a DSC?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A DSC is usually valid for one, two, or three years."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Can a DSC be used on any computer?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes, a DSC is stored in a USB token and can be used on any computer."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Can a DSC be re-validated after expiry?"
+    },
+    {
+      "type": "paragraph",
+      "text": "No, a new DSC must be obtained after the expiry of the old one."
+    }
+  ]
+}

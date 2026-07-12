@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "BookMyTM-Next",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "bookmytm-next/out"],
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}

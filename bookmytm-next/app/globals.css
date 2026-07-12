@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    @apply font-sans text-gray-900 antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .hero-bg {
+    background: radial-gradient(circle at 10% 10%, #1e5e3f 0%, #0a351f 45%, #021a0f 100%);
+  }
+  .container-site {
+    @apply mx-auto w-[90vw] max-w-7xl;
+  }
+}
+
+@keyframes blob {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes ping-dot {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+.animate-blob { animation: blob 10s infinite; }
+.animate-blob-2 { animation: blob 10s 2s infinite; }
+.animate-blob-3 { animation: blob 10s 4s infinite; }
+.animate-floaty { animation: floaty 4.5s ease-in-out infinite; }
+.animate-ping-dot { animation: ping-dot 1s cubic-bezier(0, 0, 0.2, 1) infinite; }

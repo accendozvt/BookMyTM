@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js build output & cache
+bookmytm-next/.next/
+bookmytm-next/out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local env (none currently, but guard anyway)
+.env
+.env.*
+!.env.example

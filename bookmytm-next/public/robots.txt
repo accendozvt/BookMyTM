@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /test/
+Disallow: /_next/
+Disallow: /*.json$
+
+Sitemap: https://bookmytm.com/sitemap.xml

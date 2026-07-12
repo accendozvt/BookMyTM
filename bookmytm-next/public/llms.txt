@@ -1,0 +1,25 @@
+# BookMyTM
+
+> BookMyTM (bookmytm.com) is an Indian legal-services platform for trademark registration, ISO certification, startup/company registration, intellectual property, and statutory compliance. Tagline: "Click. Start Business!" Registered office: Plot No 207, Behind Onam Park, Mavelipuram, Kakkanad, Kochi, Kerala 682030, India. Offices in Kerala & New Delhi. Phone: +91 809 809 0880 / +91 809 809 0440. Email: cc@bookmytm.com. 10,000+ trademarks filed, 15,000+ end users, 8+ years of service, 4.9-star Google rating.
+
+## Services
+
+- [Trademark Registration](https://bookmytm.com/intellectual-property/trademark/trademark-registration-in-kerala/): Trademark search, filing with IP India, class selection across all 45 classes, status tracking to certificate. 10-year validity with renewal.
+- [Trademark Services](https://bookmytm.com/intellectual-property/trademark/): Renewal, objection reply, opposition, rectification, assignment, licensing, show-cause hearing, watch service.
+- [Patent Services](https://bookmytm.com/intellectual-property/patent/): Patent search, provisional patent, permanent/complete patent registration, patent-fee reimbursement guidance (Kerala Startup Mission).
+- [Copyright & Design Registration](https://bookmytm.com/intellectual-property/other-ip-registrations/): Copyright registration, design registration.
+- [ISO Certification](https://bookmytm.com/iso-certification/): ISO 9001:2015 (QMS), ISO 14001:2015 (EMS), ISO 22000:2018 (FSMS), ISO 27001 (ISMS), ISO 45001:2018 (OH&S).
+- [Startup / Company Registration](https://bookmytm.com/startup/): Proprietorship, partnership firm, LLP, private limited, public limited, OPC, Section 8 company, Nidhi company; DSC, Udyam/MSME, IEC, barcode, FSSAI, professional tax registrations.
+- [Statutory Compliance](https://bookmytm.com/statutory-compliance/): GST registration and return filing, PAN/TAN application, PF and ESI registration, accounting & bookkeeping, ROC filings (LLP and Pvt Ltd annual compliance, DIR-3 KYC, INC-20A).
+- [Other Services](https://bookmytm.com/other-services/): Entity conversions (proprietorship/partnership/OPC to LLP or Pvt Ltd), master-data changes (directors, partners, name, registered office, share capital), winding up (close LLP/OPC/Pvt Ltd, dissolve partnership).
+
+## Resources
+
+- [Knowledge Base](https://bookmytm.com/knowledge-base/): Articles on trademark classes, objection replies, IP protection, MSME/Udyam benefits, BIS/ISI compliance, and Kerala business news. Some articles available in Malayalam.
+- [Contact](https://bookmytm.com/contact/): WhatsApp, phone, and email support. 100% digital process.
+
+## Policies
+
+- [Terms and Conditions](https://bookmytm.com/terms-and-conditions/)
+- [Privacy Policy](https://bookmytm.com/privacy-policy/)
+- [Cancellation & Refund Policy](https://bookmytm.com/cancellation-refund-policy/)
