@@ -3,6 +3,7 @@ import Link from 'next/link';
 import FaqColumns from '@/components/FaqColumns';
 import CtaBand from '@/components/CtaBand';
 import Reveal from '@/components/Reveal';
+import CardImage from '@/components/CardImage';
 import { Icon, IconFor } from '@/components/icons';
 import { seoFor, loadContent, listPosts } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
@@ -385,7 +386,7 @@ export default function Home() {
               <div className="relative h-full min-h-[420px] overflow-hidden rounded-[28px] shadow-2xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/why-consultation.jpg"
+                  src="/images/why-consultation.webp"
                   alt="BookMyTM consultants celebrating a successful trademark filing with a client"
                   className="h-full w-full object-cover"
                   loading="lazy"
@@ -497,14 +498,10 @@ export default function Home() {
                 >
                   <div className="aspect-[16/9] overflow-hidden bg-brand-surface">
                     {p.featuredImage ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img
+                      <CardImage
                         src={p.featuredImage}
                         alt={p.h1}
-                        width={640}
-                        height={360}
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        loading="lazy"
                       />
                     ) : (
                       <div className="hero-bg h-full w-full" />

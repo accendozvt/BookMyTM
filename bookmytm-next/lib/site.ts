@@ -23,7 +23,7 @@ export const NAV: NavCategory[] = [
     label: 'Startup',
     href: '/startup/',
     promo: {
-      image: '/images/photo-1497366216548-37526070297c.jpg',
+      image: '/images/photo-1497366216548-37526070297c.webp',
       title: 'Start your business right',
       text: 'Company, LLP & firm registration with expert guidance from day one.',
     },
@@ -132,7 +132,7 @@ export const NAV: NavCategory[] = [
     label: 'Statutory Compliance',
     href: '/statutory-compliance/',
     promo: {
-      image: '/images/photo-1450101499163-c8848c66ca85.jpg',
+      image: '/images/photo-1450101499163-c8848c66ca85.webp',
       title: 'Stay compliant, stress-free',
       text: 'GST, PAN, PF, ESI and ROC filings handled accurately and on time.',
     },
@@ -166,7 +166,7 @@ export const NAV: NavCategory[] = [
     label: 'Other Services',
     href: '/other-services/',
     promo: {
-      image: '/images/photo-1552664730-d307ca884978.jpg',
+      image: '/images/photo-1552664730-d307ca884978.webp',
       title: 'Evolve your business',
       text: 'Convert entity type, update records, or wind up — we handle the paperwork.',
     },

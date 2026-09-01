@@ -255,7 +255,7 @@ function renderBasicBlock(b: Block, key: number, headingTag: 'h2' | 'h3' = 'h3')
       return b.src ? (
         <div key={key} className="flex justify-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={b.src} alt={b.alt} className="max-h-[420px] rounded-2xl shadow-lg" loading="lazy" />
+          <img src={b.src} alt={b.alt} className="max-h-[420px] rounded-2xl shadow-lg" loading="lazy" decoding="async" />
         </div>
       ) : null;
     case 'imageBox':
@@ -319,7 +319,7 @@ export default function Blocks({
                   width={1200}
                   height={450}
                   className="aspect-[16/6] w-full rounded-2xl object-cover shadow-md ring-1 ring-gray-200/60"
-                  loading="lazy"
+                  loading="lazy" decoding="async"
                 />
               </Reveal>
             )}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import LeadForm from '@/components/LeadForm';
+import MapFacade from '@/components/MapFacade';
 import { seoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 import JsonLd from '@/components/JsonLd';
@@ -112,12 +113,10 @@ export default function ContactPage() {
                 Registered Office – Kochi, Kerala
               </h2>
               <div className="overflow-hidden rounded-3xl shadow-lg">
-                <iframe
+                <MapFacade
+                  query="Mavelipuram, Kakkanad, Kochi, Kerala 682030"
                   title="BookMyTM Office Location"
-                  src="https://www.google.com/maps?q=Mavelipuram%2C%20Kakkanad%2C%20Kochi%2C%20Kerala%20682030&output=embed"
-                  className="h-[480px] w-full border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  addressLines={['Plot No 207, Behind Onam Park,', 'Mavelipuram, Kakkanad, Kochi,', 'Kerala 682030']}
                 />
               </div>
             </div>

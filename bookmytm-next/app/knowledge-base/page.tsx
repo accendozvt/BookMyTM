@@ -3,6 +3,7 @@ import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import CtaBand from '@/components/CtaBand';
 import Reveal from '@/components/Reveal';
+import CardImage from '@/components/CardImage';
 import { listPosts, seoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 import JsonLd from '@/components/JsonLd';
@@ -44,21 +45,18 @@ export default function KnowledgeBase() {
         <div className="container-site py-16 md:py-20">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((p, i) => (
-              <Reveal key={p.slug} delay={(i % 3) * 60}>
+              <Reveal key={p.slug} delay={(i % 3) * 60} immediate={i < 3}>
                 <Link
                   href={`/${p.slug}/`}
                   className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
                 >
                   <div className="aspect-[16/9] overflow-hidden bg-brand-surface">
                     {p.featuredImage ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img
+                      <CardImage
                         src={p.featuredImage}
                         alt={p.h1}
-                        width={640}
-                        height={360}
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        loading={i < 6 ? 'eager' : 'lazy'}
+                        priority={i === 0}
                       />
                     ) : (
                       <div className="hero-bg h-full w-full" />

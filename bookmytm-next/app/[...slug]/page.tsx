@@ -114,12 +114,12 @@ function crumbsFor(segments: string[]) {
 const CATEGORY_IMAGES: [RegExp, string][] = [
   [/trademark/, '/images/blog_06_trademark_objection.webp'],
   [/iso-certification/, '/images/blog_05_iso_quality_seal_1765545624585.webp'],
-  [/patent|other-ip/, '/images/photo-1602216056096-3b40cc0c9944.jpg'],
-  [/startup\/registrations/, '/images/photo-1497366216548-37526070297c.jpg'],
-  [/special-business|other-registrations/, '/images/photo-1521791136064-7986c2920216.jpg'],
-  [/statutory-compliance/, '/images/photo-1450101499163-c8848c66ca85.jpg'],
-  [/winding-up/, '/images/photo-1556761175-5973dc0f32e7.jpg'],
-  [/other-services/, '/images/photo-1552664730-d307ca884978.jpg'],
+  [/patent|other-ip/, '/images/photo-1602216056096-3b40cc0c9944.webp'],
+  [/startup\/registrations/, '/images/photo-1497366216548-37526070297c.webp'],
+  [/special-business|other-registrations/, '/images/photo-1521791136064-7986c2920216.webp'],
+  [/statutory-compliance/, '/images/photo-1450101499163-c8848c66ca85.webp'],
+  [/winding-up/, '/images/photo-1556761175-5973dc0f32e7.webp'],
+  [/other-services/, '/images/photo-1552664730-d307ca884978.webp'],
 ];
 
 function imageForPath(path: string): string {

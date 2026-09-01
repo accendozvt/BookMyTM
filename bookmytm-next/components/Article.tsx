@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import LeadForm from '@/components/LeadForm';
+import CardImage from '@/components/CardImage';
 import type { Block, PageContent, PostMeta } from '@/lib/content';
 
 function fmtDate(iso?: string) {
@@ -98,7 +99,7 @@ function renderBlock(b: Block, key: number, headingLevel = 0) {
     case 'image':
       return b.src ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img key={key} src={b.src} alt={b.alt} className="mx-auto max-h-[480px] rounded-2xl shadow-md" loading="lazy" />
+        <img key={key} src={b.src} alt={b.alt} className="mx-auto max-h-[480px] rounded-2xl shadow-md" loading="lazy" decoding="async" />
       ) : null;
     case 'faq':
       return (
@@ -138,13 +139,13 @@ export default function Article({
               </p>
             )}
             {post.featuredImage && (
-              /* eslint-disable-next-line @next/next/no-img-element */
-              <img
+              /* LCP element on every post: eager, high priority, and never lazy. */
+              <CardImage
                 src={post.featuredImage}
                 alt={post.h1 || post.title}
-                width={1200}
-                height={675}
+                sizes="(max-width: 1024px) 100vw, 760px"
                 className="mb-10 aspect-video w-full rounded-3xl object-cover shadow-lg"
+                priority
               />
             )}
             <div className="space-y-5">{body.map((b, i) => renderBlock(b, i, bodyLevels[i]))}</div>
@@ -166,7 +167,7 @@ export default function Article({
                           width={80}
                           height={56}
                           className="h-14 w-20 flex-shrink-0 rounded-xl object-cover"
-                          loading="lazy"
+                          loading="lazy" decoding="async"
                         />
                       )}
                       <span className="text-[13.5px] font-semibold leading-snug text-gray-700 transition-colors group-hover:text-brand">

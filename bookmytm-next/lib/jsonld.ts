@@ -26,7 +26,7 @@ export function organizationNode() {
     telephone: SITE.phone1,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE.url}/images/logo.png`,
+      url: `${SITE.url}/images/logo.webp`,
       width: 300,
       height: 75,
     },

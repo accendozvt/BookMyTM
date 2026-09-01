@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/">
-              <Image src="/images/logo.png" alt="BookMyTM Logo" width={160} height={48} className="mb-2" />
+              <Image src="/images/logo.webp" alt="BookMyTM Logo" width={160} height={48} className="mb-2" />
             </Link>
             <p className="mb-6 text-sm text-white/50">{SITE.tagline}</p>
             <div className="flex gap-3">
