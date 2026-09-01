@@ -31,7 +31,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden flex-1 justify-center lg:flex">
+        <nav aria-label="Primary" className="hidden flex-1 justify-center lg:flex">
           <ul className="flex items-center gap-8">
             {NAV.map((cat, catIndex) => {
               const anchorLeft = catIndex === 0;
@@ -132,7 +132,7 @@ export default function Header() {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <nav className="hero-bg absolute left-0 right-0 top-full z-40 max-h-[85vh] overflow-y-auto border-t border-white/10 shadow-2xl lg:hidden">
+        <nav aria-label="Mobile" className="hero-bg absolute left-0 right-0 top-full z-40 max-h-[85vh] overflow-y-auto border-t border-white/10 shadow-2xl lg:hidden">
           <ul>
             {NAV.map((cat) => (
               <li key={cat.label} className="border-b border-white/10">

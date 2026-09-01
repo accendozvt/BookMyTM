@@ -45,8 +45,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-IN" className={manrope.variable}>
       <body>
+        {/* First focusable element: lets keyboard and screen-reader users jump the
+            header's large mega-menu. Visually hidden until focused. */}
+        <a href="#main" className="skip-link">
+          Skip to main content
+        </a>
         <Header />
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <ContactBand />
         <Footer />
         <a

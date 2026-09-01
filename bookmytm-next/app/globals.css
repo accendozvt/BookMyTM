@@ -14,6 +14,35 @@
 }
 
 @layer utilities {
+  /* Skip-to-content link. Written explicitly rather than as
+     `sr-only focus:not-sr-only` because Tailwind's .sr-only kept winning over
+     the focus variant, leaving the link 1x1 and unusable when focused. */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip-link:focus {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    background: #ffffff;
+    color: #3d6f2e;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(2, 26, 15, 0.25);
+    outline: 2px solid #3d6f2e;
+    outline-offset: 2px;
+  }
   .hero-bg {
     background: radial-gradient(circle at 10% 10%, #1e5e3f 0%, #0a351f 45%, #021a0f 100%);
   }

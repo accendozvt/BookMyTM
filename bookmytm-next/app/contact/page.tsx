@@ -83,7 +83,9 @@ export default function ContactPage() {
                 <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white">
                   {c.icon}
                 </div>
-                <h3 className="mb-3 text-lg font-bold text-gray-900">{c.label}</h3>
+                {/* h2, not h3: these cards are the first headings after the page
+                    <h1>, so h3 skipped a level. Styling is unchanged. */}
+                <h2 className="mb-3 text-lg font-bold text-gray-900">{c.label}</h2>
                 {c.lines?.map((l) => (
                   <p key={l} className="text-sm leading-relaxed text-gray-600">
                     {l}

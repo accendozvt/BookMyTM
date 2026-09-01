@@ -11,19 +11,37 @@ function fmtDate(iso?: string) {
   }
 }
 
-function renderBlock(b: Block, key: number) {
+/**
+ * Heading level to render as, so the document outline never skips a level
+ * (WCAG / Lighthouse "heading-order"). Several posts open with a level-4 callout
+ * such as "The BookMyTM Insight", which rendered as <h3> straight after the <h1>.
+ * Only the tag changes — the visual class still follows the author's level, so
+ * nothing on screen moves.
+ */
+function levelsFor(blocks: Block[]): number[] {
+  let prev = 1; // the page <h1> lives in PageHero
+  return blocks.map((b) => {
+    if (b.type !== 'heading') return 0;
+    const lvl = Math.min(b.level, prev + 1);
+    prev = lvl;
+    return lvl;
+  });
+}
+
+function renderBlock(b: Block, key: number, headingLevel = 0) {
   switch (b.type) {
     case 'heading': {
+      const Tag = (`h${Math.min(Math.max(headingLevel || b.level, 2), 6)}`) as 'h2';
       if (b.level <= 2)
         return (
-          <h2 key={key} className="mt-10 text-2xl font-extrabold tracking-tight text-gray-900">
+          <Tag key={key} className="mt-10 text-2xl font-extrabold tracking-tight text-gray-900">
             {b.text}
-          </h2>
+          </Tag>
         );
       return (
-        <h3 key={key} className="mt-8 text-xl font-bold text-gray-900">
+        <Tag key={key} className="mt-8 text-xl font-bold text-gray-900">
           {b.text}
-        </h3>
+        </Tag>
       );
     }
     case 'paragraph':
@@ -107,6 +125,7 @@ export default function Article({
 }) {
   // drop leading duplicate h1
   const body = post.blocks.filter((b, i) => !(b.type === 'heading' && b.level === 1));
+  const bodyLevels = levelsFor(body);
 
   return (
     <section className="bg-white">
@@ -128,7 +147,7 @@ export default function Article({
                 className="mb-10 aspect-video w-full rounded-3xl object-cover shadow-lg"
               />
             )}
-            <div className="space-y-5">{body.map((b, i) => renderBlock(b, i))}</div>
+            <div className="space-y-5">{body.map((b, i) => renderBlock(b, i, bodyLevels[i]))}</div>
           </article>
 
           <aside className="space-y-6 lg:sticky lg:top-28">
