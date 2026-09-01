@@ -3,6 +3,8 @@ import PageHero from '@/components/PageHero';
 import LeadForm from '@/components/LeadForm';
 import { seoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import { graph, organizationNode, websiteNode, webPageNode, breadcrumbNode, faqNode } from '@/lib/jsonld';
 import { SITE } from '@/lib/site';
 
 export function generateMetadata(): Metadata {
@@ -123,6 +125,19 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <JsonLd
+        data={graph(
+          organizationNode(),
+          websiteNode(),
+          webPageNode({
+            path: '/contact/',
+            name: seoFor('/contact/')?.title || '',
+            description: seoFor('/contact/')?.description || '',
+            hasBreadcrumb: true,
+          }),
+          breadcrumbNode('/contact/', [{label: 'Home',href: '/'},{label: 'Contact',href: '/contact/'}]),
+        )}
+      />
     </>
   );
 }

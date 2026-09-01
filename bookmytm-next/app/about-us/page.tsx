@@ -4,6 +4,8 @@ import Blocks, { splitHero } from '@/components/Blocks';
 import CtaBand from '@/components/CtaBand';
 import { loadContent, seoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import { graph, organizationNode, websiteNode, webPageNode, breadcrumbNode, faqNode } from '@/lib/jsonld';
 
 export function generateMetadata(): Metadata {
   const seo = seoFor('/about-us/');
@@ -65,6 +67,19 @@ export default function AboutPage() {
       </section>
 
       <CtaBand />
+      <JsonLd
+        data={graph(
+          organizationNode(),
+          websiteNode(),
+          webPageNode({
+            path: '/about-us/',
+            name: seoFor('/about-us/')?.title || '',
+            description: seoFor('/about-us/')?.description || '',
+            hasBreadcrumb: true,
+          }),
+          breadcrumbNode('/about-us/', [{label: 'Home',href: '/'},{label: 'About Us',href: '/about-us/'}]),
+        )}
+      />
     </>
   );
 }

@@ -10,6 +10,17 @@ import { IconFor } from '@/components/icons';
 import Article from '@/components/Article';
 import { listContentSlugs, listPostSlugs, listPosts, loadContent, loadPost, pathToFileSlug, seoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import {
+  graph,
+  organizationNode,
+  websiteNode,
+  webPageNode,
+  breadcrumbNode,
+  serviceNode,
+  articleNode,
+  faqNode,
+} from '@/lib/jsonld';
 import { childrenFor, NAV, HUB_INTROS } from '@/lib/site';
 
 type Props = { params: Promise<{ slug: string[] }> };
@@ -129,37 +140,44 @@ export default async function Page({ params }: Props) {
     if (post) {
       const related = listPosts().filter((p) => p.slug !== slug[0]).slice(0, 5);
       const seo = seoFor('/' + slug[0] + '/');
+      const postPath = '/' + slug[0] + '/';
+      const postTitle = post.h1 || post.title;
+      const postDesc = descriptionFor(slug, seo?.description || '');
+      const postCrumbs = [
+        { label: 'Home', href: '/' },
+        { label: 'Knowledge Base', href: '/knowledge-base/' },
+        { label: postTitle, href: postPath },
+      ];
+      const postFaqs = collectFaqItems(post.blocks);
       return (
         <>
-          <PageHero
-            title={post.h1 || post.title}
-            crumbs={[
-              { label: 'Home', href: '/' },
-              { label: 'Knowledge Base', href: '/knowledge-base/' },
-              { label: post.h1 || post.title, href: '/' + slug[0] + '/' },
-            ]}
-          />
+          <PageHero title={postTitle} crumbs={postCrumbs} />
           <Article post={post} related={related} />
           <CtaBand />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'Article',
-                headline: post.h1 || post.title,
-                description: seo?.description || undefined,
-                image: post.featuredImage ? `https://bookmytm.com${post.featuredImage}` : undefined,
-                datePublished: post.datePublished || undefined,
-                author: { '@type': 'Organization', name: 'BookMyTM', url: 'https://bookmytm.com' },
-                publisher: {
-                  '@type': 'Organization',
-                  name: 'BookMyTM',
-                  logo: { '@type': 'ImageObject', url: 'https://bookmytm.com/images/logo.png' },
-                },
-                mainEntityOfPage: seo?.canonical || `https://bookmytm.com/${slug[0]}/`,
+          <JsonLd
+            data={graph(
+              organizationNode(),
+              websiteNode(),
+              webPageNode({
+                path: postPath,
+                name: postTitle,
+                description: postDesc,
+                hasBreadcrumb: true,
+                image: post.featuredImage,
+                datePublished: post.datePublished,
               }),
-            }}
+              breadcrumbNode(postPath, postCrumbs),
+              articleNode({
+                path: postPath,
+                headline: postTitle,
+                description: postDesc,
+                image: post.featuredImage,
+                imageWidth: post.featuredImageWidth,
+                imageHeight: post.featuredImageHeight,
+                datePublished: post.datePublished,
+              }),
+              postFaqs.length > 0 && faqNode(postPath, postFaqs),
+            )}
           />
         </>
       );
@@ -180,6 +198,10 @@ export default async function Page({ params }: Props) {
   const title = h1 || content.h1 || crumbs[crumbs.length - 1].label;
   const heroLead = lead || (isHub && seo?.description) || undefined;
   const faqItems = collectFaqItems(body);
+  // Same value the <meta name="description"> carries, so structured data and the
+  // head never disagree (59 seo.json entries have an empty description and rely
+  // on descriptionFor's fallback).
+  const pageDescription = descriptionFor(slug, seo?.description || '');
 
   return (
     <>
@@ -255,22 +277,25 @@ export default async function Page({ params }: Props) {
 
       <CtaBand />
 
-      {faqItems.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: faqItems.map((f) => ({
-                '@type': 'Question',
-                name: f.q,
-                acceptedAnswer: { '@type': 'Answer', text: f.a },
-              })),
-            }),
-          }}
-        />
-      )}
+      <JsonLd
+        data={graph(
+          organizationNode(),
+          websiteNode(),
+          webPageNode({
+            path,
+            name: title,
+            description: pageDescription,
+            hasBreadcrumb: crumbs.length > 1,
+          }),
+          crumbs.length > 1 && breadcrumbNode(path, crumbs),
+          // Hubs are navigation pages, and the legal pages aren't services —
+          // only the actual service pages get a Service node.
+          !isHub &&
+            !isLegal &&
+            serviceNode({ path, name: title, description: pageDescription, price: price || undefined }),
+          faqItems.length > 0 && faqNode(path, faqItems),
+        )}
+      />
     </>
   );
 }

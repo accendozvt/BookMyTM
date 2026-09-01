@@ -5,6 +5,8 @@ import CtaBand from '@/components/CtaBand';
 import Reveal from '@/components/Reveal';
 import { listPosts, seoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import { graph, organizationNode, websiteNode, webPageNode, breadcrumbNode, faqNode } from '@/lib/jsonld';
 
 export function generateMetadata(): Metadata {
   const seo = seoFor('/knowledge-base/');
@@ -85,6 +87,19 @@ export default function KnowledgeBase() {
       </section>
 
       <CtaBand />
+      <JsonLd
+        data={graph(
+          organizationNode(),
+          websiteNode(),
+          webPageNode({
+            path: '/knowledge-base/',
+            name: seoFor('/knowledge-base/')?.title || '',
+            description: seoFor('/knowledge-base/')?.description || '',
+            hasBreadcrumb: true,
+          }),
+          breadcrumbNode('/knowledge-base/', [{label: 'Home',href: '/'},{label: 'Knowledge Base',href: '/knowledge-base/'}]),
+        )}
+      />
     </>
   );
 }

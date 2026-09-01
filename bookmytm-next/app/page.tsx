@@ -6,6 +6,8 @@ import Reveal from '@/components/Reveal';
 import { Icon, IconFor } from '@/components/icons';
 import { seoFor, loadContent, listPosts } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import { graph, organizationNode, websiteNode, webPageNode, breadcrumbNode, faqNode } from '@/lib/jsonld';
 import { SITE } from '@/lib/site';
 
 export function generateMetadata(): Metadata {
@@ -540,24 +542,23 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'FAQPage',
-                mainEntity: faqItems.slice(0, 12).map((f) => ({
-                  '@type': 'Question',
-                  name: f.q,
-                  acceptedAnswer: { '@type': 'Answer', text: f.a },
-                })),
-              }),
-            }}
-          />
         </section>
       )}
 
       <CtaBand />
+
+      <JsonLd
+        data={graph(
+          organizationNode(),
+          websiteNode(),
+          webPageNode({
+            path: '/',
+            name: seoFor('/')?.title || 'BookMyTM',
+            description: seoFor('/')?.description || '',
+          }),
+          faqItems.length > 0 && faqNode('/', faqItems.slice(0, 12)),
+        )}
+      />
     </>
   );
 }
