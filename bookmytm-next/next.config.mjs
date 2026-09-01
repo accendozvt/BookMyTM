@@ -5,6 +5,9 @@ const nextConfig = {
   // this just changes how the pre-rendered HTML is served (Node process vs. plain files).
   trailingSlash: true,
   images: { unoptimized: true },
+  // Don't advertise the framework/version in a response header.
+  poweredByHeader: false,
+  reactStrictMode: true,
   experimental: {
     // Inline the (small, ~9 KiB) global stylesheet into the HTML instead of a
     // render-blocking <link> — removes the only critical-path network request
@@ -31,6 +34,28 @@ const nextConfig = {
     ];
   },
   async headers() {
+    // 'unsafe-inline' in script-src is deliberate. Next inlines its hydration
+    // payload (self.__next_f.push) and the JSON-LD blocks into every page, so a
+    // strict policy needs per-request nonces — which requires middleware and
+    // forces all 141 statically prerendered pages to render dynamically. The
+    // host allow-list below still blocks injection of third-party scripts, and
+    // object-src/base-uri/form-action/frame-ancestors are fully locked down.
+    const csp = [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com",
+      "font-src 'self'",
+      "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com",
+      // the /contact map facade loads maps only after the visitor asks for it
+      "frame-src https://www.google.com",
+      "frame-ancestors 'self'",
+      "base-uri 'self'",
+      "form-action 'self'",
+      "object-src 'none'",
+      'upgrade-insecure-requests',
+    ].join('; ');
+
     return [
       {
         source: '/:path*',
@@ -38,9 +63,24 @@ const nextConfig = {
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
-          { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=(), usb=()',
+          },
+          { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+          { key: 'Content-Security-Policy', value: csp },
+          { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
+          { key: 'X-DNS-Prefetch-Control', value: 'on' },
         ],
+      },
+      {
+        // Content-hashed build assets never change under the same URL.
+        source: '/_next/static/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+      {
+        source: '/images/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' }],
       },
     ];
   },

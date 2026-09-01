@@ -37,11 +37,13 @@ const ARCHETYPES = [
   // for any non-2xx response, so it is verified separately (status + noindex + content).
 ];
 
-const pages = process.argv.includes('--all')
+const ONLY = process.env.BMTM_ONLY ? process.env.BMTM_ONLY.split(",") : null;
+const pages0 = process.argv.includes('--all')
   ? readFileSync('D:/Google Drive/Work/Accendoz/Projects/BookMyTM/seo-audit/route-inventory.txt', 'utf8')
       .split('\n').filter(Boolean).filter((r) => r !== '/_not-found/')
       .map((r) => [r.replace(/^\/|\/$/g, '').replace(/\//g, '_') || 'home', r])
   : ARCHETYPES;
+const pages = ONLY ? pages0.filter(([n]) => ONLY.includes(n)) : pages0;
 
 const CATS = ['performance', 'accessibility', 'best-practices', 'seo'];
 const rows = [];

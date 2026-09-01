@@ -11,6 +11,17 @@
     @apply font-sans text-gray-900 antialiased;
     overflow-x: hidden;
   }
+
+  /* Visible keyboard focus (WCAG 2.4.7). Only the lead-form inputs styled focus;
+     everything else — including the 84 header links sitting on the dark green
+     bar — fell back to the browser default, which is hard to see there.
+     #16a34a clears 3:1 against both the white page and the dark header, and
+     :focus-visible means mouse users see no change. */
+  :focus-visible {
+    outline: 3px solid #16a34a;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 }
 
 @layer utilities {
