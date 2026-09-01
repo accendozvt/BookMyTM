@@ -4,7 +4,7 @@
   "title": "CCFS 2026: Save 90% on MCA Late Fees | BookMyTM",
   "h1": "Save 90% on MCA Late Fees: The 2026 Amnesty Scheme is Finally Here",
   "datePublished": "",
-  "featuredImage": "https://bookmytm.com/wp-content/uploads/2025/08/3780.webp",
+  "featuredImage": "/images/blog/hdr-ccfs-2026-save-90-on-mca-late-fees.webp",
   "blocks": [
     {
       "type": "heading",
@@ -260,5 +260,7 @@
       "level": 2,
       "text": "CCFS-2026 FAQ"
     }
-  ]
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
 }

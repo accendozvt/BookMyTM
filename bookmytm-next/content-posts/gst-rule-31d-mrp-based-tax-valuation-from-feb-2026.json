@@ -4,7 +4,7 @@
   "title": "GST Rule 31D: MRP-Based Tax Valuation from Feb 2026 | BookMyTM",
   "h1": "GST is Now Calculated on MRP, Not Invoice Value: Are You Breaking Rule 31D?",
   "datePublished": "",
-  "featuredImage": "https://bookmytm.com/wp-content/uploads/2025/08/3780.webp",
+  "featuredImage": "/images/blog/hdr-gst-rule-31d-mrp-based-tax-valuation-from-feb-2026.webp",
   "blocks": [
     {
       "type": "heading",
@@ -234,5 +234,7 @@
       "level": 2,
       "text": "Rule 31D FAQ"
     }
-  ]
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
 }

@@ -4,7 +4,7 @@
   "title": "January 2026 Regulatory Round-Up",
   "h1": "January 2026 Regulatory Round-Up: Furniture, Machinery & \"Khadi\"",
   "datePublished": "",
-  "featuredImage": "https://bookmytm.com/wp-content/uploads/2025/08/3780.webp",
+  "featuredImage": "/images/blog/hdr-january-2026-regulatory-round-up.webp",
   "blocks": [
     {
       "type": "heading",
@@ -247,5 +247,7 @@
       "level": 2,
       "text": "Regulatory FAQ"
     }
-  ]
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
 }

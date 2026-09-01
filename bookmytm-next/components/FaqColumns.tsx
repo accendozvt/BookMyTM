@@ -41,7 +41,7 @@ function Column({ items, defaultOpen }: { items: FaqItem[]; defaultOpen?: number
               }`}
             >
               <div className="overflow-hidden">
-                <p className="px-5 pb-4.5 pb-5 text-[14.5px] leading-relaxed text-gray-600">{item.a}</p>
+                <p className="px-5 pb-5 text-[14.5px] leading-relaxed text-gray-600">{item.a}</p>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@
   "title": "Feb 2026 BIS Exemption for Imports | Customs Clearance | BookMyTM",
   "h1": "Stuck at Customs? The New BIS Exemption Rule Can Save Your Import Shipment",
   "datePublished": "",
-  "featuredImage": "https://bookmytm.com/wp-content/uploads/2025/08/3780.webp",
+  "featuredImage": "/images/blog/hdr-feb-2026-bis-exemption-for-imports-customs-clearance.webp",
   "blocks": [
     {
       "type": "heading",
@@ -216,5 +216,7 @@
       "level": 2,
       "text": "BIS Customs Exemption FAQ"
     }
-  ]
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
 }

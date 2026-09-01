@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import LeadForm from '@/components/LeadForm';
+import MapFacade from '@/components/MapFacade';
 import { seoFor } from '@/lib/content';
+import { buildMetadata } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import { graph, organizationNode, websiteNode, webPageNode, breadcrumbNode, faqNode } from '@/lib/jsonld';
 import { SITE } from '@/lib/site';
 
 export function generateMetadata(): Metadata {
@@ -10,21 +14,7 @@ export function generateMetadata(): Metadata {
   const description =
     seo?.description ||
     'Reach the BookMyTM team in Kochi, Kerala for trademark registration, ISO certification, and business compliance. Call +91 809 809 0880 or write to cc@bookmytm.com.';
-  const canonical = seo?.canonical || 'https://bookmytm.com/contact/';
-  return {
-    title,
-    description,
-    alternates: { canonical },
-    openGraph: {
-      title,
-      description,
-      url: canonical,
-      siteName: 'BookMyTM',
-      type: 'website',
-      images: [{ url: '/assets/opengraph/preview.webp', width: 1200, height: 630, alt: title }],
-    },
-    twitter: { card: 'summary_large_image', title, description, images: ['/assets/opengraph/preview.webp'] },
-  };
+  return buildMetadata({ path: '/contact/', title, description });
 }
 
 const cards = [
@@ -94,7 +84,9 @@ export default function ContactPage() {
                 <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white">
                   {c.icon}
                 </div>
-                <h3 className="mb-3 text-lg font-bold text-gray-900">{c.label}</h3>
+                {/* h2, not h3: these cards are the first headings after the page
+                    <h1>, so h3 skipped a level. Styling is unchanged. */}
+                <h2 className="mb-3 text-lg font-bold text-gray-900">{c.label}</h2>
                 {c.lines?.map((l) => (
                   <p key={l} className="text-sm leading-relaxed text-gray-600">
                     {l}
@@ -121,12 +113,10 @@ export default function ContactPage() {
                 Registered Office – Kochi, Kerala
               </h2>
               <div className="overflow-hidden rounded-3xl shadow-lg">
-                <iframe
+                <MapFacade
+                  query="Mavelipuram, Kakkanad, Kochi, Kerala 682030"
                   title="BookMyTM Office Location"
-                  src="https://www.google.com/maps?q=Mavelipuram%2C%20Kakkanad%2C%20Kochi%2C%20Kerala%20682030&output=embed"
-                  className="h-[480px] w-full border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  addressLines={['Plot No 207, Behind Onam Park,', 'Mavelipuram, Kakkanad, Kochi,', 'Kerala 682030']}
                 />
               </div>
             </div>
@@ -136,6 +126,19 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <JsonLd
+        data={graph(
+          organizationNode(),
+          websiteNode(),
+          webPageNode({
+            path: '/contact/',
+            name: seoFor('/contact/')?.title || '',
+            description: seoFor('/contact/')?.description || '',
+            hasBreadcrumb: true,
+          }),
+          breadcrumbNode('/contact/', [{label: 'Home',href: '/'},{label: 'Contact',href: '/contact/'}]),
+        )}
+      />
     </>
   );
 }

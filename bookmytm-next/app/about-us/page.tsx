@@ -3,6 +3,9 @@ import PageHero from '@/components/PageHero';
 import Blocks, { splitHero } from '@/components/Blocks';
 import CtaBand from '@/components/CtaBand';
 import { loadContent, seoFor } from '@/lib/content';
+import { buildMetadata } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import { graph, organizationNode, websiteNode, webPageNode, breadcrumbNode, faqNode } from '@/lib/jsonld';
 
 export function generateMetadata(): Metadata {
   const seo = seoFor('/about-us/');
@@ -10,21 +13,7 @@ export function generateMetadata(): Metadata {
   const description =
     seo?.description ||
     'BookMyTM is India’s premier digital platform for trademark, IP protection, business registration, ISO certification, and compliance — headquartered in Kochi, Kerala.';
-  const canonical = seo?.canonical || 'https://bookmytm.com/about-us/';
-  return {
-    title,
-    description,
-    alternates: { canonical },
-    openGraph: {
-      title,
-      description,
-      url: canonical,
-      siteName: 'BookMyTM',
-      type: 'website',
-      images: [{ url: '/assets/opengraph/preview.webp', width: 1200, height: 630, alt: title }],
-    },
-    twitter: { card: 'summary_large_image', title, description, images: ['/assets/opengraph/preview.webp'] },
-  };
+  return buildMetadata({ path: '/about-us/', title, description });
 }
 
 const STATS = [
@@ -61,7 +50,14 @@ export default function AboutPage() {
             {STATS.map((s, i) => (
               <div
                 key={s.label}
-                className={`p-6 text-center md:p-8 ${i < 3 ? 'md:border-r md:border-gray-100' : ''} ${i % 2 === 0 ? 'border-r border-gray-100' : ''} ${i < 2 ? 'border-b border-gray-100 md:border-b-0' : ''}`}
+                className={[
+                  'p-6 text-center md:p-8 border-gray-100',
+                  i < 3 ? 'md:border-r' : '',
+                  i % 2 === 0 ? 'border-r' : '',
+                  i < 2 ? 'border-b md:border-b-0' : '',
+                ]
+                  .filter(Boolean)
+                  .join(' ')}
               >
                 <div className="text-3xl font-extrabold tabular-nums text-brand md:text-4xl">{s.num}</div>
                 <div className="mt-1 text-[11px] font-extrabold uppercase tracking-widest text-gray-500">{s.label}</div>
@@ -78,6 +74,19 @@ export default function AboutPage() {
       </section>
 
       <CtaBand />
+      <JsonLd
+        data={graph(
+          organizationNode(),
+          websiteNode(),
+          webPageNode({
+            path: '/about-us/',
+            name: seoFor('/about-us/')?.title || '',
+            description: seoFor('/about-us/')?.description || '',
+            hasBreadcrumb: true,
+          }),
+          breadcrumbNode('/about-us/', [{label: 'Home',href: '/'},{label: 'About Us',href: '/about-us/'}]),
+        )}
+      />
     </>
   );
 }

@@ -1,0 +1,105 @@
+{
+  "slug": "trademark-renewal-deadlines-india",
+  "type": "post",
+  "title": "Trademark Renewal Deadlines: What Happens If You Miss Yours (And How to Fix It)",
+  "h1": "Trademark Renewal Deadlines: What Happens If You Miss Yours (And How to Fix It)",
+  "datePublished": "2026-06-23",
+  "featuredImage": "/images/blog/blog-trademark-renewal-deadlines-india.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Trademark Renewal Deadlines: What Happens If You Miss Yours (And How to Fix It)"
+    },
+    {
+      "type": "paragraph",
+      "text": "A registered trademark in India is valid for 10 years from the date of registration, and missing the renewal deadline does not mean you instantly lose your mark — you get a 6-month grace period to renew with a surcharge, and if you miss that too, a further window (up to one year from the expiry date) to apply for restoration. After that one-year mark, the trademark is removed from the register and can, in principle, be picked up by someone else."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When is a trademark due for renewal?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A trademark must be renewed every 10 years from the date of registration to remain valid and enforceable. Renewal is filed on Form TM-R and can be submitted any time up to one year before the expiry date, under Rule 57 of the Trade Marks Rules, 2017. The Trade Marks Registry typically also sends a reminder notice before expiry, but this is a courtesy, not a legal safety net — tracking the deadline is the owner's responsibility."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What happens in the first six months after expiry?"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you miss the expiry date, you have a 6-month grace period during which the mark stays on the register and can still be renewed, provided you pay the standard renewal fee plus a late surcharge (still filed on Form TM-R, under the proviso to Section 25(3) of the Trade Marks Act read with Rule 57(2)). This is the cheapest, simplest way to fix a missed deadline — a straightforward late renewal, not a restoration proceeding, and it happens more or less as of right once the fee and surcharge are paid."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What if I miss the six-month grace period too?"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the mark isn't renewed within six months of expiry, the Registrar removes it from the register, and the removal is ordinarily advertised in the Trade Marks Journal. You're not immediately out of options: under Section 25(4) and Rule 60, an application for restoration and renewal — still on Form TM-R — can be filed between six months and up to one year from the date of expiry. Restoration is discretionary, not automatic: the Registrar must be satisfied it's \"just\" to restore the mark, considering the interests of any third parties who may have been affected in the interim."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Can someone else register my trademark after it's removed?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes — this is the real danger of letting a renewal lapse for good. Once a mark is off the register, a third party can, in theory, file for an identical or similar mark. There's a partial safeguard: under Section 26 of the Trade Marks Act, a mark removed for non-renewal is still given some residual consideration for a period after removal when the Registrar examines a new, similar application, but this protection is not absolute and doesn't stop someone from filing. If your registration is never restored and formally lapses, you'd need to file a brand-new application, which gets a fresh filing date with no guarantee against intervening filings — though evidence of your prior use can still help your case."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Key deadlines at a glance"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "10 years: standard validity period from the date of registration",
+        "Up to 1 year before expiry: window to file a normal renewal (Form TM-R)",
+        "6 months after expiry: grace period for late renewal with surcharge (still Form TM-R)",
+        "6 months to 1 year after expiry: window to apply for discretionary restoration if the mark has been removed (Form TM-R, Rule 60)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Because restoration is discretionary and re-filing from scratch means losing your original priority date, it's worth building renewal deadlines into your compliance calendar well before the one-year filing window opens. BookMyTM tracks renewal timelines for clients and handles both straightforward TM-R renewals and restoration filings, so a missed date doesn't turn into a lost mark."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "How long does a trademark last in India before it needs renewal?",
+          "a": "A registered trademark is valid for 10 years from the date of registration and must be renewed every 10 years thereafter."
+        },
+        {
+          "q": "How many months before expiry can I renew my trademark?",
+          "a": "You can file Form TM-R any time up to one year before the expiry date under Rule 57 of the Trade Marks Rules, 2017."
+        },
+        {
+          "q": "What happens if I miss my trademark renewal deadline in India?",
+          "a": "You get a six-month grace period after expiry to renew by paying the standard fee plus a surcharge; if you miss that too, the mark is removed but can still potentially be restored between six months and one year after expiry."
+        },
+        {
+          "q": "Is the grace period for trademark renewal 6 months or 1 year?",
+          "a": "Both figures apply at different stages: late renewal with a surcharge is available for 6 months after expiry, and restoration of an already-removed mark can be applied for up to 1 year after expiry."
+        },
+        {
+          "q": "Can someone else register my trademark if I let it lapse?",
+          "a": "Yes, once your mark is removed from the register a third party can attempt to file for a similar or identical mark, though Section 26 of the Trade Marks Act gives a removed mark some limited residual protection for a period after removal."
+        },
+        {
+          "q": "What form do I use to renew or restore a trademark in India?",
+          "a": "Form TM-R is used for both ordinary renewal and, under Rule 60, restoration of a removed mark — there is no separate TM-13 form under the current 2017 Rules."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

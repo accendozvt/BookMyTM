@@ -1,0 +1,123 @@
+{
+  "slug": "trademark-assignment-vs-licensing",
+  "type": "post",
+  "title": "Trademark Assignment vs Licensing: What's the Difference and When Do You Need Each?",
+  "h1": "Trademark Assignment vs Licensing: What's the Difference and When Do You Need Each?",
+  "datePublished": "2026-07-04",
+  "featuredImage": "/images/blog/blog-trademark-assignment-vs-licensing.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Trademark Assignment vs Licensing: What's the Difference and When Do You Need Each?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trademark assignment transfers ownership of a mark permanently to another party; trademark licensing lets someone else use the mark while you keep ownership. Under India's Trade Marks Act, 1999, assignment is effectively a sale of the asset itself, while licensing is a permission — usually time-bound and revocable — granted through an agreement. Which one you need depends on whether you're exiting the brand entirely or expanding its use while retaining control."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is a trademark assignment under Indian law?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A trademark assignment is the legal transfer of ownership rights in a registered or unregistered mark from an assignor to an assignee. Section 37 of the Trade Marks Act, 1999 gives the registered proprietor the power to assign a mark and give valid receipts for consideration. Sections 38 and 39 permit a mark — registered or unregistered — to be assigned \"whether with or without the goodwill of the business concerned,\" and for all goods/services covered or only some of them."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Assignment with goodwill: the mark transfers along with the business reputation attached to it; the assignee can use it for the same goods/services without restriction tied to the old owner.",
+        "Assignment without goodwill (a \"gross\" or \"naked\" assignment): the mark transfers but the assignor keeps using an identical/similar mark for an unrelated line of business. Section 42 sets conditions on this, and Section 40 restricts gross assignments that would create confusingly overlapping rights between two parties in the market — in such cases, Registrar or Appellate Board directions may be required."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is trademark licensing, and must it be registered?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trademark licensing is a contractual permission to use a mark while the licensor keeps ownership. Under Sections 48–55 of the 1999 Act, a licensee can be recorded with the Registry as a \"registered user.\" Unlike the older Trade Marks Act, 1958, recordal is not mandatory for a license to be legally valid — a license can operate purely as a contract. However, recording a registered user under Section 49 is commonly recommended because it creates an official record useful in disputes, licensing due diligence, and enforcement, and requires the proprietor to demonstrate the quality control it exercises over the licensee's use."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What's the process to record an assignment?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Recording an assignment uses Form TM-P, filed under Rule 75 of the Trade Marks Rules, 2017, along with a certified copy of the assignment deed and a supporting statement of case. In practice:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Draft and execute a written assignment deed covering the mark(s), consideration, and whether goodwill transfers",
+        "File Form TM-P with the Trade Marks Registry, with the certified deed and statement of case",
+        "Address any Registrar directions if the assignment could create overlapping rights among multiple users (Section 40)",
+        "Wait for the new proprietor to be entered on the Register"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Secondary sources describe the Registrar as ordinarily disposing of Rule 75 applications within about three months, though this is a practice norm rather than a guaranteed statutory deadline — treat it as indicative, not fixed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What are the business and tax implications, at a high level?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assignment and licensing are treated differently for tax and accounting purposes, but exact rates and classifications depend on current tax law and the specific transaction, so this should always be confirmed with a tax professional rather than assumed. Broadly, an outright sale of a trademark (assignment) is generally approached as a transfer of a capital asset, while licensing/royalty income is typically treated as recurring business income, and licensing arrangements are also relevant for GST as a supply of services."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which scenario needs assignment, and which needs licensing?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Selling your brand outright (business exit, M&A, divesting a product line) → Assignment, usually with goodwill",
+        "Franchising your brand across multiple outlets while keeping ownership → Licensing, often with registered-user recordal",
+        "Letting a group company or manufacturing partner use your mark temporarily → Licensing via a license/permitted-use agreement",
+        "Merger, inheritance, or transfer by operation of law → Transmission, recorded via Form TM-P similarly to assignment"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "BookMyTM helps businesses draft assignment deeds and license agreements and handles the corresponding Form TM-P or registered-user filings with the Trade Marks Registry."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "Can I assign a trademark without transferring goodwill in India?",
+          "a": "Yes. Sections 38 and 39 of the Trade Marks Act, 1999 allow assignment with or without goodwill, though Section 42 sets conditions and Section 40 restricts assignments that would create confusingly overlapping rights."
+        },
+        {
+          "q": "Is it mandatory to register a trademark license as a \"registered user\" in India?",
+          "a": "No. Unlike the 1958 Act, the current law does not require registered-user recordal for a license to be valid, though recording it under Section 49 is commonly advised for evidentiary and enforcement purposes."
+        },
+        {
+          "q": "What form is used to record a trademark assignment?",
+          "a": "Form TM-P, filed under Rule 75 of the Trade Marks Rules, 2017, with a certified copy of the assignment deed."
+        },
+        {
+          "q": "Should a franchise use assignment or licensing?",
+          "a": "Licensing. Franchising typically means the brand owner keeps ownership and grants franchisees permission to use the mark under agreed terms — a licensing arrangement, not a transfer of ownership."
+        },
+        {
+          "q": "Does GST apply to trademark assignment and licensing?",
+          "a": "Both can attract GST since IP transactions are generally treated as a supply of services, but exact treatment depends on transaction specifics and should be confirmed with a tax advisor."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

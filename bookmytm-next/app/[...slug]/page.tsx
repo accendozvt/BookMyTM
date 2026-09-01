@@ -9,7 +9,19 @@ import Reveal from '@/components/Reveal';
 import { IconFor } from '@/components/icons';
 import Article from '@/components/Article';
 import { listContentSlugs, listPostSlugs, listPosts, loadContent, loadPost, pathToFileSlug, seoFor } from '@/lib/content';
-import { childrenFor, NAV } from '@/lib/site';
+import { buildMetadata } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import {
+  graph,
+  organizationNode,
+  websiteNode,
+  webPageNode,
+  breadcrumbNode,
+  serviceNode,
+  articleNode,
+  faqNode,
+} from '@/lib/jsonld';
+import { childrenFor, NAV, HUB_INTROS } from '@/lib/site';
 
 type Props = { params: Promise<{ slug: string[] }> };
 
@@ -59,29 +71,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const seo = seoFor(path);
   if (!seo) return {};
   const post = slug.length === 1 ? loadPost(slug[0]) : null;
-  const ogImage = post?.featuredImage || '/assets/opengraph/preview.webp';
   const description = descriptionFor(slug, seo.description);
-  return {
+  return buildMetadata({
+    path,
     title: seo.title,
     description,
-    alternates: { canonical: seo.canonical },
-    robots: seo.noindex ? { index: false, follow: false } : undefined,
-    openGraph: {
-      title: seo.title,
-      description,
-      url: seo.canonical,
-      siteName: 'BookMyTM',
-      type: post ? 'article' : 'website',
-      images: [{ url: ogImage, width: 1200, height: 630, alt: seo.title }],
-      ...(post?.datePublished ? { publishedTime: post.datePublished } : {}),
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: seo.title,
-      description,
-      images: [ogImage],
-    },
-  };
+    noindex: seo.noindex,
+    type: post ? 'article' : 'website',
+    ...(post?.featuredImage
+      ? {
+          image: post.featuredImage,
+          imageWidth: post.featuredImageWidth,
+          imageHeight: post.featuredImageHeight,
+        }
+      : {}),
+    ...(post?.datePublished ? { publishedTime: post.datePublished } : {}),
+  });
 }
 
 function titleCase(s: string) {
@@ -109,12 +114,12 @@ function crumbsFor(segments: string[]) {
 const CATEGORY_IMAGES: [RegExp, string][] = [
   [/trademark/, '/images/blog_06_trademark_objection.webp'],
   [/iso-certification/, '/images/blog_05_iso_quality_seal_1765545624585.webp'],
-  [/patent|other-ip/, '/images/photo-1602216056096-3b40cc0c9944.jpg'],
-  [/startup\/registrations/, '/images/photo-1497366216548-37526070297c.jpg'],
-  [/special-business|other-registrations/, '/images/photo-1521791136064-7986c2920216.jpg'],
-  [/statutory-compliance/, '/images/photo-1450101499163-c8848c66ca85.jpg'],
-  [/winding-up/, '/images/photo-1556761175-5973dc0f32e7.jpg'],
-  [/other-services/, '/images/photo-1552664730-d307ca884978.jpg'],
+  [/patent|other-ip/, '/images/photo-1602216056096-3b40cc0c9944.webp'],
+  [/startup\/registrations/, '/images/photo-1497366216548-37526070297c.webp'],
+  [/special-business|other-registrations/, '/images/photo-1521791136064-7986c2920216.webp'],
+  [/statutory-compliance/, '/images/photo-1450101499163-c8848c66ca85.webp'],
+  [/winding-up/, '/images/photo-1556761175-5973dc0f32e7.webp'],
+  [/other-services/, '/images/photo-1552664730-d307ca884978.webp'],
 ];
 
 function imageForPath(path: string): string {
@@ -135,37 +140,44 @@ export default async function Page({ params }: Props) {
     if (post) {
       const related = listPosts().filter((p) => p.slug !== slug[0]).slice(0, 5);
       const seo = seoFor('/' + slug[0] + '/');
+      const postPath = '/' + slug[0] + '/';
+      const postTitle = post.h1 || post.title;
+      const postDesc = descriptionFor(slug, seo?.description || '');
+      const postCrumbs = [
+        { label: 'Home', href: '/' },
+        { label: 'Knowledge Base', href: '/knowledge-base/' },
+        { label: postTitle, href: postPath },
+      ];
+      const postFaqs = collectFaqItems(post.blocks);
       return (
         <>
-          <PageHero
-            title={post.h1 || post.title}
-            crumbs={[
-              { label: 'Home', href: '/' },
-              { label: 'Knowledge Base', href: '/knowledge-base/' },
-              { label: post.h1 || post.title, href: '/' + slug[0] + '/' },
-            ]}
-          />
+          <PageHero title={postTitle} crumbs={postCrumbs} />
           <Article post={post} related={related} />
           <CtaBand />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'Article',
-                headline: post.h1 || post.title,
-                description: seo?.description || undefined,
-                image: post.featuredImage ? `https://bookmytm.com${post.featuredImage}` : undefined,
-                datePublished: post.datePublished || undefined,
-                author: { '@type': 'Organization', name: 'BookMyTM', url: 'https://bookmytm.com' },
-                publisher: {
-                  '@type': 'Organization',
-                  name: 'BookMyTM',
-                  logo: { '@type': 'ImageObject', url: 'https://bookmytm.com/images/bookmytm-white.png' },
-                },
-                mainEntityOfPage: seo?.canonical || `https://bookmytm.com/${slug[0]}/`,
+          <JsonLd
+            data={graph(
+              organizationNode(),
+              websiteNode(),
+              webPageNode({
+                path: postPath,
+                name: postTitle,
+                description: postDesc,
+                hasBreadcrumb: true,
+                image: post.featuredImage,
+                datePublished: post.datePublished,
               }),
-            }}
+              breadcrumbNode(postPath, postCrumbs),
+              articleNode({
+                path: postPath,
+                headline: postTitle,
+                description: postDesc,
+                image: post.featuredImage,
+                imageWidth: post.featuredImageWidth,
+                imageHeight: post.featuredImageHeight,
+                datePublished: post.datePublished,
+              }),
+              postFaqs.length > 0 && faqNode(postPath, postFaqs),
+            )}
           />
         </>
       );
@@ -186,6 +198,10 @@ export default async function Page({ params }: Props) {
   const title = h1 || content.h1 || crumbs[crumbs.length - 1].label;
   const heroLead = lead || (isHub && seo?.description) || undefined;
   const faqItems = collectFaqItems(body);
+  // Same value the <meta name="description"> carries, so structured data and the
+  // head never disagree (59 seo.json entries have an empty description and rely
+  // on descriptionFor's fallback).
+  const pageDescription = descriptionFor(slug, seo?.description || '');
 
   return (
     <>
@@ -194,6 +210,9 @@ export default async function Page({ params }: Props) {
       {isHub ? (
         <section className="bg-white">
           <div className="container-site py-16 md:py-20">
+            {HUB_INTROS[path] && (
+              <p className="mb-10 max-w-3xl text-lg leading-relaxed text-gray-600">{HUB_INTROS[path]}</p>
+            )}
             <div className="mb-10">
               <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 md:text-3xl">Our Services</h2>
               <div className="mt-3 h-1 w-14 rounded-full bg-brand" />
@@ -258,22 +277,25 @@ export default async function Page({ params }: Props) {
 
       <CtaBand />
 
-      {faqItems.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: faqItems.map((f) => ({
-                '@type': 'Question',
-                name: f.q,
-                acceptedAnswer: { '@type': 'Answer', text: f.a },
-              })),
-            }),
-          }}
-        />
-      )}
+      <JsonLd
+        data={graph(
+          organizationNode(),
+          websiteNode(),
+          webPageNode({
+            path,
+            name: title,
+            description: pageDescription,
+            hasBreadcrumb: crumbs.length > 1,
+          }),
+          crumbs.length > 1 && breadcrumbNode(path, crumbs),
+          // Hubs are navigation pages, and the legal pages aren't services —
+          // only the actual service pages get a Service node.
+          !isHub &&
+            !isLegal &&
+            serviceNode({ path, name: title, description: pageDescription, price: price || undefined }),
+          faqItems.length > 0 && faqNode(path, faqItems),
+        )}
+      />
     </>
   );
 }

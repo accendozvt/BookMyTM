@@ -11,9 +11,49 @@
     @apply font-sans text-gray-900 antialiased;
     overflow-x: hidden;
   }
+
+  /* Visible keyboard focus (WCAG 2.4.7). Only the lead-form inputs styled focus;
+     everything else — including the 84 header links sitting on the dark green
+     bar — fell back to the browser default, which is hard to see there.
+     #16a34a clears 3:1 against both the white page and the dark header, and
+     :focus-visible means mouse users see no change. */
+  :focus-visible {
+    outline: 3px solid #16a34a;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 }
 
 @layer utilities {
+  /* Skip-to-content link. Written explicitly rather than as
+     `sr-only focus:not-sr-only` because Tailwind's .sr-only kept winning over
+     the focus variant, leaving the link 1x1 and unusable when focused. */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip-link:focus {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    background: #ffffff;
+    color: #3d6f2e;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(2, 26, 15, 0.25);
+    outline: 2px solid #3d6f2e;
+    outline-offset: 2px;
+  }
   .hero-bg {
     background: radial-gradient(circle at 10% 10%, #1e5e3f 0%, #0a351f 45%, #021a0f 100%);
   }
@@ -28,15 +68,12 @@
   66% { transform: translate(-20px, 20px) scale(0.9); }
   100% { transform: translate(0, 0) scale(1); }
 }
-@keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+/* Decorative infinite animations run only on desktop-class screens: the blobs sit
+   under blur-3xl filters, so animating their transform forces large blurred layers
+   to re-composite every frame — wasted battery/CPU on phones for a subtle effect.
+   Mobile gets the same visuals as static glows. */
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  .animate-blob { animation: blob 10s infinite; }
+  .animate-blob-2 { animation: blob 10s 2s infinite; }
+  .animate-blob-3 { animation: blob 10s 4s infinite; }
 }
-@keyframes ping-dot {
-  75%, 100% { transform: scale(2); opacity: 0; }
-}
-.animate-blob { animation: blob 10s infinite; }
-.animate-blob-2 { animation: blob 10s 2s infinite; }
-.animate-blob-3 { animation: blob 10s 4s infinite; }
-.animate-floaty { animation: floaty 4.5s ease-in-out infinite; }
-.animate-ping-dot { animation: ping-dot 1s cubic-bezier(0, 0, 0.2, 1) infinite; }

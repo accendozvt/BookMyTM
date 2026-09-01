@@ -1,0 +1,105 @@
+{
+  "slug": "ai-generated-logo-copyright-trademark-ownership",
+  "type": "post",
+  "title": "Who Owns an AI-Generated Logo? Copyright and Trademark Ownership in the AI Era",
+  "h1": "Who Owns an AI-Generated Logo? Copyright and Trademark Ownership in the AI Era",
+  "datePublished": "2026-07-09",
+  "featuredImage": "/images/blog/blog-ai-generated-logo-copyright-trademark-ownership.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Who Owns an AI-Generated Logo? Copyright and Trademark Ownership in the AI Era"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you designed your logo with an AI tool, here's the short answer: whether you own the copyright in that image is legally murky in India right now, but whether you can trademark it as your brand's identifier is not — that path is well-established and available today. These are two different rights, governed by two different laws, and businesses that confuse them often leave their brand under-protected."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Does Indian copyright law recognize AI as an author?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not clearly, and that's the core problem. The Copyright Act, 1957 protects \"original\" works, and Section 2(d) defines who counts as an \"author.\" For most works, that's the human creator. But Section 2(d)(vi) — added by a 1994 amendment, well before generative AI existed — covers \"computer-generated\" literary, dramatic, musical, or artistic works, and names the author as \"the person who causes the work to be created.\" That phrase was written for rule-based software, not diffusion models generating an image from a text prompt. Applied to modern AI tools, it's genuinely unclear whether the human who typed the prompt \"causes\" the output enough to qualify as its legal author, especially when the output isn't directly controlled by the user."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What did the RAGHAV \"Suryast\" case actually decide?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Less than it seems. In November 2020, the Indian Copyright Office registered an artwork called \"Suryast,\" listing IP lawyer Ankit Sahni and an AI tool called RAGHAV as co-authors — reportedly a global first. Later, the Copyright Office issued a withdrawal notice, questioning RAGHAV's legal standing as an \"author\" and pointing back to Section 2(d)(vi). Sahni contested the withdrawal, and the matter has not been conclusively resolved in a way that sets clear precedent. For contrast, the US Copyright Office rejected the same work outright, holding that it lacked the human authorship copyright requires. Even India's one high-profile test case ended in ambiguity, not a settled rule."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Can you copyright a logo an AI generated with no human creative input?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Very likely not, under current practice — but there's no definitive ruling to point to either way. The Copyright Office's practice and the Act's language both lean on human creativity as the basis for protection; a fully autonomous output with no meaningful human creative choices sits in a legal gap nobody has closed yet. The government is aware of this gap and has been examining AI and copyright policy, but no statutory amendment specifically resolving AI-output authorship had been notified as of mid-2026. Treat AI-logo copyright ownership as unsettled — not denied, and not guaranteed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Does an AI-generated logo still qualify for trademark protection?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes — and this is the part worth acting on. Trademark law under the Trade Marks Act, 1999 doesn't ask who or what \"authored\" a mark. Section 2(1)(zb) defines a trademark as a mark capable of graphical representation and capable of distinguishing your goods or services from someone else's. What matters is:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Distinctiveness — the logo must be capable of identifying your brand, either inherently or through acquired use",
+        "Use in commerce — you can file on a \"used\" or \"proposed to be used\" basis",
+        "No authorship test — unlike copyright, trademark law doesn't care whether a human, a design agency, or an AI tool created the artwork",
+        "Registrability check — the logo still needs to clear absolute grounds of refusal under Section 9 (not generic, not merely descriptive, not deceptive)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "So even where AI-logo copyright is contested, the same logo can be registered as a trademark, giving you exclusive rights to use it as your brand identifier — usually the protection businesses actually need."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What should a business do right now?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Don't wait for copyright law to catch up. File for trademark registration on your logo as soon as you start using it commercially, keep records of your design brief and any human edits made to the AI output, and avoid AI outputs that closely resemble existing copyrighted art or registered trademarks, since that risk exists independently of who \"owns\" the AI version. BookMyTM works with businesses in exactly this situation, assessing a logo's registrability and filing the trademark application — the protection layer that's actually enforceable today, regardless of how the copyright question eventually settles."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "Is an AI-generated logo protected by copyright in India?",
+          "a": "It's unsettled. Indian copyright law expects a human author, and there's no conclusive ruling confirming copyright protection for a logo with no meaningful human creative input."
+        },
+        {
+          "q": "Can I trademark a logo that was made using AI?",
+          "a": "Yes. Trademark registration depends on distinctiveness and use in commerce, not on how the logo was created, so an AI-generated logo can be registered like any other."
+        },
+        {
+          "q": "What was the RAGHAV AI copyright case about?",
+          "a": "It involved an AI tool briefly listed as co-author of an artwork by the Indian Copyright Office in 2020, followed by a later withdrawal notice questioning that recognition — the issue remains legally unresolved."
+        },
+        {
+          "q": "Does India have a specific law for AI-generated content yet?",
+          "a": "No dedicated statute existed as of mid-2026 specifically resolving AI-output copyright authorship, though the government has been reviewing the issue."
+        },
+        {
+          "q": "If I can't copyright my AI logo, is my brand unprotected?",
+          "a": "No — trademark registration is the more relevant protection for a logo used as a brand identifier, and it's available independent of the copyright question."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

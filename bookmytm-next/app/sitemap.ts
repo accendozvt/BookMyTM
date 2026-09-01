@@ -1,20 +1,38 @@
 import type { MetadataRoute } from 'next';
-import { listContentSlugs, listPosts, fileSlugToPath } from '@/lib/content';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+import { listContentSlugs, listPostSlugs, fileSlugToPath } from '@/lib/content';
 import { SITE } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
+/**
+ * Route -> last-commit date, precomputed by scrape/generate-lastmod.mjs.
+ * Deployment ships a source zip with no .git, so git history isn't readable here.
+ */
+const LASTMOD = JSON.parse(
+  readFileSync(join(process.cwd(), 'data', 'lastmod.json'), 'utf8'),
+) as Record<string, string>;
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ['/', '/about-us/', '/contact/', '/knowledge-base/', ...listContentSlugs().map(fileSlugToPath)].map((p) => ({
-    url: SITE.url + p,
-    changeFrequency: 'monthly' as const,
-    priority: p === '/' ? 1 : p.split('/').filter(Boolean).length === 1 ? 0.8 : 0.6,
-  }));
-  const posts = listPosts().map((p) => ({
-    url: `${SITE.url}/${p.slug}/`,
-    lastModified: p.datePublished ? new Date(p.datePublished) : undefined,
-    changeFrequency: 'yearly' as const,
-    priority: 0.5,
-  }));
-  return [...pages, ...posts];
+  const routes = [
+    '/',
+    '/about-us/',
+    '/contact/',
+    '/knowledge-base/',
+    ...listContentSlugs().map(fileSlugToPath),
+    ...listPostSlugs().map((s) => `/${s}/`),
+  ];
+
+  // De-dupe defensively: a content file and a post slug must never both claim a path.
+  const seen = new Set<string>();
+
+  return routes
+    .filter((p) => (seen.has(p) ? false : (seen.add(p), true)))
+    .sort()
+    .map((p) => ({
+      url: SITE.url + p,
+      // priority and changeFrequency are deliberately omitted — Google ignores both.
+      ...(LASTMOD[p] ? { lastModified: new Date(LASTMOD[p]) } : {}),
+    }));
 }

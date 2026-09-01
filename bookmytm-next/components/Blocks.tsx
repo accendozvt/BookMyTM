@@ -199,14 +199,19 @@ function Timeline({ cards }: { cards: Card[] }) {
   );
 }
 
-function renderBasicBlock(b: Block, key: number) {
+function renderBasicBlock(b: Block, key: number, headingTag: 'h2' | 'h3' = 'h3') {
   switch (b.type) {
-    case 'heading':
+    case 'heading': {
+      // In a section that has no <h2> of its own (the lead section, which sits
+      // directly under the page <h1>), an <h3> here skips a level. Render <h2>
+      // there instead — the class, and so the appearance, is identical.
+      const Tag = headingTag;
       return (
-        <h3 key={key} className="pt-2 text-lg font-bold text-gray-900 md:text-xl">
+        <Tag key={key} className="pt-2 text-lg font-bold text-gray-900 md:text-xl">
           {b.text}
-        </h3>
+        </Tag>
       );
+    }
     case 'paragraph':
       return (
         <p key={key} className="text-base leading-[1.75] text-gray-600">
@@ -250,7 +255,7 @@ function renderBasicBlock(b: Block, key: number) {
       return b.src ? (
         <div key={key} className="flex justify-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={b.src} alt={b.alt} className="max-h-[420px] rounded-2xl shadow-lg" loading="lazy" />
+          <img src={b.src} alt={b.alt} className="max-h-[420px] rounded-2xl shadow-lg" loading="lazy" decoding="async" />
         </div>
       ) : null;
     case 'imageBox':
@@ -287,10 +292,14 @@ export default function Blocks({
 
         if (isFaq) {
           const items = toFaqItems(section.blocks);
+          // Only the first FAQ section carries the anchor id — a few pages have
+          // two FAQ-titled sections, which produced a duplicate id="faq".
+          const isFirstFaq =
+            sections.findIndex((s) => s.heading && /frequently asked|faq/i.test(s.heading)) === si;
           return (
-            <section key={si} id="faq">
+            <section key={si} {...(isFirstFaq ? { id: 'faq' } : {})}>
               <SectionHeading text={section.heading!} />
-              {items.length ? <Faq items={items} /> : <div className="space-y-4">{section.blocks.map((b, i) => renderBasicBlock(b, i))}</div>}
+              {items.length ? <Faq items={items} /> : <div className="space-y-4">{section.blocks.map((b, i) => renderBasicBlock(b, i, section.heading ? 'h3' : 'h2'))}</div>}
             </section>
           );
         }
@@ -314,11 +323,11 @@ export default function Blocks({
                   width={1200}
                   height={450}
                   className="aspect-[16/6] w-full rounded-2xl object-cover shadow-md ring-1 ring-gray-200/60"
-                  loading="lazy"
+                  loading="lazy" decoding="async"
                 />
               </Reveal>
             )}
-            <div className="space-y-4">{(cardDetect ? cardDetect.rest : nonBoxes).map((b, i) => renderBasicBlock(b, i))}</div>
+            <div className="space-y-4">{(cardDetect ? cardDetect.rest : nonBoxes).map((b, i) => renderBasicBlock(b, i, section.heading ? 'h3' : 'h2'))}</div>
 
             {cardDetect &&
               (isTimeline(cardDetect.cards) ? (

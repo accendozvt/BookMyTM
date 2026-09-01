@@ -1,0 +1,117 @@
+{
+  "slug": "well-known-trademark-status-india",
+  "type": "post",
+  "title": "What Is a \"Well-Known Trademark\" in India — and How Do Brands Get That Status?",
+  "h1": "What Is a \"Well-Known Trademark\" in India — and How Do Brands Get That Status?",
+  "datePublished": "2026-07-10",
+  "featuredImage": "/images/blog/blog-well-known-trademark-status-india.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "What Is a \"Well-Known Trademark\" in India — and How Do Brands Get That Status?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A \"well-known trademark\" in India isn't just a mark that's popular — it's a formal legal status under the Trade Marks Act, 1999 that extends a brand's protection across all classes of goods and services, not just the ones it's actually registered in. A business doesn't need to wait for a court dispute to get this recognition anymore; since 2017, brand owners can apply directly to the Trade Marks Registry for a formal determination."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What legally makes a trademark \"well-known\" in India?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Section 2(1)(zg) of the Trade Marks Act, 1999 defines a well-known trademark as a mark that has become so well known to a substantial segment of the public using the relevant goods or services that its use on other, unrelated goods or services would likely be seen as indicating a connection with the original mark's owner. In simple terms: the public associates the mark so strongly with one source that using it anywhere else would confuse people, even outside the original product category."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How is \"well-known\" status actually determined?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Section 11(6) and 11(7) of the Act set out the factors the Registrar must weigh — no single one is decisive on its own:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Knowledge or recognition of the trademark among the relevant section of the public, including recognition gained through promotion",
+        "Duration, extent, and geographical area of use of the trademark",
+        "Duration, extent, and geographical area of any promotion of the trademark",
+        "Duration and geographical area of any registrations, or applications for registration, of the trademark",
+        "Record of successful enforcement of the rights in the trademark, including recognition by any court or Registrar",
+        "The number of actual or potential consumers, distribution channels, and business circles dealing with the goods or services"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Once a mark has been recognized as well-known by a court or the Registrar in even one context, the Registrar must treat it as well-known for other registration purposes too."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How does a brand actually apply for well-known status?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before 2017, the only way to get well-known recognition was through a court or Registrar ruling that came up incidentally during an opposition, rectification, or infringement proceeding. Rule 124 of the Trade Marks Rules, 2017 changed that by creating a direct application route: any trademark owner can now file a request for determination as well-known, supported by a statement of case and all supporting evidence and documents, along with the prescribed official fee. This is a meaningfully faster path than waiting for litigation to establish the same status."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What benefits come with well-known trademark status?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Cross-class protection: A well-known mark is protected even in classes of goods/services where it isn't registered — someone can't use it on unrelated products and claim there's no conflict.",
+        "Stronger footing against dilution: It becomes much harder for others to argue their use of a similar mark on different goods is legitimate.",
+        "Faster enforcement: A recognized well-known mark carries more weight in oppositions and infringement actions, since the recognition itself is on record with the Registry.",
+        "Public listing: IP India maintains and publishes a list of trademarks it has formally recognized as well-known — check the current official list on ipindia.gov.in for specific examples, as it's periodically updated."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Is well-known status only for giant multinational brands?"
+    },
+    {
+      "type": "paragraph",
+      "text": "No — the legal test is about recognition within the \"relevant section of the public\" for that category of goods or services, not necessarily universal fame. A regional or sector-specific brand with strong recognition, sustained use, and a documented promotional and enforcement history within its market can potentially qualify, provided it can build a solid evidentiary case under the Section 11(6)/11(7) factors. The bar is high, but it isn't limited to household names with nationwide advertising budgets."
+    },
+    {
+      "type": "paragraph",
+      "text": "For businesses building a brand from the ground up, well-known status is typically a long-term goal reached after years of consistent registration, use, and enforcement — not something pursued at the trademark registration stage. BookMyTM helps businesses get the fundamentals right early: registering the trademark correctly, keeping usage and promotional records organized, and building the enforcement history that would eventually support a well-known status claim if the brand grows into one."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "What's the difference between a registered trademark and a \"well-known\" trademark?",
+          "a": "A registered trademark is protected only for the specific classes of goods/services it's registered under; a well-known trademark gets protection across all classes, recognized formally by the Registrar or a court."
+        },
+        {
+          "q": "How do I apply for well-known trademark status in India?",
+          "a": "Under Rule 124 of the Trade Marks Rules, 2017, you file a direct application to the Registrar with a statement of case, supporting evidence, and the prescribed fee — you no longer need to wait for a court case."
+        },
+        {
+          "q": "What evidence do I need to prove my trademark is well-known?",
+          "a": "Evidence of public recognition, duration and geography of use and promotion, prior registrations, and a record of successfully enforcing the mark against infringers, per the factors in Section 11(6) and 11(7)."
+        },
+        {
+          "q": "Can a small or regional brand qualify as well-known?",
+          "a": "Potentially yes, since the legal test looks at recognition within the \"relevant section of the public\" for that category of goods or services, not nationwide fame — but the evidentiary bar is still high."
+        },
+        {
+          "q": "What protection does well-known status actually give me?",
+          "a": "It stops others from using your mark on unrelated goods or services in a way that could suggest a connection to your brand, even outside the classes you're formally registered in."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

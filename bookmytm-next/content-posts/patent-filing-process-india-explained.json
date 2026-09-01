@@ -1,0 +1,121 @@
+{
+  "slug": "patent-filing-process-india-explained",
+  "type": "post",
+  "title": "Patent Filing in India: The Complete Search-to-Grant Process Explained",
+  "h1": "Patent Filing in India: The Complete Search-to-Grant Process Explained",
+  "datePublished": "2026-07-01",
+  "featuredImage": "/images/blog/blog-patent-filing-process-india-explained.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Patent Filing in India: The Complete Search-to-Grant Process Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "Getting a patent granted in India involves filing, publication, examination, and often opposition — a process that typically takes several years from first filing to grant. Understanding the sequence in advance helps inventors and startups plan realistic timelines and budgets rather than being surprised by delays at each stage."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What actually needs to be true for an invention to be patentable"
+    },
+    {
+      "type": "paragraph",
+      "text": "Under Section 2(1)(j) of the Patents Act, 1970, a patentable invention must be a new product or process that involves an inventive step and is capable of industrial application. In practice, examiners check three things: novelty (the invention must not already be publicly known anywhere — India follows an absolute novelty standard), inventive step (the invention must involve a technical advance or economic significance that would not be obvious to someone skilled in the field), and industrial applicability (it must be capable of being made or used in an industry, not just a theoretical idea). Even if these are satisfied, Section 3 of the Act lists categories — such as mere discoveries, abstract theories, and certain business methods or software \"per se\" — that are expressly excluded from patentability."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Provisional vs complete specification — why the choice matters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Under Section 9, an applicant can file a provisional specification to lock in a priority date while the invention is still being finalised. This is common for startups filing early to establish priority before full data or drawings are ready."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "A provisional application secures a filing/priority date with a brief description of the invention",
+        "The complete specification — which fully describes the invention and defines the claims — must be filed within 12 months of the provisional filing",
+        "Missing the 12-month deadline means losing the earlier priority date"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Publication and examination timelines"
+    },
+    {
+      "type": "paragraph",
+      "text": "Once the complete specification is filed, the application does not proceed to examination automatically — the process runs in distinct stages:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Publication: The application is published in the official Patent Office journal 18 months after the filing or priority date (applicants can request earlier publication).",
+        "Request for Examination (RFE): A separate request must be filed before the Patent Office assigns an examiner. Following the Patents (Amendment) Rules, 2024, applications filed on or after 15 March 2024 must file the RFE within 31 months of the earliest priority date (down from the earlier 48-month window, which still applies to applications filed before that date).",
+        "First Examination Report (FER): The examiner raises objections, if any, and the applicant typically has a limited window (commonly cited as around six months, extendable) to respond and get the application in order for grant."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Opposition: pre-grant and post-grant"
+    },
+    {
+      "type": "paragraph",
+      "text": "Indian patent law allows third parties to challenge an application or granted patent at two points, under Section 25:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Pre-grant opposition (Section 25(1)) can be filed by any person after publication but before grant. Under the Patents (Amendment) Rules, 2024, the Controller now screens pre-grant representations for a prima facie case before formally notifying the applicant, rather than automatically forwarding every representation.",
+        "Post-grant opposition (Section 25(2)) can be filed within one year of the publication of grant, but only by a \"person interested\" — someone with a genuine commercial, research, or legal stake in the field."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How long does the whole process take, and what does it cost?"
+    },
+    {
+      "type": "paragraph",
+      "text": "There's no fixed timeline because it depends heavily on the technology area and whether objections or oppositions arise, but grant commonly takes several years from the initial filing when the full provisional-to-complete-to-examination cycle is followed, and can extend further if opposed. On fees, the Patents Rules set two broad slabs: a lower fee for natural persons, DPIIT-recognised startups, small entities, and educational institutions, and a higher fee for all other applicants (including large companies) — but the exact rupee figures change periodically, so applicants should confirm current amounts on the official IP India fee schedule before filing rather than relying on older published figures."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because the sequence — provisional filing, complete specification, publication, RFE, FER response, and possible opposition — has several hard deadlines that can permanently affect your rights if missed, most applicants file through a professional. BookMyTM assists inventors and businesses in Kerala and beyond with patent search, drafting, and filing through each of these stages."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "What's the difference between a provisional and complete patent application in India?",
+          "a": "A provisional application secures an early priority date with a brief description; the complete specification, due within 12 months, fully describes the invention and defines the legal claims."
+        },
+        {
+          "q": "When does my patent application become public?",
+          "a": "It's published in the Patent Office journal 18 months after the filing or priority date, unless you request earlier publication."
+        },
+        {
+          "q": "How long do I have to request examination of my patent application?",
+          "a": "For applications filed on or after 15 March 2024, the Request for Examination must be filed within 31 months of the earliest priority date; earlier applications have a 48-month window."
+        },
+        {
+          "q": "Can someone oppose my patent application before it's granted?",
+          "a": "Yes — under Section 25(1), anyone can file a pre-grant opposition after publication but before grant; the Controller now screens these for a prima facie case first."
+        },
+        {
+          "q": "Do startups pay lower patent fees in India?",
+          "a": "Yes — DPIIT-recognised startups, along with natural persons, small entities, and educational institutions, are eligible for a reduced government fee slab, provided the correct declaration form is filed with the application."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}
