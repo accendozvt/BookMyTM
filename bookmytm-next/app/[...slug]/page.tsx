@@ -10,6 +10,7 @@ import { IconFor } from '@/components/icons';
 import Article from '@/components/Article';
 import { listContentSlugs, listPostSlugs, listPosts, loadContent, loadPost, pathToFileSlug, seoFor } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import { serviceImageFor } from '@/lib/service-images';
 import JsonLd from '@/components/JsonLd';
 import {
   graph,
@@ -108,23 +109,6 @@ function crumbsFor(segments: string[]) {
     crumbs.push({ label: navLabel || titleCase(seg), href });
   }
   return crumbs;
-}
-
-/* Category → contextual image for the intro section (SEO) */
-const CATEGORY_IMAGES: [RegExp, string][] = [
-  [/trademark/, '/images/blog_06_trademark_objection.webp'],
-  [/iso-certification/, '/images/blog_05_iso_quality_seal_1765545624585.webp'],
-  [/patent|other-ip/, '/images/photo-1602216056096-3b40cc0c9944.webp'],
-  [/startup\/registrations/, '/images/photo-1497366216548-37526070297c.webp'],
-  [/special-business|other-registrations/, '/images/photo-1521791136064-7986c2920216.webp'],
-  [/statutory-compliance/, '/images/photo-1450101499163-c8848c66ca85.webp'],
-  [/winding-up/, '/images/photo-1556761175-5973dc0f32e7.webp'],
-  [/other-services/, '/images/photo-1552664730-d307ca884978.webp'],
-];
-
-function imageForPath(path: string): string {
-  for (const [re, src] of CATEGORY_IMAGES) if (re.test(path)) return src;
-  return '/images/kerala_startup_trademark_16x9_v2.webp';
 }
 
 const NO_FORM = new Set(['privacy-policy', 'terms-and-conditions', 'cancellation-refund-policy', 'about-us']);
@@ -253,7 +237,7 @@ export default async function Page({ params }: Props) {
         <section className="bg-white">
           <div className="container-site py-16 md:py-20">
             <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr),380px]">
-              <Blocks blocks={body} sectionImage={{ src: imageForPath(path), alt: `${title} – BookMyTM` }} />
+              <Blocks blocks={body} sectionImage={serviceImageFor(path)} />
               <aside className="lg:sticky lg:top-28">
                 <LeadForm service={title} price={price || undefined} />
                 <div className="mt-5 rounded-3xl border border-gray-100 bg-brand-surface p-6">
