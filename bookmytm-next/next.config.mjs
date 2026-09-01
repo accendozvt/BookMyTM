@@ -16,6 +16,28 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Canonical host is the apex domain — every canonical tag and every sitemap
+      // URL uses https://bookmytm.com. Anything on www gets a single 301 to the
+      // same path. Kept in the app, not only in the host panel, so the rule ships
+      // with the deploy and cannot be lost in a control-panel change.
+      //
+      // Split into two rules on purpose. A single '/:path*' drops the trailing
+      // slash on nested paths, so www/a/b/ landed on /a/b and then took a second
+      // 308 to /a/b/ — a two-hop chain. ':path+' requires at least one segment,
+      // which lets the destination re-add the slash without producing '//' at the
+      // root, and statusCode 301 is used rather than `permanent` (which emits 308).
+      {
+        source: '/',
+        has: [{ type: 'host', value: 'www.bookmytm.com' }],
+        destination: 'https://bookmytm.com/',
+        statusCode: 301,
+      },
+      {
+        source: '/:path+',
+        has: [{ type: 'host', value: 'www.bookmytm.com' }],
+        destination: 'https://bookmytm.com/:path+/',
+        statusCode: 301,
+      },
       {
         // Legacy WordPress landing page duplicating the home page's content, title, and
         // meta description — consolidate into the home page instead of maintaining a duplicate.
@@ -81,6 +103,14 @@ const nextConfig = {
       {
         source: '/images/:path*',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' }],
+      },
+      {
+        // Belt-and-braces with the robots.txt Disallow: nothing under /api/ is a
+        // page, and an X-Robots-Tag keeps it out of the index even if something
+        // links to it directly. There are currently no private page routes; if
+        // any are added, list them here as well as in app/robots.ts.
+        source: '/api/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
       },
     ];
   },
