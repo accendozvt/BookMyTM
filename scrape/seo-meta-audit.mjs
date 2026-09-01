@@ -44,7 +44,10 @@ for (const f of files) {
     jsonld: one(h, /application\/ld\+json/g),
     h1: one(h, /<h1[\s>]/g),
     manifest: one(h, /rel="manifest"/g),
-    appleIcon: one(h, /apple-touch-icon/g),
+    // Match the rel attribute, not the bare string: Next also serialises the
+    // metadata into its inlined hydration payload, so a substring count reports
+    // two on every page and the check fails against a page that is correct.
+    appleIcon: one(h, /rel="apple-touch-icon"/g),
   });
 }
 

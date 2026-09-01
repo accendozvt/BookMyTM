@@ -3769,6 +3769,14 @@ Affidavit stating basic information about your trademark and usage date.
 
 Invoices, registration certificates, or receipts showing prior use.
 
+### Grounds for Applying for Opposition
+
+- If the applied trademark is similar or identical to an earlier or existing registered trademark.
+- If the mark is devoid of any distinctive character or is descriptive.
+- The trademark is likely to cause confusion or deceive the public.
+- If the mark is contrary to the law or prohibited under the Emblem and Names Act, 1950.
+- If the mark contains matters that are likely to hurt religious sentiments of any class or section of people.
+
 ### File Opposition in 3 Easy Steps
 
 ##### Register & Pay

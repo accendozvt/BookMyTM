@@ -560,7 +560,11 @@ export default function Home() {
             name: seoFor('/')?.title || 'BookMyTM',
             description: seoFor('/')?.description || '',
           }),
-          faqItems.length > 0 && faqNode('/', faqItems.slice(0, 12)),
+          // All of them, not a slice. FAQPage has no documented item limit, and
+          // every one of these questions is rendered on the page above, which is
+          // the actual requirement. Capping at 12 kept 18 visible questions out
+          // of the structured data for no stated reason.
+          faqItems.length > 0 && faqNode('/', faqItems),
         )}
       />
     </>

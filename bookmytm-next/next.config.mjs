@@ -21,11 +21,15 @@ const nextConfig = {
       // same path. Kept in the app, not only in the host panel, so the rule ships
       // with the deploy and cannot be lost in a control-panel change.
       //
+      // Every rule below states statusCode: 301 rather than permanent: true.
+      // Next emits 308 for permanent, which Google treats as equivalent but which
+      // older crawlers and link-checking tools handle less consistently — and these
+      // are recovery redirects for URLs that already carry rankings and links.
+      //
       // Split into two rules on purpose. A single '/:path*' drops the trailing
       // slash on nested paths, so www/a/b/ landed on /a/b and then took a second
       // 308 to /a/b/ — a two-hop chain. ':path+' requires at least one segment,
-      // which lets the destination re-add the slash without producing '//' at the
-      // root, and statusCode 301 is used rather than `permanent` (which emits 308).
+      // which lets the destination re-add the slash without producing '//' at the root.
       {
         source: '/',
         has: [{ type: 'host', value: 'www.bookmytm.com' }],
@@ -43,7 +47,7 @@ const nextConfig = {
         // meta description — consolidate into the home page instead of maintaining a duplicate.
         source: '/no-1-trademark-registration-provider-in-kerala-bookmytm/',
         destination: '/',
-        permanent: true,
+        statusCode: 301,
       },
       {
         // Raw Malayalam Unicode slug didn't survive Hostinger's deploy/routing (404) —
@@ -51,7 +55,24 @@ const nextConfig = {
         // Trailing slashes on both sides avoid an extra trailingSlash-normalization hop.
         source: '/%E0%B4%AC%E0%B5%8D%E0%B4%B0%E0%B4%BE%E0%B5%BB%E0%B4%A1%E0%B5%8D-%E0%B4%85%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%BF%E0%B4%AE%E0%B4%B1%E0%B4%BF-%E0%B4%87%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B5%8D%E0%B4%AF/',
         destination: '/brand-sabotage-trademark-mistakes-malayalam/',
-        permanent: true,
+        statusCode: 301,
+      },
+      {
+        // The old site's main trademark page. Its content moved to the Kerala URL
+        // and grew there, but the original URL was left returning 404 — and it is
+        // the page most likely to carry rankings and inbound links of anything on
+        // the site. Found by comparing the WordPress sitemap against the build.
+        source: '/intellectual-property/trademark/trademark-registration/',
+        destination: '/intellectual-property/trademark/trademark-registration-in-kerala/',
+        statusCode: 301,
+      },
+      {
+        // WordPress category archives. They listed posts; the Knowledge Base is
+        // where those posts live now, so it is the closest equivalent rather than
+        // a catch-all redirect to the home page.
+        source: '/category/:slug',
+        destination: '/knowledge-base/',
+        statusCode: 301,
       },
     ];
   },
