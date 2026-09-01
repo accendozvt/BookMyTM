@@ -50,7 +50,14 @@ export default function AboutPage() {
             {STATS.map((s, i) => (
               <div
                 key={s.label}
-                className={`p-6 text-center md:p-8 ${i < 3 ? 'md:border-r md:border-gray-100' : ''} ${i % 2 === 0 ? 'border-r border-gray-100' : ''} ${i < 2 ? 'border-b border-gray-100 md:border-b-0' : ''}`}
+                className={[
+                  'p-6 text-center md:p-8 border-gray-100',
+                  i < 3 ? 'md:border-r' : '',
+                  i % 2 === 0 ? 'border-r' : '',
+                  i < 2 ? 'border-b md:border-b-0' : '',
+                ]
+                  .filter(Boolean)
+                  .join(' ')}
               >
                 <div className="text-3xl font-extrabold tabular-nums text-brand md:text-4xl">{s.num}</div>
                 <div className="mt-1 text-[11px] font-extrabold uppercase tracking-widest text-gray-500">{s.label}</div>

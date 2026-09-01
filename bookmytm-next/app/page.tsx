@@ -177,7 +177,14 @@ export default function Home() {
             ].map((s, i) => (
               <div
                 key={s.label}
-                className={`p-6 transition hover:bg-white/5 md:p-7 ${i < 3 ? 'md:border-r md:border-white/10' : ''} ${i % 2 === 0 ? 'border-r border-white/10 md:border-r' : ''} ${i < 2 ? 'border-b border-white/10 md:border-b-0' : ''}`}
+                className={[
+                  'p-6 transition hover:bg-white/5 md:p-7 border-white/10',
+                  i < 3 ? 'md:border-r' : '',
+                  i % 2 === 0 ? 'border-r' : '',
+                  i < 2 ? 'border-b md:border-b-0' : '',
+                ]
+                  .filter(Boolean)
+                  .join(' ')}
               >
                 <div className="min-h-[36px] text-3xl font-extrabold tabular-nums md:min-h-[40px] md:text-4xl">
                   {s.num}
@@ -211,7 +218,7 @@ export default function Home() {
                 href="/intellectual-property/trademark/trademark-registration-in-kerala/"
                 className="hero-bg group flex h-full flex-col rounded-[28px] p-8 text-white transition duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
               >
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/12 bg-white/10 text-brand-light">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-brand-light">
                   <Icon name="tag" className="h-6 w-6" />
                 </div>
                 <h3 className="text-2xl font-extrabold">Trademark Registration</h3>
@@ -416,7 +423,7 @@ export default function Home() {
               <div className="mt-8 grid gap-3.5 sm:grid-cols-2">
                 {WHY.map((w, i) => (
                   <Reveal key={w.title} delay={i * 60}>
-                    <div className="group h-full rounded-2xl border border-gray-200/80 bg-brand-surface p-5.5 p-6 transition duration-300 hover:-translate-y-1 hover:border-brand/35 hover:bg-white hover:shadow-xl">
+                    <div className="group h-full rounded-2xl border border-gray-200/80 bg-brand-surface p-6 transition duration-300 hover:-translate-y-1 hover:border-brand/35 hover:bg-white hover:shadow-xl">
                       <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white text-brand shadow-sm">
                         <IconFor text={w.title} className="h-5 w-5" />
                       </div>
@@ -434,7 +441,7 @@ export default function Home() {
       {/* ── 5 · TRADEMARK IN INDIA ── */}
       <section className="bg-white">
         <div className="container-site pb-20">
-          <div className="hero-bg rounded-[2.75rem] px-6 py-16 text-white md:px-14 md:py-18 md:py-20">
+          <div className="hero-bg rounded-[2.75rem] px-6 py-16 text-white md:px-14 md:py-20">
             <h2 className="text-center text-3xl font-extrabold tracking-tight md:text-4xl">
               Trademark Registration in India
             </h2>

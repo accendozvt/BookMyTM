@@ -292,8 +292,12 @@ export default function Blocks({
 
         if (isFaq) {
           const items = toFaqItems(section.blocks);
+          // Only the first FAQ section carries the anchor id — a few pages have
+          // two FAQ-titled sections, which produced a duplicate id="faq".
+          const isFirstFaq =
+            sections.findIndex((s) => s.heading && /frequently asked|faq/i.test(s.heading)) === si;
           return (
-            <section key={si} id="faq">
+            <section key={si} {...(isFirstFaq ? { id: 'faq' } : {})}>
               <SectionHeading text={section.heading!} />
               {items.length ? <Faq items={items} /> : <div className="space-y-4">{section.blocks.map((b, i) => renderBasicBlock(b, i, section.heading ? 'h3' : 'h2'))}</div>}
             </section>

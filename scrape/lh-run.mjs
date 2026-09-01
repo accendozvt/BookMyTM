@@ -53,14 +53,22 @@ const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless=new', '--
 for (const [name, path] of pages) {
   for (const preset of ['mobile', 'desktop']) {
     const opts = { port: chrome.port, output: 'json', logLevel: 'error', onlyCategories: CATS };
-    let res;
-    try {
-      res = await lighthouse(ORIGIN + path, opts, preset === 'desktop' ? desktopConfig : undefined);
-    } catch (e) {
-      console.log(`FAIL ${name} ${preset}: ${e.message}`);
-      continue;
+    // Lighthouse intermittently fails to record a trace on a loaded machine
+    // (NO_NAVSTART / NO_FCP). Retry rather than reporting a phantom zero.
+    let lhr = null;
+    for (let attempt = 1; attempt <= 3 && !lhr; attempt++) {
+      try {
+        const res = await lighthouse(ORIGIN + path, opts, preset === 'desktop' ? desktopConfig : undefined);
+        if (res.lhr.runtimeError) {
+          if (attempt === 3) { console.log(`FAIL ${name} ${preset}: ${res.lhr.runtimeError.code}`); }
+          continue;
+        }
+        lhr = res.lhr;
+      } catch (e) {
+        if (attempt === 3) console.log(`FAIL ${name} ${preset}: ${e.message}`);
+      }
     }
-    const lhr = res.lhr;
+    if (!lhr) continue;
     const scores = Object.fromEntries(CATS.map((c) => [c, Math.round((lhr.categories[c]?.score ?? 0) * 100)]));
     const m = lhr.audits;
     rows.push({
