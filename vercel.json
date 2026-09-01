@@ -1,5 +1,0 @@
-{
-  "buildCommand": "cd bookmytm-next && npm install && npm run build",
-  "outputDirectory": "bookmytm-next/out",
-  "framework": null
-}
