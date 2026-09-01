@@ -1,19 +1,21 @@
-# FTP deploy to Hostinger.
+# Sync the static assets to Hostinger over FTPS.
 #
 # Background: on this host LiteSpeed serves public_html ahead of the Node app, so
 # a file in bookmytm-next/public/ only reaches the browser once it also exists in
 # public_html. Keeping the two in step by hand is what left the logo and
-# llms-full.txt returning 404 for weeks. The static job below removes that step.
+# llms-full.txt returning 404 for weeks. This removes that step.
 #
-# What this does NOT do: trigger the Node build. Hostinger runs
-# `npm install && npm run build` from its own panel, and FTP cannot start it.
-# The app job uploads the source so that panel build is a single click.
+# The Node app is deliberately NOT deployed from here. Hostinger builds it from a
+# zip uploaded through its panel, so source pushed to any other directory is
+# simply never read - an earlier revision of this file uploaded the whole app
+# over FTP on every push and the panel ignored all of it. Build the zip with
+# scrape/package-deploy.mjs and upload it as a new deployment.
 #
 # Credentials live in repository secrets (Settings > Secrets and variables >
 # Actions), never in this file. This repository is public: secrets are masked in
 # logs and are not exposed to pull requests from forks, and the triggers below
 # deliberately exclude pull_request.
-name: Deploy to Hostinger
+name: Deploy static assets to Hostinger
 
 on:
   push:
@@ -47,39 +49,3 @@ jobs:
           # there, so pre-existing files in public_html are left alone.
           state-name: .ftp-deploy-public.json
           dry-run: ${{ vars.FTP_DRY_RUN == 'true' }}
-
-  app:
-    name: Node app source
-    runs-on: ubuntu-latest
-    # Runs after the assets, so a page can never go live referencing an image
-    # that has not been uploaded yet.
-    needs: static
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Sync app source to the Node app root
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./bookmytm-next/
-          server-dir: ${{ secrets.FTP_APP_DIR }}
-          state-name: .ftp-deploy-app.json
-          # node_modules and .next live on the server and are rebuilt there; they
-          # are not in the repository and must never be touched from here.
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.next/**
-            **/out/**
-            **/*.log
-          dry-run: ${{ vars.FTP_DRY_RUN == 'true' }}
-
-      - name: What to do next
-        run: |
-          echo "Source uploaded. Open the Hostinger panel and run the Node app"
-          echo "build (npm install && npm run build) to pick up these changes."
