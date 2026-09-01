@@ -6,6 +6,11 @@ export const metadata = {
   title: 'Page Not Found | BookMyTM',
   // No `robots` here: Next already emits <meta name="robots" content="noindex">
   // on not-found, and declaring it again produced two robots tags on this page.
+  //
+  // null (not undefined) actively clears the layout's openGraph/twitter blocks —
+  // a noindex page should not carry social cards that invite sharing.
+  openGraph: null,
+  twitter: null,
 };
 
 export default function NotFound() {
