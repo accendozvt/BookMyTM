@@ -27,13 +27,14 @@ export default function Header() {
     <header className="hero-bg sticky top-0 z-50 border-b border-white/10">
       <div className="mx-auto flex h-20 max-w-[1300px] items-center justify-between px-5">
         <Link href="/" aria-label="BookMyTM Home" className="flex-shrink-0">
-          <Image src="/images/bookmytm-white.png" alt="BookMyTM Logo" width={150} height={45} priority />
+          <Image src="/images/logo.png" alt="BookMyTM Logo" width={150} height={45} priority />
         </Link>
 
         {/* Desktop nav */}
         <nav className="hidden flex-1 justify-center lg:flex">
           <ul className="flex items-center gap-8">
             {NAV.map((cat, catIndex) => {
+              const anchorLeft = catIndex === 0;
               const anchorRight = catIndex >= NAV.length - 2;
               const singleCol = cat.columns.length === 1;
               return (
@@ -50,7 +51,7 @@ export default function Header() {
                   {/* Megamenu */}
                   <div
                     className={`invisible absolute top-full z-50 w-max max-w-[92vw] translate-y-1 overflow-hidden rounded-2xl border border-gray-200/70 bg-white opacity-0 shadow-[0_24px_60px_rgba(2,26,15,0.18)] transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 ${
-                      anchorRight ? 'right-0' : 'left-1/2 -translate-x-1/2 group-hover:-translate-x-1/2'
+                      anchorLeft ? 'left-0' : anchorRight ? 'right-0' : 'left-1/2 -translate-x-1/2 group-hover:-translate-x-1/2'
                     }`}
                   >
                     <div className="flex">

@@ -1,0 +1,133 @@
+{
+  "slug": "gst-eway-bill-rules-kerala-mistakes",
+  "type": "post",
+  "title": "GST E-Way Bill Rules for Kerala Businesses: Common Mistakes to Avoid",
+  "h1": "GST E-Way Bill Rules for Kerala Businesses: Common Mistakes to Avoid",
+  "datePublished": "2026-07-15",
+  "featuredImage": "/images/blog/blog-gst-eway-bill-rules-kerala-mistakes.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "GST E-Way Bill Rules for Kerala Businesses: Common Mistakes to Avoid"
+    },
+    {
+      "type": "paragraph",
+      "text": "An e-way bill is required under Rule 138 of the CGST Rules whenever goods worth more than Rs. 50,000 are moved, and Kerala largely follows this standard threshold with a few state-specific exceptions businesses should know about. Most e-way bill penalties don't come from ignorance of the threshold — they come from avoidable errors like an expired validity period or an unupdated vehicle number. Here's what actually trips businesses up."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is the value threshold that triggers an e-way bill?"
+    },
+    {
+      "type": "paragraph",
+      "text": "An e-way bill is required under Rule 138(1) of the CGST Rules whenever the consignment value of goods being moved exceeds Rs. 50,000, including the tax component. This is the standard threshold for interstate movement nationwide, and Kerala applies the same Rs. 50,000 figure for general intra-state movement — there is no separate blanket lower or higher threshold for ordinary goods within the state."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How is e-way bill validity calculated?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Validity is based on distance travelled, and this is where many businesses get caught out:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Normal cargo: 1 day of validity for every 200 km (or part thereof) from the date of generation",
+        "Over-Dimensional Cargo (ODC): 1 day of validity for every 20 km (or part thereof)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A shipment travelling 310 km, for example, gets 2 days of validity — 1 day for the first 200 km plus 1 additional day for the remainder. Each day of validity runs from the time of generation to midnight of the following day. If a shipment gets delayed by traffic, a breakdown, or a transshipment, the validity clock doesn't pause — businesses need to extend the e-way bill before it lapses, not after."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Kerala's specific intra-state exemptions and rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kerala has two notable state-specific provisions that differ from the general rule:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Conditional exemptions (Notification No. 3/2018–State Tax): Certain intra-state movements are exempt from e-way bill requirements regardless of value, including goods supplied via registered sales vans (with prescribed documents), rubber and spices moved from an agriculturist's own premises to a registered business location, and local deliveries within a 25 km radius to unregistered end customers when accompanied by a valid tax invoice.",
+        "Gold and precious stones (effective January 2025): Kerala made e-way bills mandatory for intra-state movement of gold, precious stones, pearls, and jewellery (HSN Chapter 71, excluding imitation jewellery) valued at Rs. 10 lakh or more — a state-specific rule, since gold and jewellery are normally exempt from e-way bill requirements nationally."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Outside of these two carve-outs, general goods in Kerala follow the standard Rs. 50,000 threshold."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The most common compliance mistakes"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Leaving Part B (vehicle number) blank or outdated — an e-way bill without a current vehicle number isn't valid for transport and is one of the most common reasons goods get detained.",
+        "Letting validity expire in transit — traffic delays, breakdowns, or transshipment can eat into the validity window; businesses need to extend before expiry, not scramble afterward.",
+        "Mismatched invoice details — value, HSN code, GSTIN, or delivery address that doesn't match the underlying tax invoice is a frequent trigger for penalties.",
+        "Skipping e-way bills for non-sale movements — job-work goods, sales returns, and goods sent on approval basis still require an e-way bill once the value threshold is crossed, even though no sale is taking place.",
+        "Incorrect distance entries — the portal auto-calculates PIN-to-PIN distance, but entering the wrong figure manually affects the validity calculation and can cause portal-flagged mismatches.",
+        "Not updating Part B after a mid-route vehicle change — when goods are transferred between vehicles during transshipment, failing to update the new vehicle number before continuing the journey is a common detention trigger."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Key facts"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Standard threshold: Rs. 50,000 consignment value, under Rule 138 of the CGST Rules.",
+        "Validity: 1 day per 200 km for normal cargo; 1 day per 20 km for ODC.",
+        "Kerala has conditional intra-state exemptions for sales-van deliveries, agriculturist-to-business rubber/spice movement, and short-radius local deliveries.",
+        "Kerala requires e-way bills for gold/precious stones worth Rs. 10 lakh or more, moved intra-state — a rule most other states don't have for this category."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Getting e-way bill compliance right matters most when goods are actually moving and there's no time to fix a mistake mid-route — BookMyTM helps Kerala businesses set up GST processes, including e-way bill workflows, that hold up during an actual transport check rather than just on paper."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "What is the value threshold for generating an e-way bill in Kerala?",
+          "a": "Rs. 50,000 in consignment value, the same as the national standard under Rule 138 of the CGST Rules — Kerala doesn't have a separate lower general threshold."
+        },
+        {
+          "q": "How long is an e-way bill valid for?",
+          "a": "One day per 200 km travelled for normal cargo (or 1 day per 20 km for over-dimensional cargo), calculated from the time of generation."
+        },
+        {
+          "q": "Does Kerala have any special e-way bill rules that other states don't?",
+          "a": "Yes — Kerala requires e-way bills for intra-state movement of gold and precious stones worth Rs. 10 lakh or more (effective January 2025), a category normally exempt from e-way bills nationally."
+        },
+        {
+          "q": "Is an e-way bill needed for goods sent for job work or returned as sales returns?",
+          "a": "Yes, if the value crosses the threshold. Job-work movements and sales returns still require an e-way bill even though no sale is occurring."
+        },
+        {
+          "q": "What happens if an e-way bill expires while goods are still in transit?",
+          "a": "The e-way bill needs to be extended before it lapses; goods moving on an expired e-way bill can be detained, so businesses should monitor validity closely on longer routes."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

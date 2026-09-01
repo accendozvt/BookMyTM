@@ -1,0 +1,118 @@
+{
+  "slug": "company-name-rejected-run-spice-reasons",
+  "type": "post",
+  "title": "Company Name Rejected? The Top Reasons RUN/SPICe+ Applications Fail",
+  "h1": "Company Name Rejected? The Top Reasons RUN/SPICe+ Applications Fail",
+  "datePublished": "2026-07-08",
+  "featuredImage": "/images/blog/blog-company-name-rejected-run-spice-reasons.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Company Name Rejected? The Top Reasons RUN/SPICe+ Applications Fail"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most company name applications in India get rejected for a handful of predictable reasons: the name is too similar to an existing company, LLP, or registered trademark; it uses a restricted word without government approval; or it doesn't match the business the company actually plans to do. The Ministry of Corporate Affairs (MCA) checks every name against the Companies (Incorporation) Rules, 2014, and understanding those rules before you apply — not after a rejection — is the single biggest factor in getting approved on the first try."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How does name approval actually work — RUN or SPICe+?"
+    },
+    {
+      "type": "paragraph",
+      "text": "You have two routes on the MCA portal. RUN (Reserve Unique Name) is a standalone web service used purely to reserve a name before you're ready to file the rest of your incorporation paperwork, or to rename an existing company. SPICe+ (INC-32) Part A is the name-reservation step built into the integrated incorporation form, which also generates DIN, PAN, TAN, and EPFO/ESIC registration once you proceed to Part B. Both let you submit up to two proposed names in order of preference, and if neither is available you typically get one resubmission attempt. Applications are checked by the Central Registration Centre (CRC), and the outcome is emailed to the applicant with reasons if rejected."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why does MCA reject names that are \"too similar\" to another company?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Because Rule 8 of the Companies (Incorporation) Rules, 2014 instructs the CRC to compare names after ignoring things founders often think matter:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Legal suffixes like \"Private Limited,\" \"LLP,\" or \"Limited\"",
+        "Singular vs. plural forms (e.g., \"Builder\" vs. \"Builders\")",
+        "Spacing, punctuation, and capitalization differences",
+        "Minor spelling or phonetic variations that sound the same when spoken",
+        "Word order (e.g., \"Ravi Builders and Contractors\" vs. \"Ravi Contractors and Builders\")",
+        "Generic additions like \".com,\" \"the,\" or \"company\""
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If your proposed name only differs from an already-registered company, LLP, or trademark by one of these superficial changes, it will almost certainly be flagged as \"too similar\" and rejected."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why does a name get rejected even if no company already has it?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Because MCA also screens for names that are \"undesirable\" under Rule 8A, independent of whether an identical company exists. This covers names that: are prohibited under the Emblems and Names (Prevention and Improper Use) Act, 1950, unless prior permission is obtained; include a registered trademark without the trademark owner's written consent; contain offensive language; too closely resemble an existing LLP name; falsely suggest a connection to government or a foreign embassy; or are merely generic/descriptive with no distinctive element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which words need special government approval before I can use them?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Under Section 4(3) of the Companies Act, 2013, certain words and expressions can only be used with prior Central Government approval, and Rule 8B lists them. Restricted terms commonly cited include \"Board,\" \"Commission,\" \"Authority,\" \"Undertaking,\" \"National,\" \"Union,\" \"Central,\" \"Federal,\" \"President,\" \"Rashtrapati,\" \"Minister,\" \"Governor,\" and similar words that could suggest a government, statutory, or regulatory connection. Separately, sector-specific words like \"Bank,\" \"Insurance,\" \"Stock Exchange,\" or \"Mutual Fund\" require confirmation that relevant regulatory conditions are met before use."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What practical mistakes cause the most rejections?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Not searching the MCA name database and the registered trademark database before applying",
+        "Proposing a name with no real connection to the company's stated main objects",
+        "Submitting only one weak name option instead of two genuinely distinct alternatives",
+        "Using a restricted or scale-implying word without lining up the required approval first",
+        "Assuming a name is safe because a similar domain or social handle was available"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A name that clears MCA can still create legal trouble later if it collides with someone else's registered trademark — MCA's name check and the Trade Marks Registry's database are separate systems, and a clean result on one doesn't guarantee a clean result on the other. BookMyTM typically runs both checks in parallel before filing, which helps avoid a rejection cycle or a trademark dispute down the line."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "How many name options can I submit in a RUN or SPICe+ application?",
+          "a": "You can propose up to two names in order of preference in a single application, and if neither is approved, you generally get one resubmission attempt."
+        },
+        {
+          "q": "Can MCA reject my name even if it isn't identical to any existing company?",
+          "a": "Yes — under Rule 8A, a name can be rejected for being \"undesirable,\" such as being too generic, misleading, offensive, or resembling an existing LLP or registered trademark, even without an identical company name on record."
+        },
+        {
+          "q": "Why was my name rejected when no other company has it?",
+          "a": "It was most likely rejected either for containing a restricted word requiring Central Government approval under Rule 8B, for not matching your stated business objects, or for being judged \"too similar\" under Rule 8's phonetic/spelling comparison rules."
+        },
+        {
+          "q": "Does MCA name approval mean I'm safe from trademark issues?",
+          "a": "No. MCA's name check and the Trade Marks Registry are separate databases; a name can pass MCA screening and still infringe an existing registered trademark, so a separate trademark search is recommended."
+        },
+        {
+          "q": "What's the difference between RUN and SPICe+ Part A for reserving a name?",
+          "a": "RUN is a standalone service best used to lock in a name before your incorporation paperwork is ready, while SPICe+ Part A reserves the name as the first step of the full incorporation form, moving directly into Part B once approved."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

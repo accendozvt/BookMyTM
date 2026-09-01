@@ -227,3 +227,35 @@ export function childrenFor(path: string): NavLink[] {
   const all = NAV.flatMap((c) => c.columns.flatMap((col) => col.links));
   return all.filter((l) => l.href.startsWith(path) && l.href !== path);
 }
+
+/** Short intro copy for category hub pages — replaces the empty space above the service grid. */
+export const HUB_INTROS: Record<string, string> = {
+  '/intellectual-property/':
+    "Your brand, inventions, and creative work are valuable assets. BookMyTM's intellectual property services cover trademarks, patents, copyright, and design registration — helping you secure legal ownership and defend against infringement across India.",
+  '/intellectual-property/other-ip-registrations/':
+    'Beyond trademarks and patents, protecting your creative and industrial work matters. We help you register copyrights for original works and designs for unique product appearances, securing legal recognition of your ownership.',
+  '/intellectual-property/patent/':
+    'Patents protect new inventions and give you the exclusive right to make, use, or sell them for up to 20 years. From a preliminary patent search to provisional and permanent registration, BookMyTM guides inventors through every stage of the process.',
+  '/other-services/':
+    'As your business grows and changes, so do its legal requirements. From converting your business structure to updating company records or winding up an entity, BookMyTM handles the paperwork so you can focus on running your business.',
+  '/other-services/change-entity-type/':
+    'Outgrown your current business structure? We help proprietorships, partnerships, and OPCs convert into LLPs or private limited companies — unlocking limited liability, easier fundraising, and room to scale.',
+  '/other-services/change-in-master-data/':
+    "Company details change — directors join or leave, offices relocate, share capital grows. We handle the ROC filings needed to keep your company's official records accurate and compliant.",
+  '/other-services/winding-up-an-entity/':
+    "Closing a business the right way protects you from future liability. Whether you're closing an LLP, OPC, or private limited company, or dissolving a partnership, BookMyTM manages the legal winding-up process end to end.",
+  '/startup/':
+    "Starting a business in India begins with choosing the right legal structure. Whether you're a solo founder or launching with partners, BookMyTM handles company registration, licenses, and compliance so you can focus on building your business.",
+  '/startup/other-registrations/':
+    'Beyond company registration, certain licenses and certificates are essential for running your business smoothly — from digital signatures for e-filing to import-export codes for global trade. We help you get them all sorted.',
+  '/startup/registrations/':
+    'Choosing the right business structure is the first big decision every founder makes. From a simple proprietorship to a private limited company, BookMyTM helps you register the entity that fits your goals.',
+  '/startup/special-business-entities/':
+    "Not every business fits the standard mould. Section 8 companies and Nidhi companies serve specific purposes — from non-profit work to community lending — and BookMyTM helps you register the right one correctly.",
+  '/statutory-compliance/':
+    "Staying compliant isn't optional — it's essential for keeping your business in good legal standing. From GST and tax filings to annual ROC compliance, BookMyTM keeps your paperwork accurate and on time.",
+  '/statutory-compliance/basic-compliances/':
+    'Every registered business has recurring compliance obligations — GST returns, PAN and TAN, PF and ESI contributions, and accurate books. BookMyTM manages these essentials so nothing slips through the cracks.',
+  '/statutory-compliance/roc-filing/':
+    'LLPs and companies must file regular returns with the Registrar of Companies to stay in good standing. From annual compliance to DIR-3 KYC and INC-20A filings, BookMyTM keeps your ROC filings current.',
+};

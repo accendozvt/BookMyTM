@@ -1,0 +1,120 @@
+{
+  "slug": "section-8-company-vs-trust-vs-society",
+  "type": "post",
+  "title": "Section 8 Company vs Trust vs Society: Which Non-Profit Structure Is Right for You?",
+  "h1": "Section 8 Company vs Trust vs Society: Which Non-Profit Structure Is Right for You?",
+  "datePublished": "2026-07-02",
+  "featuredImage": "/images/blog/blog-section-8-company-vs-trust-vs-society.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Section 8 Company vs Trust vs Society: Which Non-Profit Structure Is Right for You?"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you're setting up a non-profit in India, the right legal structure depends on how you plan to operate, fund, and scale it — a Section 8 Company suits professionally managed, growth-oriented organisations; a Trust suits founder-controlled charitable work with simpler governance; and a Society suits membership-based groups operating primarily within a state. Each is registered under a different law, and the choice affects everything from compliance burden to donor confidence."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What each structure actually is"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Section 8 Company is registered under Section 8 of the Companies Act, 2013 with the Ministry of Corporate Affairs (MCA). It is a company by legal form — with the governance discipline that implies — but its profits must be applied only to its stated charitable objects, and it cannot distribute dividends to members."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Trust is created when a settlor transfers assets to trustees who manage them for a defined charitable or public purpose, governed by the Indian Trusts Act, 1882 (for private trusts) and, for public charitable trusts, by state-specific trust laws where applicable."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Society is a membership-based organisation registered under the Societies Registration Act, 1860 (as adopted or amended by individual states), typically formed for literary, scientific, charitable, or social purposes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How registration and governing law differ"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Section 8 Company: Registered with MCA under the Companies Act, 2013; requires incorporation formalities plus a specific licence for charitable objects; recognised uniformly across India.",
+        "Trust: Created via a trust deed, registered with the state's Sub-Registrar; governed mainly by the Indian Trusts Act and, for public trusts, applicable state trust legislation; generally the simplest to set up.",
+        "Society: Registered with the Registrar of Societies in the relevant state under the Societies Registration Act, 1860; requires a minimum group of founding members and a governing body/managing committee."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Compliance burden and operational scope"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Section 8 Company carries the heaviest ongoing compliance load — statutory audits, annual filings with the MCA (Registrar of Companies), board meetings, and adherence to Companies Act provisions generally — but in return it gets unrestricted pan-India recognition without needing separate state-level registrations. A Trust generally has lighter, less standardised compliance, largely governed by its own trust deed and state-specific rules, but usually operates within the scope its deed defines. A Society sits in between, with its own annual filing requirements to the Registrar of Societies, but its recognition and operating scope are typically tied more closely to the state where it's registered."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which structure fits which use case"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Section 8 Company: Best for organisations seeking institutional credibility, corporate/CSR funding, or eventual scale across states — donors and regulators generally find its MCA-filed records easier to verify.",
+        "Trust: Best for founder- or family-led charitable initiatives where a smaller group wants to retain long-term control with a simpler structure — common for religious, educational, or relief-focused trusts.",
+        "Society: Best for membership-driven groups — educational institutions, cultural associations, sports clubs, or welfare organisations — where collective, democratic participation among members matters more than corporate-style governance."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A quick side-by-side"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Governing law: Section 8 Company — Companies Act, 2013; Trust — Indian Trusts Act, 1882 / state trust laws; Society — Societies Registration Act, 1860 (state-adopted)",
+        "Registering authority: Section 8 Company — MCA/Registrar of Companies; Trust — Sub-Registrar; Society — Registrar of Societies",
+        "Structural basis: Section 8 Company — shareholders/members with a board of directors; Trust — settlor and trustees; Society — members with a governing/managing committee",
+        "Geographic recognition: Section 8 Company — pan-India by default; Trust — as defined in the deed; Society — generally state-centric",
+        "Tax benefits: All three can apply separately for 12A (income tax exemption) and 80G (donor tax deduction) registration once formed — the entity type itself doesn't grant these automatically"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Because each structure has real trade-offs in compliance cost versus credibility and flexibility, it's worth mapping your funding sources, growth plans, and governance preferences before choosing. BookMyTM helps founders in Kerala and across India compare these options against their actual goals and handles the registration paperwork for whichever structure fits."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "Which non-profit structure is easiest to set up in India?",
+          "a": "A Trust is generally considered the simplest to form, since it mainly requires executing and registering a trust deed, compared to the more document-intensive processes for a Society or Section 8 Company."
+        },
+        {
+          "q": "Which structure is best for receiving corporate donations or CSR funding?",
+          "a": "A Section 8 Company is generally preferred by corporate donors because its MCA-regulated filings and audits are easier to verify and align with due-diligence requirements."
+        },
+        {
+          "q": "Can a Society operate across multiple states?",
+          "a": "A Society's registration and recognition are generally tied to the state where it is registered, unlike a Section 8 Company, which is recognised pan-India by default."
+        },
+        {
+          "q": "Do all three structures get the same tax benefits?",
+          "a": "All three can apply separately for 12A and 80G registration to obtain income tax exemption and donor tax benefits, but none of them get these automatically just by registering."
+        },
+        {
+          "q": "Which structure has the lowest ongoing compliance burden?",
+          "a": "A Trust generally carries a lighter, less standardised compliance load than a Section 8 Company, which is subject to the fuller audit and filing requirements of the Companies Act."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

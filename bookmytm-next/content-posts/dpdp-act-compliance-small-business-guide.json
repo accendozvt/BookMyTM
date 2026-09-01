@@ -1,0 +1,140 @@
+{
+  "slug": "dpdp-act-compliance-small-business-guide",
+  "type": "post",
+  "title": "DPDP Act Compliance: What Small Businesses Must Do Under India's New Data Protection Law",
+  "h1": "DPDP Act Compliance: What Small Businesses Must Do Under India's New Data Protection Law",
+  "datePublished": "2026-06-09",
+  "featuredImage": "/images/blog/blog-dpdp-act-compliance-small-business-guide.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "DPDP Act Compliance: What Small Businesses Must Do Under India's New Data Protection Law"
+    },
+    {
+      "type": "paragraph",
+      "text": "India's Digital Personal Data Protection Act, 2023 (DPDP Act) is no longer a future concern — it is being enforced in phases, and small businesses that collect even basic customer data (names, phone numbers, emails) are covered. The Act's Rules were notified on 13 November 2025, and the law is rolling out in three stages running through 13 May 2027. Businesses that wait until that deadline to start preparing will run out of runway."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When did the DPDP Act actually take effect?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Parliament passed the DPDP Act in August 2023, but it sat unenforced for over two years until the government notified the Digital Personal Data Protection Rules, 2025 on 13 November 2025. Rather than switching on all at once, the law is being implemented in three phases:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Phase 1 (13 November 2025): Procedural and institutional provisions — definitions, the Data Protection Board's establishment.",
+        "Phase 2 (13 November 2026): Provisions on Consent Managers and the Board's power to investigate breaches and levy penalties.",
+        "Phase 3 (13 May 2027): The substantive compliance obligations that matter most to businesses — notice, consent, security safeguards, breach notification, and data principal rights — become fully enforceable."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "2026 is therefore the preparation year. Businesses that build compliance systems now won't be scrambling when the core obligations and penalty powers become active."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Is the Data Protection Board of India operational?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Partially. The Data Protection Board of India (DPBI) was formally constituted on 13 November 2025 as the regulator that will investigate complaints and impose penalties, but recruitment for its full leadership (chairperson and members) was still ongoing well into 2026. Treat the Board as a real, active institution — its case-handling capacity is simply still ramping up."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What must a small business do as a \"Data Fiduciary\"?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Any business that decides why and how personal data is processed is a Data Fiduciary under the Act — this includes nearly every business with a customer database, website contact form, or employee records, regardless of size. Key obligations:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Notice: Give individuals clear, plain-language notice — separate from your terms and conditions — explaining what data you collect, why, and how they can withdraw consent or file a grievance.",
+        "Consent: Must be free, specific, informed, unconditional, and unambiguous, obtained through clear affirmative action (no pre-ticked boxes), and as easy to withdraw as to give.",
+        "Data principal rights: Individuals can request access, correction, erasure, and grievance redressal — you need a working mechanism to handle these.",
+        "Children's data: Processing a child's (under 18) data requires verifiable parental consent, and targeted advertising to children is restricted.",
+        "Cross-border transfers: Generally permitted unless government specifically restricts a destination — this list is still evolving, so check current notifications rather than relying on stale information."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What happens if there is a data breach?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Under the DPDP Rules, businesses must notify both the Data Protection Board and affected individuals without delay once aware of a breach, with a more detailed report to the Board typically expected within a short follow-up window. This is a tight timeline for a business without an incident-response plan already in place — figuring out who to call after a breach happens is too late."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What are the penalties for non-compliance?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Act's Schedule sets maximum penalties per contravention that scale into the hundreds of crores of rupees for serious violations — such as failing to implement reasonable security safeguards leading to a breach, or failing to notify the Board of one. These are ceiling figures aimed at large-scale violations, but they signal how seriously the framework treats non-compliance."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Practical first steps for small businesses"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Map all personal data you collect, where it's stored, and why",
+        "Rewrite your privacy notice in plain language, separate from your terms of service",
+        "Fix consent flows: no pre-checked boxes, clear withdrawal option, itemized purposes",
+        "Draft a breach-response plan naming who does what",
+        "Set up a grievance redressal channel and designate a contact person for data queries",
+        "Review contracts with vendors who handle customer data on your behalf"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Getting documentation and policies right early is far cheaper than retrofitting compliance under regulatory pressure. BookMyTM helps small and growing businesses put in place the legal and compliance documentation — privacy policies, consent frameworks, and registration paperwork — needed to meet DPDP requirements alongside existing trademark, ISO, and company registration needs."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "Does the DPDP Act apply to small businesses and startups?",
+          "a": "Yes. Any entity that determines the purpose and means of processing personal data is a Data Fiduciary under the Act, regardless of size."
+        },
+        {
+          "q": "Is the DPDP Act fully enforced right now?",
+          "a": "No. It's rolling out in three phases through May 2027, when core obligations on consent, notice, and breach handling become fully enforceable; institutional provisions have been active since November 2025."
+        },
+        {
+          "q": "How much time does a business have to report a data breach?",
+          "a": "The Data Protection Board must be notified without delay, with a more detailed follow-up report due within a short window afterward — build an incident-response plan now rather than figuring this out during a breach."
+        },
+        {
+          "q": "What is the maximum penalty under the DPDP Act?",
+          "a": "The Act's Schedule sets penalties running into hundreds of crores of rupees per contravention for serious failures like inadequate security safeguards, though actual penalties depend on the nature and gravity of the violation."
+        },
+        {
+          "q": "Do businesses need parental consent to process a child's data?",
+          "a": "Yes, verifiable parental or guardian consent is required before processing personal data of anyone under 18."
+        },
+        {
+          "q": "Is the Data Protection Board of India actually functioning yet?",
+          "a": "It was formally constituted in November 2025, but its full leadership was still being appointed through 2026 — check its current status before assuming full enforcement capacity is in place."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

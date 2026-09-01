@@ -27,7 +27,7 @@ export default function ContactBand() {
               <Icon name="phone" className="h-6 w-6" />
             </div>
             <h3 className="text-lg font-extrabold text-gray-900">Call us</h3>
-            <p className="mt-1 text-[13px] font-semibold uppercase tracking-wide text-gray-400">Mon–Sat · 9:30 AM–6:30 PM</p>
+            <p className="mt-1 text-[13px] font-semibold uppercase tracking-wide text-gray-500">Mon–Sat · 9:30 AM–6:30 PM</p>
             <div className="mt-4 flex flex-col gap-1.5">
               <a href={SITE.phone1Href} className="text-[15px] font-bold text-gray-800 transition-colors hover:text-brand">
                 {SITE.phone1}
@@ -44,7 +44,7 @@ export default function ContactBand() {
               <Icon name="mail" className="h-6 w-6" />
             </div>
             <h3 className="text-lg font-extrabold text-gray-900">Email us</h3>
-            <p className="mt-1 text-[13px] font-semibold uppercase tracking-wide text-gray-400">Replies within 24 hours</p>
+            <p className="mt-1 text-[13px] font-semibold uppercase tracking-wide text-gray-500">Replies within 24 hours</p>
             <div className="mt-4 flex flex-col gap-2">
               <a href={`mailto:${SITE.email}`} className="text-[15px] font-bold text-gray-800 transition-colors hover:text-brand">
                 {SITE.email}
@@ -53,7 +53,7 @@ export default function ContactBand() {
                 href={SITE.whatsapp}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex w-fit items-center gap-2 rounded-full bg-[#25d366] px-4 py-2 text-[13px] font-extrabold text-white transition hover:-translate-y-0.5"
+                className="inline-flex w-fit items-center gap-2 rounded-full bg-[#0f7a40] px-4 py-2 text-[13px] font-extrabold text-white transition hover:-translate-y-0.5"
               >
                 Chat on WhatsApp
               </a>
@@ -66,7 +66,7 @@ export default function ContactBand() {
               <Icon name="building" className="h-6 w-6" />
             </div>
             <h3 className="text-lg font-extrabold text-gray-900">Visit us</h3>
-            <p className="mt-1 text-[13px] font-semibold uppercase tracking-wide text-gray-400">Registered office</p>
+            <p className="mt-1 text-[13px] font-semibold uppercase tracking-wide text-gray-500">Registered office</p>
             <p className="mt-4 text-[14.5px] leading-relaxed text-gray-600">
               Plot No 207, Behind Onam Park,
               <br />

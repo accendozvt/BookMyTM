@@ -9,7 +9,9 @@ const config: Config = {
       },
       colors: {
         brand: {
-          DEFAULT: '#497E38',
+          // Deepened from #497E38 so small text (eyebrow labels, links) on light
+          // surfaces clears WCAG AA 4.5:1 contrast — the old value sat right at ~4.5.
+          DEFAULT: '#3d6f2e',
           dark: '#052e16',
           deep: '#0a351f',
           surface: '#f3f6f4',

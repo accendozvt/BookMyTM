@@ -12,7 +12,7 @@ export default function CtaBand() {
             </p>
             <Link
               href="/contact/"
-              className="inline-block rounded-full bg-brand px-12 py-4 font-bold text-white shadow-xl transition hover:scale-105 hover:bg-[#3a6a2c]"
+              className="inline-block rounded-full bg-brand px-12 py-4 font-bold text-white shadow-xl transition hover:scale-105 hover:bg-[#2f5622]"
             >
               Explore our Services
             </Link>

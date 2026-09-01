@@ -5,30 +5,13 @@ import CtaBand from '@/components/CtaBand';
 import Reveal from '@/components/Reveal';
 import { Icon, IconFor } from '@/components/icons';
 import { seoFor, loadContent, listPosts } from '@/lib/content';
+import { buildMetadata } from '@/lib/seo';
 import { SITE } from '@/lib/site';
 
 export function generateMetadata(): Metadata {
   const seo = seoFor('/');
   if (!seo) return {};
-  return {
-    title: seo.title,
-    description: seo.description,
-    alternates: { canonical: seo.canonical },
-    openGraph: {
-      title: seo.title,
-      description: seo.description,
-      url: seo.canonical,
-      siteName: 'BookMyTM',
-      type: 'website',
-      images: [{ url: '/assets/opengraph/preview.webp', width: 1200, height: 630, alt: seo.title }],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: seo.title,
-      description: seo.description,
-      images: ['/assets/opengraph/preview.webp'],
-    },
-  };
+  return buildMetadata({ path: '/', title: seo.title, description: seo.description });
 }
 
 const QUICK_PICKS = [
@@ -117,10 +100,7 @@ export default function Home() {
           <div className="grid items-end gap-10 lg:grid-cols-[1.15fr,0.85fr]">
             <div>
               <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping-dot absolute inset-0 rounded-full bg-green-400 opacity-75" />
-                  <span className="relative h-2.5 w-2.5 rounded-full bg-green-500" />
-                </span>
+                <span className="h-2.5 w-2.5 rounded-full bg-green-500" />
                 <span className="text-[11px] font-extrabold uppercase tracking-widest text-white/90">
                   Trusted by 15,000+ Enterprises
                 </span>
@@ -129,9 +109,7 @@ export default function Home() {
               <h1 className="mt-7 text-5xl font-extrabold leading-[1.05] tracking-tight text-white md:text-6xl lg:text-[64px]">
                 Apply
                 <br />
-                <span className="bg-gradient-to-r from-green-200 via-green-100 to-white bg-clip-text pb-1 pr-1 text-transparent">
-                  Trademark Registration
-                </span>
+                Trademark Registration
               </h1>
 
               <p className="mt-5 max-w-xl text-lg font-medium leading-relaxed text-green-100">
@@ -142,7 +120,7 @@ export default function Home() {
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Link
                   href="/intellectual-property/trademark/trademark-registration-in-kerala/"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-9 py-4 text-lg font-extrabold text-white shadow-xl shadow-brand/30 transition hover:-translate-y-0.5 hover:bg-[#3a6a2c]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-9 py-4 text-lg font-extrabold text-white shadow-xl shadow-brand/30 transition hover:-translate-y-0.5 hover:bg-[#2f5622]"
                 >
                   Apply Online
                   <ArrowIcon />
@@ -170,33 +148,17 @@ export default function Home() {
               </div>
             </div>
 
-            {/* advisor image + pills */}
+            {/* advisor image */}
             <div className="relative hidden self-end lg:block" aria-hidden>
               <div className="absolute -inset-10 rounded-full bg-gradient-to-br from-brand/35 to-transparent blur-3xl" />
-              <a
-                href={SITE.phone2Href}
-                className="animate-floaty absolute -left-3 top-[38%] z-30 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-3.5 py-2 text-[11.5px] font-extrabold text-white shadow-lg backdrop-blur transition hover:scale-105"
-              >
-                {SITE.phone2}
-              </a>
-              <a
-                href={SITE.phone1Href}
-                className="animate-floaty absolute -right-2 top-[16%] z-30 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-3.5 py-2 text-[11.5px] font-extrabold text-white shadow-lg backdrop-blur transition hover:scale-105 [animation-delay:0.9s]"
-              >
-                {SITE.phone1}
-              </a>
-              <a
-                href={`mailto:${SITE.email}`}
-                className="animate-floaty absolute -right-4 bottom-[24%] z-30 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-3.5 py-2 text-[11.5px] font-extrabold text-white shadow-lg backdrop-blur transition hover:scale-105 [animation-delay:1.7s]"
-              >
-                {SITE.email}
-              </a>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/smiling-happy-businesswoman-black-suit-pointing-hand-left-statistics-diagram-with-pleased-face-having-business-meeting-introduce-product-graph-standing-white-background.webp"
+                src="/images/hero-advisor.webp"
                 alt=""
-                width={640}
-                height={800}
+                width={900}
+                height={826}
+                loading="eager"
+                fetchPriority="high"
                 className="relative z-10 mx-auto w-full max-w-md drop-shadow-2xl"
               />
             </div>
@@ -207,15 +169,18 @@ export default function Home() {
             {[
               { num: '10k+', label: 'Trademarks Done' },
               { num: '15k+', label: 'End Users' },
-              { num: '4.9★', label: 'Stars on Google' },
+              { num: '4.9', star: true, label: 'Stars on Google' },
               { num: '8+', label: 'Years of Service' },
             ].map((s, i) => (
               <div
                 key={s.label}
                 className={`p-6 transition hover:bg-white/5 md:p-7 ${i < 3 ? 'md:border-r md:border-white/10' : ''} ${i % 2 === 0 ? 'border-r border-white/10 md:border-r' : ''} ${i < 2 ? 'border-b border-white/10 md:border-b-0' : ''}`}
               >
-                <div className="text-3xl font-extrabold tabular-nums md:text-4xl">{s.num}</div>
-                <div className="mt-0.5 text-[11px] font-extrabold uppercase tracking-widest text-brand-light">{s.label}</div>
+                <div className="min-h-[36px] text-3xl font-extrabold tabular-nums md:min-h-[40px] md:text-4xl">
+                  {s.num}
+                  {'star' in s && s.star && <span className="ml-0.5 align-middle text-lg md:text-xl">★</span>}
+                </div>
+                <div className="mt-0.5 min-h-[13px] text-[11px] font-extrabold uppercase tracking-widest text-brand-light">{s.label}</div>
               </div>
             ))}
           </div>
@@ -338,7 +303,7 @@ export default function Home() {
                     href={SITE.whatsapp}
                     target="_blank"
                     rel="noopener"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25d366] px-5 py-2.5 text-sm font-extrabold text-white transition hover:-translate-y-0.5"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0f7a40] px-5 py-2.5 text-sm font-extrabold text-white transition hover:-translate-y-0.5"
                   >
                     Chat on WhatsApp
                   </a>

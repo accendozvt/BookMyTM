@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import Blocks, { splitHero } from '@/components/Blocks';
 import CtaBand from '@/components/CtaBand';
 import { loadContent, seoFor } from '@/lib/content';
+import { buildMetadata } from '@/lib/seo';
 
 export function generateMetadata(): Metadata {
   const seo = seoFor('/about-us/');
@@ -10,21 +11,7 @@ export function generateMetadata(): Metadata {
   const description =
     seo?.description ||
     'BookMyTM is India’s premier digital platform for trademark, IP protection, business registration, ISO certification, and compliance — headquartered in Kochi, Kerala.';
-  const canonical = seo?.canonical || 'https://bookmytm.com/about-us/';
-  return {
-    title,
-    description,
-    alternates: { canonical },
-    openGraph: {
-      title,
-      description,
-      url: canonical,
-      siteName: 'BookMyTM',
-      type: 'website',
-      images: [{ url: '/assets/opengraph/preview.webp', width: 1200, height: 630, alt: title }],
-    },
-    twitter: { card: 'summary_large_image', title, description, images: ['/assets/opengraph/preview.webp'] },
-  };
+  return buildMetadata({ path: '/about-us/', title, description });
 }
 
 const STATS = [

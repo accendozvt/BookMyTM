@@ -1,0 +1,105 @@
+{
+  "slug": "one-person-company-opc-rule-changes",
+  "type": "post",
+  "title": "One Person Company (OPC): Recent Rule Relaxations Founders Should Know",
+  "h1": "One Person Company (OPC): Recent Rule Relaxations Founders Should Know",
+  "datePublished": "2026-07-07",
+  "featuredImage": "/images/blog/blog-one-person-company-opc-rule-changes.webp",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "One Person Company (OPC): Recent Rule Relaxations Founders Should Know"
+    },
+    {
+      "type": "paragraph",
+      "text": "Since April 1, 2021, an OPC (One Person Company) in India is no longer forced to convert into a private or public company just because it grows past a certain paid-up capital or turnover — that mandatory conversion trigger was removed by the Companies (Incorporation) Second Amendment Rules, 2021. The same amendment also opened OPC incorporation to NRIs by relaxing the residency requirement. Both changes matter directly for founders deciding whether an OPC still makes sense as their business scales."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is an OPC, and who could historically form one?"
+    },
+    {
+      "type": "paragraph",
+      "text": "An OPC is a company structure that allows a single individual to incorporate a company with limited liability, rather than needing a minimum of two members as with a standard private company — defined under Section 2(62) of the Companies Act, 2013. Historically, OPC incorporation was limited to natural persons who were Indian citizens and residents of India, which by definition excluded NRIs from forming one."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What were the old mandatory conversion thresholds, and were they actually removed?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes — this was confirmed via the amendment and cross-checked across multiple sources. Before April 2021, Rule 6 of the Companies (Incorporation) Rules, 2014 required an OPC to compulsorily convert into a private or public company once it exceeded a paid-up capital of ₹50 lakh, or its average annual turnover during the relevant period crossed ₹2 crore. The Companies (Incorporation) Second Amendment Rules, 2021 — effective April 1, 2021 — removed this threshold-based mandatory conversion requirement entirely. An OPC can now continue operating as an OPC regardless of how much its paid-up capital or turnover grows, and it can instead choose to convert into a private or public company voluntarily, at any time it wants to, rather than being forced to."
+    },
+    {
+      "type": "paragraph",
+      "text": "As part of the same reform, the related compliance form for flagging threshold breaches (e-form INC-5, \"intimation of exceeding threshold\") was omitted, and the conversion form (INC-6) was revised accordingly."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Can NRIs now incorporate an OPC in India?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes. The same 2021 amendment package changed Rule 3 of the Companies (Incorporation) Rules by replacing the requirement that the sole member be \"resident in India\" with language allowing the member to be \"resident in India or otherwise\" — opening OPC incorporation to Non-Resident Indians who hold Indian citizenship. Alongside this, the residency threshold used to define \"resident in India\" for this purpose was reduced from 182 days to 120 days of stay in India during the immediately preceding financial year, making it easier for someone who splits time between India and abroad to qualify."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What does this mean practically for founders?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "An OPC no longer has a hidden growth ceiling that forces a structural change — you can scale revenue and capital within an OPC indefinitely if you choose to",
+        "Conversion to a private or public company is now optional and founder-driven, not a compliance trap tied to crossing a specific number",
+        "NRIs holding Indian citizenship can now set up an OPC on their own, provided they meet the reduced 120-day residency threshold in the relevant financial year",
+        "The paperwork associated with the old threshold-monitoring requirement (INC-5) is no longer part of OPC compliance"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Does this mean an OPC is now always the right choice as a business grows?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not necessarily — the threshold removal changes what's mandatory, not what's strategically optimal. An OPC still has only one member, cannot issue shares to multiple shareholders, and isn't a fit if you plan to raise external equity funding or bring in co-founders — for that, a Private Limited Company remains the appropriate structure regardless of the 2021 relaxation. The amendment simply means founders aren't forced into conversion by size alone; the decision to convert (or not) is now a business call rather than a compliance deadline."
+    },
+    {
+      "type": "paragraph",
+      "text": "BookMyTM helps founders incorporate OPCs — including NRI founders now eligible under the relaxed residency rule — and advises on when voluntary conversion to a private company makes sense as the business grows."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "q": "Do OPCs still have to convert into a private company after crossing a certain turnover?",
+          "a": "No. Since the Companies (Incorporation) Second Amendment Rules, 2021 took effect on April 1, 2021, the mandatory conversion trigger tied to paid-up capital (previously ₹50 lakh) and average annual turnover (previously ₹2 crore) was removed."
+        },
+        {
+          "q": "Can an NRI start a One Person Company in India?",
+          "a": "Yes, as of the same April 2021 amendment — an NRI who holds Indian citizenship can incorporate an OPC, provided they meet the reduced residency requirement of at least 120 days of stay in India in the preceding financial year."
+        },
+        {
+          "q": "What was the residency requirement for OPC before the 2021 change?",
+          "a": "It required the sole member to be \"resident in India,\" generally understood as staying in India for at least 182 days in the preceding financial year; this was reduced to 120 days by the 2021 amendment."
+        },
+        {
+          "q": "Is voluntary conversion of an OPC to a private company still possible?",
+          "a": "Yes — the 2021 amendment kept voluntary conversion available and made it accessible at any time, rather than only after crossing removed thresholds."
+        },
+        {
+          "q": "Should a growing OPC convert to a Private Limited Company?",
+          "a": "It depends on your goals — an OPC can now legally continue to grow without forced conversion, but if you need multiple shareholders or plan to raise equity funding, a Private Limited Company remains the appropriate structure since an OPC has only one member."
+        }
+      ]
+    }
+  ],
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630
+}

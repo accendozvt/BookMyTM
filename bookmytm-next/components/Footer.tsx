@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/">
-              <Image src="/images/bookmytm-white.png" alt="BookMyTM Logo" width={160} height={48} className="mb-2" />
+              <Image src="/images/logo.png" alt="BookMyTM Logo" width={160} height={48} className="mb-2" />
             </Link>
             <p className="mb-6 text-sm text-white/50">{SITE.tagline}</p>
             <div className="flex gap-3">
@@ -73,7 +73,6 @@ export default function Footer() {
                 { label: 'Knowledge Base', href: '/knowledge-base/' },
                 { label: 'Contact', href: '/contact/' },
                 { label: 'Trademark Registration in Kerala', href: '/intellectual-property/trademark/trademark-registration-in-kerala/' },
-                { label: 'No.1 Trademark Provider in Kerala', href: '/no-1-trademark-registration-provider-in-kerala-bookmytm/' },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="text-sm text-white/65 transition hover:text-white">
                   {l.label}
@@ -108,11 +107,10 @@ export default function Footer() {
               </div>
               <div>
                 <p className="mb-1 text-[11px] font-bold uppercase tracking-wider text-white/45">Phone</p>
-                <p className="text-sm text-white/80">
-                  <a href={SITE.phone1Href} className="hover:text-white">{SITE.phone1}</a>
-                  <br />
-                  <a href={SITE.phone2Href} className="hover:text-white">{SITE.phone2}</a>
-                </p>
+                <div className="-my-1 flex flex-col text-sm text-white/80">
+                  <a href={SITE.phone1Href} className="py-1.5 hover:text-white">{SITE.phone1}</a>
+                  <a href={SITE.phone2Href} className="py-1.5 hover:text-white">{SITE.phone2}</a>
+                </div>
               </div>
             </div>
             <div className="flex items-start gap-3">

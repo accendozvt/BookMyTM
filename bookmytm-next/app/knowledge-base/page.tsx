@@ -4,6 +4,7 @@ import PageHero from '@/components/PageHero';
 import CtaBand from '@/components/CtaBand';
 import Reveal from '@/components/Reveal';
 import { listPosts, seoFor } from '@/lib/content';
+import { buildMetadata } from '@/lib/seo';
 
 export function generateMetadata(): Metadata {
   const seo = seoFor('/knowledge-base/');
@@ -11,20 +12,7 @@ export function generateMetadata(): Metadata {
   const description =
     seo?.description ||
     'Insights on trademark registration, ISO certification, intellectual property, and business compliance in India from the BookMyTM team.';
-  return {
-    title,
-    description,
-    alternates: { canonical: seo?.canonical || 'https://bookmytm.com/knowledge-base/' },
-    openGraph: {
-      title,
-      description,
-      url: 'https://bookmytm.com/knowledge-base/',
-      siteName: 'BookMyTM',
-      type: 'website',
-      images: [{ url: '/assets/opengraph/preview.webp', width: 1200, height: 630, alt: title }],
-    },
-    twitter: { card: 'summary_large_image', title, description, images: ['/assets/opengraph/preview.webp'] },
-  };
+  return buildMetadata({ path: '/knowledge-base/', title, description });
 }
 
 function fmtDate(iso?: string) {

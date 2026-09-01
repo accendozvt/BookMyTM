@@ -21,6 +21,9 @@ export type PageContent = {
   h1: string;
   datePublished?: string;
   featuredImage?: string;
+  /** Real pixel size of featuredImage, so og:image:width/height stay truthful. */
+  featuredImageWidth?: number;
+  featuredImageHeight?: number;
   blocks: Block[];
 };
 
@@ -29,6 +32,8 @@ export type PostMeta = {
   h1: string;
   datePublished: string;
   featuredImage: string;
+  featuredImageWidth?: number;
+  featuredImageHeight?: number;
   blockCount: number;
 };
 
@@ -43,7 +48,15 @@ const IMAGE_MANIFEST = JSON.parse(
 ) as Record<string, string>;
 
 /** slugs we don't build in the catch-all (junk/handled by dedicated routes) */
-const EXCLUDED = new Set(['test', '__home', 'contact', 'knowledge-base', 'about-us']);
+const EXCLUDED = new Set([
+  'test',
+  '__home',
+  'contact',
+  'knowledge-base',
+  'about-us',
+  // duplicates the home page's content/title/description — 301 redirected to / in next.config.mjs
+  'no-1-trademark-registration-provider-in-kerala-bookmytm',
+]);
 
 const POSTS_DIR = join(process.cwd(), 'content-posts');
 

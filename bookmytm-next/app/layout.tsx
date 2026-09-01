@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import { Manrope } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -10,7 +11,19 @@ const manrope = Manrope({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-manrope',
+  // 'optional' avoids the fallback→Manrope swap reflow that was causing layout shift
+  // (font loads in the background; if it isn't ready almost immediately, the fallback stays).
+  display: 'optional',
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#3d6f2e',
+};
+
+/** GA4 property for bookmytm.com. */
+const GA_ID = 'G-EGJYMRGC23';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -33,7 +46,7 @@ const orgJsonLd = {
   '@type': 'Organization',
   name: 'BookMyTM',
   url: SITE.url,
-  logo: `${SITE.url}/images/bookmytm-white.png`,
+  logo: `${SITE.url}/images/logo.png`,
   contactPoint: [
     { '@type': 'ContactPoint', telephone: '+91-809-809-0880', contactType: 'customer service' },
     { '@type': 'ContactPoint', telephone: '+91-809-809-0440', contactType: 'customer service' },
@@ -51,7 +64,7 @@ const orgJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={manrope.variable}>
+    <html lang="en-IN" className={manrope.variable}>
       <body>
         <Header />
         <main>{children}</main>
@@ -72,6 +85,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
+        {/* GA4 — loaded after hydration so it never competes with LCP or blocks the main thread. */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA_ID}');`}
+        </Script>
       </body>
     </html>
   );

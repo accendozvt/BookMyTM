@@ -136,5 +136,7 @@
       "level": 2,
       "text": "Frequently Asked Questions"
     }
-  ]
+  ],
+  "featuredImageWidth": 1024,
+  "featuredImageHeight": 576
 }

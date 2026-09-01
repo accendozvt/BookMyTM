@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import LeadForm from '@/components/LeadForm';
 import { seoFor } from '@/lib/content';
+import { buildMetadata } from '@/lib/seo';
 import { SITE } from '@/lib/site';
 
 export function generateMetadata(): Metadata {
@@ -10,21 +11,7 @@ export function generateMetadata(): Metadata {
   const description =
     seo?.description ||
     'Reach the BookMyTM team in Kochi, Kerala for trademark registration, ISO certification, and business compliance. Call +91 809 809 0880 or write to cc@bookmytm.com.';
-  const canonical = seo?.canonical || 'https://bookmytm.com/contact/';
-  return {
-    title,
-    description,
-    alternates: { canonical },
-    openGraph: {
-      title,
-      description,
-      url: canonical,
-      siteName: 'BookMyTM',
-      type: 'website',
-      images: [{ url: '/assets/opengraph/preview.webp', width: 1200, height: 630, alt: title }],
-    },
-    twitter: { card: 'summary_large_image', title, description, images: ['/assets/opengraph/preview.webp'] },
-  };
+  return buildMetadata({ path: '/contact/', title, description });
 }
 
 const cards = [

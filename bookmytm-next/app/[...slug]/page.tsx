@@ -9,7 +9,8 @@ import Reveal from '@/components/Reveal';
 import { IconFor } from '@/components/icons';
 import Article from '@/components/Article';
 import { listContentSlugs, listPostSlugs, listPosts, loadContent, loadPost, pathToFileSlug, seoFor } from '@/lib/content';
-import { childrenFor, NAV } from '@/lib/site';
+import { buildMetadata } from '@/lib/seo';
+import { childrenFor, NAV, HUB_INTROS } from '@/lib/site';
 
 type Props = { params: Promise<{ slug: string[] }> };
 
@@ -59,29 +60,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const seo = seoFor(path);
   if (!seo) return {};
   const post = slug.length === 1 ? loadPost(slug[0]) : null;
-  const ogImage = post?.featuredImage || '/assets/opengraph/preview.webp';
   const description = descriptionFor(slug, seo.description);
-  return {
+  return buildMetadata({
+    path,
     title: seo.title,
     description,
-    alternates: { canonical: seo.canonical },
-    robots: seo.noindex ? { index: false, follow: false } : undefined,
-    openGraph: {
-      title: seo.title,
-      description,
-      url: seo.canonical,
-      siteName: 'BookMyTM',
-      type: post ? 'article' : 'website',
-      images: [{ url: ogImage, width: 1200, height: 630, alt: seo.title }],
-      ...(post?.datePublished ? { publishedTime: post.datePublished } : {}),
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: seo.title,
-      description,
-      images: [ogImage],
-    },
-  };
+    noindex: seo.noindex,
+    type: post ? 'article' : 'website',
+    ...(post?.featuredImage
+      ? {
+          image: post.featuredImage,
+          imageWidth: post.featuredImageWidth,
+          imageHeight: post.featuredImageHeight,
+        }
+      : {}),
+    ...(post?.datePublished ? { publishedTime: post.datePublished } : {}),
+  });
 }
 
 function titleCase(s: string) {
@@ -161,7 +155,7 @@ export default async function Page({ params }: Props) {
                 publisher: {
                   '@type': 'Organization',
                   name: 'BookMyTM',
-                  logo: { '@type': 'ImageObject', url: 'https://bookmytm.com/images/bookmytm-white.png' },
+                  logo: { '@type': 'ImageObject', url: 'https://bookmytm.com/images/logo.png' },
                 },
                 mainEntityOfPage: seo?.canonical || `https://bookmytm.com/${slug[0]}/`,
               }),
@@ -194,6 +188,9 @@ export default async function Page({ params }: Props) {
       {isHub ? (
         <section className="bg-white">
           <div className="container-site py-16 md:py-20">
+            {HUB_INTROS[path] && (
+              <p className="mb-10 max-w-3xl text-lg leading-relaxed text-gray-600">{HUB_INTROS[path]}</p>
+            )}
             <div className="mb-10">
               <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 md:text-3xl">Our Services</h2>
               <div className="mt-3 h-1 w-14 rounded-full bg-brand" />

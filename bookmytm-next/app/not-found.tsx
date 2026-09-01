@@ -4,7 +4,8 @@ import { NAV, SITE } from '@/lib/site';
 
 export const metadata = {
   title: 'Page Not Found | BookMyTM',
-  robots: { index: false, follow: true },
+  // No `robots` here: Next already emits <meta name="robots" content="noindex">
+  // on not-found, and declaring it again produced two robots tags on this page.
 };
 
 export default function NotFound() {
@@ -28,7 +29,7 @@ export default function NotFound() {
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <Link
             href="/"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-9 py-4 text-base font-extrabold text-white shadow-xl shadow-brand/30 transition hover:-translate-y-0.5 hover:bg-[#3a6a2c]"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-9 py-4 text-base font-extrabold text-white shadow-xl shadow-brand/30 transition hover:-translate-y-0.5 hover:bg-[#2f5622]"
           >
             Back to Home
           </Link>
