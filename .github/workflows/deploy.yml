@@ -1,0 +1,1 @@
+Get-Content ".github/workflows/deploy.yml" -Raw | Set-Clipboard
