@@ -4,7 +4,7 @@
   "title": "Halal & Export Certification for Kerala's Seafood and Spice Industry",
   "h1": "Halal & Export Certification for Kerala's Seafood and Spice Industry",
   "datePublished": "2026-07-13",
-  "featuredImage": "/images/blog/blog-halal-export-certification-kerala.webp",
+  "featuredImage": "/images/blog/hdr-halal-export-certification-kerala.webp",
   "blocks": [
     {
       "type": "heading",
@@ -102,5 +102,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Kerala seafood and spice consignment being inspected before export"
 }

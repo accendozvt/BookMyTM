@@ -4,7 +4,7 @@
   "title": "Company Name Rejected? The Top Reasons RUN/SPICe+ Applications Fail",
   "h1": "Company Name Rejected? The Top Reasons RUN/SPICe+ Applications Fail",
   "datePublished": "2026-07-08",
-  "featuredImage": "/images/blog/blog-company-name-rejected-run-spice-reasons.webp",
+  "featuredImage": "/images/blog/hdr-company-name-rejected-run-spice.webp",
   "blocks": [
     {
       "type": "heading",
@@ -114,5 +114,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Company name application being checked against existing registered names"
 }

@@ -4,7 +4,7 @@
   "title": "MSME Udyam Classification 2026: New Investment & Turnover Limits Explained",
   "h1": "MSME Udyam Classification 2026: New Investment & Turnover Limits Explained",
   "datePublished": "2026-06-16",
-  "featuredImage": "/images/blog/blog-msme-udyam-classification-2026-limits.webp",
+  "featuredImage": "/images/blog/hdr-msme-udyam-classification-2026.webp",
   "blocks": [
     {
       "type": "heading",
@@ -122,5 +122,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Manufacturing unit being assessed against MSME investment and turnover limits"
 }

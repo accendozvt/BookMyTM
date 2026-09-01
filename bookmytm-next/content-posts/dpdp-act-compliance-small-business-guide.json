@@ -4,7 +4,7 @@
   "title": "DPDP Act Compliance: What Small Businesses Must Do Under India's New Data Protection Law",
   "h1": "DPDP Act Compliance: What Small Businesses Must Do Under India's New Data Protection Law",
   "datePublished": "2026-06-09",
-  "featuredImage": "/images/blog/blog-dpdp-act-compliance-small-business-guide.webp",
+  "featuredImage": "/images/blog/hdr-dpdp-act-compliance-small-business.webp",
   "blocks": [
     {
       "type": "heading",
@@ -136,5 +136,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Small business owner securing customer data records under the DPDP Act"
 }

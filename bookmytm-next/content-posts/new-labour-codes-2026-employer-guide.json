@@ -4,7 +4,7 @@
   "title": "New Labour Codes 2026: What Every Employer Needs to Know Before Rollout",
   "h1": "New Labour Codes 2026: What Every Employer Needs to Know Before Rollout",
   "datePublished": "2026-06-02",
-  "featuredImage": "/images/blog/blog-new-labour-codes-2026-employer-guide.webp",
+  "featuredImage": "/images/blog/hdr-new-labour-codes-2026-employer-guide.webp",
   "blocks": [
     {
       "type": "heading",
@@ -115,5 +115,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "HR team reviewing employment policies against India’s new labour codes"
 }

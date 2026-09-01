@@ -4,7 +4,7 @@
   "title": "Barcode Registration (GS1 India): Why Retailers and Manufacturers Need One",
   "h1": "Barcode Registration (GS1 India): Why Retailers and Manufacturers Need One",
   "datePublished": "2026-07-05",
-  "featuredImage": "/images/blog/blog-gs1-barcode-registration-india-guide.webp",
+  "featuredImage": "/images/blog/hdr-gs1-barcode-registration-india.webp",
   "blocks": [
     {
       "type": "heading",
@@ -98,5 +98,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Retail products being scanned and catalogued for barcode registration"
 }

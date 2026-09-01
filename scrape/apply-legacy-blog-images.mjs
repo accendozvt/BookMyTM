@@ -82,12 +82,16 @@ const localize = (s) => (s ? manifest[s] || manifest[s.split('/').pop()] || s : 
 // files are in here as well as content: the first run scanned only content/ and
 // content-posts/ and deleted two images that lib/site.ts uses for the megamenu
 // promo panels, breaking them on all 141 pages.
+// image-variants.json and image-manifest.json are derived indexes rebuilt from
+// whatever is on disk, not references - counting them would make every file look
+// used and nothing would ever be retired.
+const DERIVED = new Set(['image-variants.json', 'image-manifest.json']);
 const sources = [];
 (function walk(d) {
   for (const e of readdirSync(d, { withFileTypes: true })) {
     const p = join(d, e.name);
     if (e.isDirectory()) { if (e.name !== 'node_modules' && e.name !== '.next') walk(p); }
-    else if (/\.(tsx?|mjs|json)$/.test(e.name)) sources.push(readFileSync(p, 'utf8'));
+    else if (/\.(tsx?|mjs|json)$/.test(e.name) && !DERIVED.has(e.name)) sources.push(readFileSync(p, 'utf8'));
   }
 })(APP, 0);
 const stillUsed = sources.join('\n');

@@ -4,7 +4,7 @@
   "title": "K-SWIFT: Kerala's Single Window Clearance for Startups, Explained",
   "h1": "K-SWIFT: Kerala's Single Window Clearance for Startups, Explained",
   "datePublished": "2026-07-11",
-  "featuredImage": "/images/blog/blog-kswift-kerala-single-window-clearance.webp",
+  "featuredImage": "/images/blog/hdr-kswift-kerala-single-window.webp",
   "blocks": [
     {
       "type": "heading",
@@ -116,5 +116,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Kerala entrepreneur completing multiple business clearances at one counter"
 }

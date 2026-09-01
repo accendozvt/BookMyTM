@@ -4,7 +4,7 @@
   "title": "Who Owns an AI-Generated Logo? Copyright and Trademark Ownership in the AI Era",
   "h1": "Who Owns an AI-Generated Logo? Copyright and Trademark Ownership in the AI Era",
   "datePublished": "2026-07-09",
-  "featuredImage": "/images/blog/blog-ai-generated-logo-copyright-trademark-ownership.webp",
+  "featuredImage": "/images/blog/hdr-ai-generated-logo-ownership.webp",
   "blocks": [
     {
       "type": "heading",
@@ -101,5 +101,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Designer reviewing machine-generated logo concepts for ownership and protection"
 }

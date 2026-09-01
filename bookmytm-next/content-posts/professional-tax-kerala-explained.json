@@ -4,7 +4,7 @@
   "title": "Professional Tax in Kerala: Who Pays, How Much, and When It's Due",
   "h1": "Professional Tax in Kerala: Who Pays, How Much, and When It's Due",
   "datePublished": "2026-07-14",
-  "featuredImage": "/images/blog/blog-professional-tax-kerala-explained.webp",
+  "featuredImage": "/images/blog/hdr-professional-tax-kerala.webp",
   "blocks": [
     {
       "type": "heading",
@@ -114,5 +114,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Kerala employer calculating professional tax deductions for staff"
 }

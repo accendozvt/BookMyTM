@@ -4,7 +4,7 @@
   "title": "Patent Filing in India: The Complete Search-to-Grant Process Explained",
   "h1": "Patent Filing in India: The Complete Search-to-Grant Process Explained",
   "datePublished": "2026-07-01",
-  "featuredImage": "/images/blog/blog-patent-filing-process-india-explained.webp",
+  "featuredImage": "/images/blog/hdr-patent-filing-process-india.webp",
   "blocks": [
     {
       "type": "heading",
@@ -117,5 +117,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Patent application moving from drafting through examination at the patent office"
 }

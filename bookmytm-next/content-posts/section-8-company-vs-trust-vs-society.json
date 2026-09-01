@@ -4,7 +4,7 @@
   "title": "Section 8 Company vs Trust vs Society: Which Non-Profit Structure Is Right for You?",
   "h1": "Section 8 Company vs Trust vs Society: Which Non-Profit Structure Is Right for You?",
   "datePublished": "2026-07-02",
-  "featuredImage": "/images/blog/blog-section-8-company-vs-trust-vs-society.webp",
+  "featuredImage": "/images/blog/hdr-section-8-trust-society-comparison.webp",
   "blocks": [
     {
       "type": "heading",
@@ -116,5 +116,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Founders weighing three legal structures for setting up a non-profit in India"
 }

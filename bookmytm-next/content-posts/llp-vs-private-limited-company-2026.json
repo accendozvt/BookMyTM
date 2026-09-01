@@ -4,7 +4,7 @@
   "title": "LLP vs Private Limited Company: A 2026 Comparison for First-Time Founders",
   "h1": "LLP vs Private Limited Company: A 2026 Comparison for First-Time Founders",
   "datePublished": "2026-07-06",
-  "featuredImage": "/images/blog/blog-llp-vs-private-limited-company-2026.webp",
+  "featuredImage": "/images/blog/hdr-llp-vs-private-limited-company.webp",
   "blocks": [
     {
       "type": "heading",
@@ -120,5 +120,6 @@
     }
   ],
   "featuredImageWidth": 1200,
-  "featuredImageHeight": 630
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "First-time founders comparing two company structures before registering"
 }
