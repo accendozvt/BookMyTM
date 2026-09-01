@@ -66,7 +66,7 @@ export const NAV: NavCategory[] = [
     label: 'ISO Certification',
     href: '/iso-certification/',
     promo: {
-      image: '/images/blog_05_iso_quality_seal_1765545624585.webp',
+      image: '/images/blog/hdr-iso-9001-2025-upgrade-msme.webp',
       title: 'The gold standard for growth',
       text: 'Globally recognized certifications that build trust and win tenders.',
     },
@@ -88,7 +88,7 @@ export const NAV: NavCategory[] = [
     label: 'Intellectual Property',
     href: '/intellectual-property/',
     promo: {
-      image: '/images/blog_06_trademark_objection.webp',
+      image: '/images/blog/hdr-trademark-vs-copyright-vs-patent-india.webp',
       title: 'Protect what you build',
       text: 'Trademarks, patents, copyright & design — full-spectrum IP protection.',
     },

@@ -54,7 +54,7 @@ export default function KnowledgeBase() {
                     {p.featuredImage ? (
                       <CardImage
                         src={p.featuredImage}
-                        alt={p.h1}
+                        alt={p.featuredImageAlt || p.h1}
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         priority={i === 0}
                       />

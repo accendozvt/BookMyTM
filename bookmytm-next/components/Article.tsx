@@ -142,7 +142,7 @@ export default function Article({
               /* LCP element on every post: eager, high priority, and never lazy. */
               <CardImage
                 src={post.featuredImage}
-                alt={post.h1 || post.title}
+                alt={post.featuredImageAlt || post.h1 || post.title}
                 sizes="(max-width: 1024px) 100vw, 760px"
                 className="mb-10 aspect-video w-full rounded-3xl object-cover shadow-lg"
                 priority

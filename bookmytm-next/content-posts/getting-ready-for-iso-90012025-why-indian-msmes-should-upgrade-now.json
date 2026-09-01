@@ -4,7 +4,7 @@
   "title": "Getting Ready for ISO 9001:2025: Why Indian MSMEs Should Upgrade NowGetting Ready for ISO 9001:2025: Why Indian MSMEs Should Upgrade Now - BookMyTM",
   "h1": "Getting Ready for ISO 9001:2025: Why Indian MSMEs Should Upgrade Now",
   "datePublished": "",
-  "featuredImage": "https://bookmytm.com/wp-content/uploads/2025/12/blog_05_iso_quality_seal_1765545624585.webp",
+  "featuredImage": "/images/blog/hdr-iso-9001-2025-upgrade-msme.webp",
   "blocks": [
     {
       "type": "heading",
@@ -128,6 +128,7 @@
       "text": "Frequently Asked Questions"
     }
   ],
-  "featuredImageWidth": 1024,
-  "featuredImageHeight": 1024
+  "featuredImageWidth": 1200,
+  "featuredImageHeight": 630,
+  "featuredImageAlt": "Quality manager reviewing an updated ISO 9001 quality management manual at an Indian factory"
 }

@@ -21,6 +21,11 @@ export type PageContent = {
   h1: string;
   datePublished?: string;
   featuredImage?: string;
+  /**
+   * What the header photo shows. Falls back to the H1 where a post has none,
+   * which is what every post used before the generated headers landed.
+   */
+  featuredImageAlt?: string;
   /** Real pixel size of featuredImage, so og:image:width/height stay truthful. */
   featuredImageWidth?: number;
   featuredImageHeight?: number;
@@ -32,6 +37,7 @@ export type PostMeta = {
   h1: string;
   datePublished: string;
   featuredImage: string;
+  featuredImageAlt?: string;
   featuredImageWidth?: number;
   featuredImageHeight?: number;
   blockCount: number;
