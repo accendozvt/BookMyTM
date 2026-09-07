@@ -40,19 +40,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "What is ISO 14001:2015?"
     },
@@ -82,29 +69,7 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Certified!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fast & Professional"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Benefits of ISO 14001:2015 Certification"
     },
     {
@@ -145,7 +110,7 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Document Required for ISO 14001:2015 Certification"
     },
     {
@@ -186,71 +151,101 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Register for ISO 14001:2015 in 3 Easy Steps"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Step 01 · Register & Pay"
     },
     {
-      "type": "paragraph",
-      "text": "Select any package suits your requirement. Fill up the form, which will take less than 10 minutes. Provide details & upload documents required for ISO 14001:2015 Certification. Make payment through secure payment gateway."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Your queries will be answered quickly and effectively. Consultation on Scope of Certification. Discussion on Quality Policy Vision and Mission of the organization. Preparation of documents and reports."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Certification Issued"
-    },
-    {
-      "type": "paragraph",
-      "text": "Issuance of ISO 14001:2015 Certificate. (All it takes 10 – 15 working days*)"
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form, which will take less than 10 minutes",
+        "Provide details & upload documents required for ISO 14001:2015 Certification",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
       "level": 3,
+      "text": "Step 02 · We Will Help"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Consultation on Scope of Certification",
+        "Discussion on Quality Policy Vision and Mission of the organization",
+        "Preparation of documents and reports"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Certification Issued"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Issuance of ISO 14001:2015 Certificate.",
+        "All it takes 10 – 15 working days* *Subjected to Certification Bodies’ processing time."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
       "text": "The Process of ISO Certification"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Day 1-4"
+      "level": 3,
+      "text": "Day 1 – 4"
     },
     {
-      "type": "paragraph",
-      "text": "Collection of Information. Collection of required documents (Scanned copies). Review of documents and information provided. Consultation on scope of Certification."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Day 4-8"
-    },
-    {
-      "type": "paragraph",
-      "text": "Drafting of Documents. Approval from client."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Day 9-15"
-    },
-    {
-      "type": "paragraph",
-      "text": "Issuance of ISO 14001:2015 Certification (*Subjected Certification Body's Processing Time)."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Collection of Information",
+        "Collection of required documents (Scanned copies)",
+        "Review of documents and information provided",
+        "Consultation on scope of Certification"
+      ]
     },
     {
       "type": "heading",
       "level": 3,
+      "text": "Day 4 – 8"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Drafting of Documents",
+        "Approval from client"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Day 9 – 15"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Issuance of ISO 14001:2015 Certification",
+        "*Subjected Certification Body’s Processing Time."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
       "text": "Frequently Asked Questions"
     },
     {
@@ -387,11 +382,6 @@
     {
       "type": "paragraph",
       "text": "ISO 14001 helps an organization not just comply with laws but actively contribute to the environmental pillar of sustainability, securing a more responsible and profitable future."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Explore Other ISO Services"
     }
   ]
 }

@@ -33,32 +33,61 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Apply Now!"
-    },
-    {
-      "type": "form"
-    },
-    {
-      "type": "heading",
-      "level": 2,
-      "text": "Register a Nidhi Company Online"
+      "text": "Documents Required for Registering a Nidhi Company in India"
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Documents Required for Registering a Nidhi Company in India"
+      "text": "PAN Card"
     },
     {
-      "type": "list",
-      "ordered": true,
-      "items": [
-        "PAN Card PAN Card of all the Members and Directors",
-        "Photograph Latest passport size photograph of all the Members and Directors",
-        "ID Proof Voters ID / Driving License / Aadhaar Card / Passport of all the members and Directors",
-        "Address Proof Latest Electricity Bill / Telephone Bill / Bank Account Statement of all the Members and Directors",
-        "Rental Agreement Rental Agreement of the registered office if the office is rented",
-        "NOC NOC (No Objection Certificate) obtained from the registered owner of Office Building"
-      ]
+      "type": "paragraph",
+      "text": "PAN Card of all the Members and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photograph"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest passport size photograph of all the Members and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "ID Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Voters ID / Driving License / Aadhaar Card / Passport of all the members and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Electricity Bill / Telephone Bill / Bank Account Statement of all the Members and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Rental Agreement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rental Agreement of the registered office if the office is rented"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "NOC"
+    },
+    {
+      "type": "paragraph",
+      "text": "NOC (No Objection Certificate) obtained from the registered owner of Office Building"
     },
     {
       "type": "heading",
@@ -67,7 +96,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Build a Unique Identity"
     },
     {
@@ -80,7 +109,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Mention Constitution Type on Your Brand Name"
     },
     {
@@ -90,16 +119,11 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register Online"
-    },
-    {
-      "type": "heading",
-      "level": 2,
       "text": "Register Your Nidhi Company in 3 Easy Steps"
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 01"
     },
     {
@@ -117,7 +141,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 02"
     },
     {
@@ -139,7 +163,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 03"
     },
     {
@@ -161,7 +185,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 01 - 02"
     },
     {
@@ -176,7 +200,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 03 - 07"
     },
     {
@@ -191,7 +215,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 08 - 10"
     },
     {
@@ -206,7 +230,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 11 - 13"
     },
     {
@@ -221,7 +245,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 11 - 13"
     },
     {

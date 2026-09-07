@@ -35,23 +35,6 @@
       "text": "Register for Rs. 1000"
     },
     {
-      "type": "paragraph",
-      "text": "Get started in minutes"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "What is Trademark Watch?"
@@ -63,11 +46,6 @@
     {
       "type": "paragraph",
       "text": "With trademark watch service, BookMyTM examines all relevant trademark registers to identify trademarks which are identical or similar to your registered mark. We ensure your mark is protected from infringers or unauthorized users using advanced monitoring algorithms."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Related Services"
     },
     {
       "type": "heading",
@@ -94,28 +72,6 @@
     {
       "type": "paragraph",
       "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Register for Rs. 1000"
-    },
-    {
-      "type": "paragraph",
-      "text": "Monitoring Service"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -147,30 +103,45 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Step 01 · Register & Pay"
     },
     {
-      "type": "paragraph",
-      "text": "Select package, fill form & make payment."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Discussions, Document Collection & Agreement Signing."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Service Activated"
+      "level": 3,
+      "text": "Step 02 · We Will Help"
     },
     {
-      "type": "paragraph",
-      "text": "Watch Service active within 3 working days*."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Discussions with client about trademark watch service",
+        "Provide details & upload documents required for Trademark Watch Service",
+        "Signing of Service agreement by the client"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Service Activated"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your Trademark Watch Service is Activated",
+        "All these in just 3 working days* *Subjected to change due to any unnatural circumstances"
+      ]
     },
     {
       "type": "heading",
@@ -199,8 +170,8 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "Discussions about watch service",
-        "Signing of service agreement"
+        "Discussions with the client about trademark watch service",
+        "Signing of service agreement by the client"
       ]
     },
     {
@@ -213,7 +184,7 @@
       "ordered": false,
       "items": [
         "Your Trademark Watch Service is activated",
-        "*Subject to change"
+        "*Subjected to change due to any unnatural circumstances"
       ]
     },
     {

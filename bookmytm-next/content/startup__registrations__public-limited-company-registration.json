@@ -27,9 +27,6 @@
       "text": "Apply Now for Rs. 25000!"
     },
     {
-      "type": "form"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "How to Register a Public Limited Company in India?"
@@ -76,27 +73,88 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register a Public Limited Company in India"
+      "text": "Documents Required Registering a Public Limited Company in India"
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Documents Required Registering a Public Limited Company in India"
+      "text": "PAN Card"
     },
     {
-      "type": "list",
-      "ordered": true,
-      "items": [
-        "PAN Card PAN Card of all the Directors and Shareholders",
-        "Identity Proof Voters ID/ Passport/ Driving License of all the Directors and Shareholders",
-        "Address Proof Electricity / Water/ Gas bill/ Bank Statement of the Directors and Shareholders",
-        "Passport Foreign Nationals if any in Directors and Shareholder must provide a valid passport.",
-        "Photograph Passport size photograph of all Directors and Shareholders",
-        "Business Address Proof Electricity / Gas bill of the registered office",
-        "NOC from Owner NOC from registered owner of the office building.",
-        "Rent Agreement Rent Agreement of the office building if it’s a rented office.",
-        "Notarization In case of NRI or Foreign National, documents of director (s) must be notarized"
-      ]
+      "type": "paragraph",
+      "text": "PAN Card of all the Directors and Shareholders"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Identity Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Voters ID/ Passport/ Driving License of all the Directors and Shareholders"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electricity / Water/ Gas bill/ Bank Statement of the Directors and Shareholders"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Passport"
+    },
+    {
+      "type": "paragraph",
+      "text": "Foreign Nationals if any in Directors and Shareholder must provide a valid passport."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photograph"
+    },
+    {
+      "type": "paragraph",
+      "text": "Passport size photograph of all Directors and Shareholders"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Business Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electricity / Gas bill of the registered office"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "NOC from Owner"
+    },
+    {
+      "type": "paragraph",
+      "text": "NOC from registered owner of the office building."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Rent Agreement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rent Agreement of the office building if it’s a rented office."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Notarization"
+    },
+    {
+      "type": "paragraph",
+      "text": "In case of NRI or Foreign National, documents of director (s) must be notarized"
     },
     {
       "type": "heading",
@@ -105,7 +163,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Build a Unique Identity"
     },
     {
@@ -118,7 +176,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Constitution Type"
     },
     {
@@ -128,16 +186,11 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register Online"
-    },
-    {
-      "type": "heading",
-      "level": 2,
       "text": "Register Your Public Limited Company in 3 Easy Steps"
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 01"
     },
     {
@@ -155,7 +208,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 02"
     },
     {
@@ -177,7 +230,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 03"
     },
     {
@@ -199,7 +252,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 1 – 2"
     },
     {
@@ -214,7 +267,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 3 – 8"
     },
     {
@@ -229,7 +282,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 9 – 12"
     },
     {
@@ -244,7 +297,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 13 - 15"
     },
     {
@@ -259,7 +312,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 16 – 20"
     },
     {

@@ -35,23 +35,6 @@
       "text": "Book Now for Rs. 6000!"
     },
     {
-      "type": "paragraph",
-      "text": "Get started in minutes"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "What is Trademark Opposition?"
@@ -75,97 +58,62 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Related Services"
-    },
-    {
-      "type": "paragraph",
-      "text": "Need expert assistance?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Book Now for Rs. 6000!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Secure Filing Service"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "Documents Required"
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Applicant Details"
+      "level": 4,
+      "text": "Details of Applicant"
     },
     {
       "type": "paragraph",
-      "text": "Name, Address, and Nationality of the individual/entity opposing."
+      "text": "Name, Address, Nationality, etc. of the applicant, in case the applicant is an individual."
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Opposed Mark Details"
+      "level": 4,
+      "text": "Registration Certificate"
     },
     {
       "type": "paragraph",
-      "text": "Name and application number of the mark published in the journal."
+      "text": "Body Corporate/Other Categories of entities need to provide Registration Certificate"
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Grounds for Opposition"
-    },
-    {
-      "type": "paragraph",
-      "text": "Detailed reasons why the mark should not be registered (similarity, bad faith, etc)."
-    },
-    {
-      "type": "heading",
-      "level": 3,
+      "level": 4,
       "text": "Power of Attorney"
     },
     {
       "type": "paragraph",
-      "text": "Authorization for our attorney to file the opposition on your behalf."
+      "text": "Power of Attorney allows the attorney to file the trademark opposition on your behalf."
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 4,
       "text": "Affidavit"
     },
     {
       "type": "paragraph",
-      "text": "Affidavit stating basic information about your trademark and usage date."
+      "text": "Affidavit with basic information about the trademark and its user date"
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Proof of Use"
+      "level": 4,
+      "text": "Proof of use"
     },
     {
       "type": "paragraph",
-      "text": "Invoices, registration certificates, or receipts showing prior use."
+      "text": "Such as invoices, receipts, registration certificates with the mark mentioned on it."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Details about Opposed Mark"
+    },
+    {
+      "type": "paragraph",
+      "text": "Details of the published mark (in the journal) which needed to be opposed (details like – Name of the mark and grounds on which opposition should be filed)"
     },
     {
       "type": "heading",
@@ -189,30 +137,49 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Step 01 · Register & Pay"
     },
     {
-      "type": "paragraph",
-      "text": "Select package, fill form in 10 mins & make payment."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Consultation, Drafting POA, Affidavit & Application."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Opposition Filed"
+      "level": 3,
+      "text": "Step 02 · We Will Help"
     },
     {
-      "type": "paragraph",
-      "text": "Successfully filed in 15-20 working days*."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Consultation regarding Trademark opposition application",
+        "Provide details & upload documents required for filing Trademark Opposition",
+        "Drafting of POA and User Affidavit",
+        "Sending POA and User Affidavit to client",
+        "Receipt of signed POA and User affidavit from Client",
+        "Provide Application number and TM Registration Certificate (if any)",
+        "Preparation and filing of the application"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Opposition Filed"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your Trademark opposition filed successfully",
+        "All it takes 15 – 20 days* *Subjected to Government Processing Time"
+      ]
     },
     {
       "type": "heading",

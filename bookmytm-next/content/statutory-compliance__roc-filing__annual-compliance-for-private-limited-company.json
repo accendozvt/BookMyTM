@@ -23,22 +23,8 @@
       "text": "Register Online for Rs.7000"
     },
     {
-      "type": "heading",
-      "level": 6,
+      "type": "paragraph",
       "text": "Form 11 and 8, Govt fee extra"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -81,11 +67,19 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "PAN CardPAN Card of the company",
-        "Incorporation DocumentMOA & AOA, Certificate of Incorporation",
-        "Audited Financial StatementsFinancial Statements audited by an independent auditor",
-        "DSC of DirectorA valid Digital Signature Certificate of one of the Directors must be provided"
+        "Incorporation Document MOA & AOA, Certificate of Incorporation",
+        "Audited Financial Statements Financial Statements audited by an independent auditor",
+        "DSC of Director A valid Digital Signature Certificate of one of the Directors must be provided"
       ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "PAN Card"
+    },
+    {
+      "type": "paragraph",
+      "text": "PAN Card of the company"
     },
     {
       "type": "heading",

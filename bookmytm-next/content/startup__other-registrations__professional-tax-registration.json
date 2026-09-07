@@ -19,24 +19,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Register for Professional Tax Online"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "Benefits of Professional Tax Registration"
     },
@@ -69,19 +51,53 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Documents required for Professional Tax Registration"
     },
     {
-      "type": "list",
-      "ordered": false,
-      "items": [
-        "ID proof: A self-attested copy of ID proof of Proprietor/ Partner/ Director",
-        "PAN Card: PAN Card of the proprietor/firm",
-        "Address Proof: Self-attested copy of address proof of Proprietor/ Partner/ Director. Shop and Establishment Certificate (if any)",
-        "Photographs: 3 copy of passport size photograph of the Proprietor/ Partner/ Director",
-        "Incorporation Documents: MoA – AoA of Company, Partnership Deed/ LLP Agreement, etc. along with the registration certificate, if any"
-      ]
+      "type": "heading",
+      "level": 4,
+      "text": "ID proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "A self-attested copy of ID proof of Proprietor/ Partner/ Director"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "PAN Card"
+    },
+    {
+      "type": "paragraph",
+      "text": "PAN Card of the proprietor/firm"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Self-attested copy of address proof of Proprietor/ Partner/ Director. Shop and Establishment Certificate (if any)"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photographs"
+    },
+    {
+      "type": "paragraph",
+      "text": "3 copy of passport size photograph of the Proprietor/ Partner/ Director"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Incorporation Documents"
+    },
+    {
+      "type": "paragraph",
+      "text": "MoA – AoA of Company, Partnership Deed/ LLP Agreement, etc. along with the registration certificate, if any"
     },
     {
       "type": "heading",
@@ -90,30 +106,39 @@
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Fill up the registration form"
     },
     {
-      "type": "paragraph",
-      "text": "Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Make payment"
     },
     {
-      "type": "paragraph",
-      "text": "Make payment through secure payment gateway."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "BookMyTM is Here to Help"
     },
     {
-      "type": "paragraph",
-      "text": "Your queries will be answered quickly and effectively. We handle application prep, filing, and allotment. All it takes 10 – 15 Working Days*."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively. We handle application prep, filing, and allotment. All it takes 10 – 15 Working Days*."
+      ]
     },
     {
       "type": "heading",

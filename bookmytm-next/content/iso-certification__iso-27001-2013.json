@@ -31,28 +31,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Certified!"
-    },
-    {
-      "type": "paragraph",
-      "text": "ISO 27001 Experts"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "What is ISO 27001:2022 – Information Security Management System (ISMS)"
     },
@@ -75,28 +53,6 @@
     {
       "type": "paragraph",
       "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Certified!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fast & Professional"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -159,7 +115,7 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Document Required for ISO 27001:2022 Certification"
     },
     {
@@ -200,7 +156,7 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Frequently Asked Questions (FAQs) – ISO/IEC 27001:2022 Certification"
     },
     {
@@ -395,11 +351,6 @@
     {
       "type": "paragraph",
       "text": "ISO 27001 provides a repeatable and verifiable assurance mechanism that the organization’s most valuable asset—information—is adequately protected."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Explore Other ISO Services"
     }
   ]
 }

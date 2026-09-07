@@ -35,23 +35,6 @@
       "text": "Book Hearing for Rs. 5000"
     },
     {
-      "type": "paragraph",
-      "text": "Get started in minutes"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "What is Trademark Objection Show Cause Hearing?"
@@ -63,11 +46,6 @@
     {
       "type": "paragraph",
       "text": "Generally, the hearing date is informed via mail or physical copy. However, it is advisable to keep watching the trademark status every 10 days once the status shows ‘Ready for Show Cause Hearing’."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Related Services"
     },
     {
       "type": "heading",
@@ -94,19 +72,6 @@
     {
       "type": "paragraph",
       "text": "Legal Representation"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -137,13 +102,20 @@
       "text": "Documents Required"
     },
     {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Other Supporting Documents Documents such as Bills, Receipts, registration Certificates, Advertisement materials, P&L Account Statements, etc. in order to prove the usage of the mark applied for."
+      ]
+    },
+    {
       "type": "heading",
       "level": 4,
       "text": "Application Number"
     },
     {
       "type": "paragraph",
-      "text": "The specific Trademark Application Number."
+      "text": "Trademark Application Number"
     },
     {
       "type": "heading",
@@ -152,7 +124,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Duly signed to authorize our attorney."
+      "text": "Duly signed Power of Attorney from Applicant"
     },
     {
       "type": "heading",
@@ -161,16 +133,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Evidence of usage if applicable."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Supporting Docs"
-    },
-    {
-      "type": "paragraph",
-      "text": "Invoices, Bills, Ads, P&L Statements proving usage."
+      "text": "If the mark is being in use"
     },
     {
       "type": "heading",
@@ -179,30 +142,48 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Step 01 · Register & Pay"
     },
     {
-      "type": "paragraph",
-      "text": "Select package, fill form & make payment."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Consultation, Drafting POA & Affidavit."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Hearing"
+      "level": 3,
+      "text": "Step 02 · We Will Help"
     },
     {
-      "type": "paragraph",
-      "text": "Experienced Attorney appears for you."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Provide the Application Number & Examination Report issued for your TM.",
+        "Provide details & upload documents required for Trademark Objection Show Cause Hearing",
+        "Know the grounds of objection by registry",
+        "Drafting of Power of Attorney",
+        "Drafting of User Affidavit (if applicable)",
+        "Receipt of Signed POA and User Affidavit from Customer"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Hearing"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Experienced Attorney from BookMyTM will appear for your Trademark Objection Show Cause Hearing",
+        "All it takes 4 working days* *Subjected to Registry Processing Time"
+      ]
     },
     {
       "type": "heading",
@@ -212,39 +193,25 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 1"
+      "text": "Hearing Process"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Consultation on grounds of objection",
-        "Discussing stands & Drafting POA"
+        "It is very important to the applicant to do not leave the hearing unattended once the trademark hearing date is issued, if do so may end up in refusal of Trademark Application filed without going into merit of the Trademark Application. Normally, an applicant is awarded 3 Trademark Objection Show Cause Hearing to defend the Objections in their Trademark Application. If the applicant is not comfortable with the hearing date due to any valid reasons, he can seeks more time for the same by filing Extension of Time, in a prescribed application format with a Fees of 900/- by online."
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 2 - 3"
+      "text": "Trademark Objection Show Cause Hearing Jurisdictions"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Receipt of Notarized POA & Affidavit",
-        "Finalizing submission strategy"
-      ]
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Day 4"
-    },
-    {
-      "type": "list",
-      "ordered": false,
-      "items": [
-        "Assigning Attorney to Attend Hearing"
+        "Hearing on Trademark application will takes place at Chennai, Mumbai, Ahmedabad, Delhi and Kolkota according to the prescribed jurisdictions of each registry and states."
       ]
     },
     {

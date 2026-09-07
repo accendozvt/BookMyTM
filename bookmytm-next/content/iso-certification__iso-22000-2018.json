@@ -40,19 +40,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "What is ISO 22000:2018?"
     },
@@ -75,28 +62,6 @@
     {
       "type": "paragraph",
       "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Certified!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fast & Professional"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -241,7 +206,7 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "The Process of ISO Certification"
     },
     {
@@ -446,11 +411,6 @@
     {
       "type": "paragraph",
       "text": "ISO 22000 ensures that the organization not only produces safe food today but has the structured capability to sustain and continually improve that safety tomorrow."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Explore Other ISO Services"
     }
   ]
 }

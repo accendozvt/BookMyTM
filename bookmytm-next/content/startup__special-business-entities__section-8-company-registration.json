@@ -27,9 +27,6 @@
       "text": "Apply Now for Rs.20,000"
     },
     {
-      "type": "form"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "Benefits of Section 8 Company Registration"
@@ -65,27 +62,88 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register a Section 8 Company Online"
+      "text": "Documents Required for Registration of a Section 8 (Charitable) company"
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Documents Required for Registration of a Section 8 (Charitable) company"
+      "text": "PAN Card"
     },
     {
-      "type": "list",
-      "ordered": true,
-      "items": [
-        "PAN Card PAN Card of all Members and Directors",
-        "Passport Foreign Nationals must provide a valid passport.",
-        "Photograph Latest Passport size photographs of all Members and Directors",
-        "Identity Proof Voters ID/ Passport / Driving License of all Members and Directors",
-        "Address Proof Telephone Bill / Electricity Bill / Latest Bank Account Statement of Members and Directors",
-        "Business Address Proof Electricity Bill / Telephone Bill of the registered office address in India.",
-        "No Objection Certificate NOC obtained from the Owner/s of registered office.",
-        "Rental agreement Rental Agreement of the office if it is rented",
-        "Statement of Income and Expenditure Estimated statement of Income and Expenditure for the next three years"
-      ]
+      "type": "paragraph",
+      "text": "PAN Card of all Members and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Passport"
+    },
+    {
+      "type": "paragraph",
+      "text": "Foreign Nationals must provide a valid passport."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photograph"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Passport size photographs of all Members and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Identity Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Voters ID/ Passport / Driving License of all Members and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Telephone Bill / Electricity Bill / Latest Bank Account Statement of Members and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Business Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electricity Bill / Telephone Bill of the registered office address in India."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "No Objection Certificate"
+    },
+    {
+      "type": "paragraph",
+      "text": "NOC obtained from the Owner/s of registered office."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Rental agreement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rental Agreement of the office if it is rented"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Statement of Income and Expenditure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Estimated statement of Income and Expenditure for the next three years"
     },
     {
       "type": "heading",
@@ -94,7 +152,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Build a Unique Identity"
     },
     {
@@ -107,7 +165,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Suffix"
     },
     {
@@ -116,7 +174,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Constitution Type"
     },
     {
@@ -126,16 +184,11 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register Online"
-    },
-    {
-      "type": "heading",
-      "level": 2,
       "text": "Register your Section 8 Company in 3 Easy Steps"
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 01"
     },
     {
@@ -153,7 +206,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 02"
     },
     {
@@ -175,7 +228,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 03"
     },
     {
@@ -197,7 +250,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 01 - 02"
     },
     {
@@ -212,7 +265,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 03 - 06"
     },
     {
@@ -226,7 +279,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 07 - 10"
     },
     {
@@ -240,7 +293,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 11 - 17"
     },
     {
@@ -254,7 +307,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 18 – 20"
     },
     {
@@ -268,7 +321,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 21 - 28"
     },
     {

@@ -44,7 +44,9 @@ export function splitHero(blocks: Block[]) {
     // price: any heading/paragraph mentioning Rs. within the first 15 blocks
     if (!price && i < 15 && (b.type === 'heading' || b.type === 'paragraph')) {
       const m = b.text.match(PRICE_RE);
-      if (m && /apply|register|online|now|get|start/i.test(b.text)) price = 'Rs. ' + m[1].replace(/,/g, ',');
+      // "File for Rs. 2800" and "Book Hearing for Rs. 5000" are price CTAs too;
+      // without book|file they yielded no price and rendered as bare headings.
+      if (m && /apply|register|online|now|get|start|book|file/i.test(b.text)) price = 'Rs. ' + m[1].replace(/,/g, ',');
     }
   });
 
@@ -63,7 +65,9 @@ export function splitHero(blocks: Block[]) {
       heroDone = true;
     }
     if ((b.type === 'paragraph' || b.type === 'heading') && isBoilerplate(b.text)) continue;
-    if (b.type === 'heading' && PRICE_RE.test(b.text) && /apply|register|online/i.test(b.text)) continue;
+    // Every price CTA heading is consumed here - it feeds the hero badge, the
+    // lead form and the Service offer, and is never body content.
+    if (b.type === 'heading' && PRICE_RE.test(b.text) && /apply|register|online|book|file|now/i.test(b.text)) continue;
     if (b.type === 'cta' || b.type === 'form' || b.type === 'map') continue;
     if (b.type === 'heading' && b.level === 1) continue;
     body.push(b);
@@ -73,49 +77,113 @@ export function splitHero(blocks: Block[]) {
 
 type Section = { heading: string | null; blocks: Block[] };
 
+/**
+ * Does the heading at `i` open a section? Always for h2 and for an FAQ title.
+ * Also for an h3 whose first following heading is deeper (h4+): that h3 is a
+ * parent, not a card. Without this rule, pages that titled their sub-sections
+ * with h3 — "Benefits of ISO Registration", "Document Required for ISO 9001" —
+ * collapsed into one section: every h3 title rendered as a bare orphan line and
+ * all the h4 cards from every sub-section merged into a single grid.
+ */
+function startsSection(blocks: Block[], i: number): boolean {
+  const b = blocks[i];
+  if (b.type !== 'heading') return false;
+  if (b.level === 2) return true;
+  if (b.level <= 3 && /frequently asked|faq/i.test(b.text)) return true;
+  if (b.level === 3) {
+    for (let j = i + 1; j < blocks.length; j++) {
+      const n = blocks[j];
+      if (n.type === 'heading') return n.level > 3;
+    }
+  }
+  return false;
+}
+
 function groupSections(blocks: Block[]): Section[] {
   const sections: Section[] = [];
   let cur: Section = { heading: null, blocks: [] };
-  for (const b of blocks) {
-    const isFaqHeading = b.type === 'heading' && b.level <= 3 && /frequently asked|faq/i.test(b.text);
-    if (b.type === 'heading' && (b.level === 2 || isFaqHeading)) {
+  blocks.forEach((b, i) => {
+    if (startsSection(blocks, i)) {
       if (cur.heading || cur.blocks.length) sections.push(cur);
-      cur = { heading: b.text, blocks: [] };
+      cur = { heading: (b as { text: string }).text, blocks: [] };
     } else {
       cur.blocks.push(b);
     }
-  }
+  });
   if (cur.heading || cur.blocks.length) sections.push(cur);
   return sections;
 }
 
-type Card = { title: string; text: string };
+/**
+ * `items` keeps a list as a list. They used to be joined into the text with
+ * " · ", which turned Day 01's six process steps into one run-on line and lost
+ * the list markup that assistants and screen readers read as discrete steps.
+ */
+type Card = { title: string; level: number; text: string; items?: string[] };
 
-/** Detect runs of (h3/h4 heading + paragraphs) pairs → card grids */
-function detectCards(blocks: Block[]): { cards: Card[]; rest: Block[] } | null {
-  const cards: Card[] = [];
-  const rest: Block[] = [];
+type Segment = { kind: 'blocks'; blocks: Block[] } | { kind: 'cards'; cards: Card[] };
+
+/**
+ * Split a section's blocks, in order, into prose runs and card runs.
+ *
+ * A run of two or more (h3/h4 heading + paragraphs/lists) pairs becomes a card
+ * grid rendered where it occurs. The earlier version pulled every card out of
+ * the section and rendered them all after the prose, so a container heading
+ * like "Key Clauses and Implementation Depth" ended up as a bare line with its
+ * own clauses in a grid further down, mixed with cards from other containers.
+ * A lone pair stays as heading and text.
+ */
+function segment(blocks: Block[]): Segment[] {
+  const segs: Segment[] = [];
+  let plain: Block[] = [];
+  let run: { card: Card; src: Block[] }[] = [];
+  const flushPlain = () => {
+    if (plain.length) segs.push({ kind: 'blocks', blocks: plain });
+    plain = [];
+  };
+  const flushRun = () => {
+    if (run.length >= 2) {
+      flushPlain();
+      segs.push({ kind: 'cards', cards: run.map((r) => r.card) });
+    } else if (run.length === 1) {
+      plain.push(...run[0].src);
+    }
+    run = [];
+  };
   let i = 0;
   while (i < blocks.length) {
     const b = blocks[i];
     const next = blocks[i + 1];
     if (b.type === 'heading' && b.level >= 3 && (next?.type === 'paragraph' || next?.type === 'list')) {
       let text = '';
+      const items: string[] = [];
       let j = i + 1;
       while (j < blocks.length && (blocks[j].type === 'paragraph' || blocks[j].type === 'list')) {
         const nb = blocks[j];
         if (nb.type === 'paragraph') text += (text ? ' ' : '') + nb.text;
-        if (nb.type === 'list') text += (text ? ' ' : '') + nb.items.join(' · ');
+        if (nb.type === 'list') items.push(...nb.items);
         j++;
       }
-      cards.push({ title: b.text, text });
+      // A heading with an intro paragraph whose next heading is deeper is a
+      // container introducing its own cards, not the first card of the run.
+      const after = blocks[j];
+      const isContainer = after?.type === 'heading' && after.level > b.level && (blocks[j + 1]?.type === 'paragraph' || blocks[j + 1]?.type === 'list');
+      if (isContainer) {
+        flushRun();
+        plain.push(...blocks.slice(i, j));
+      } else {
+        run.push({ card: { title: b.text, level: b.level, text, ...(items.length ? { items } : {}) }, src: blocks.slice(i, j) });
+      }
       i = j;
     } else {
-      rest.push(b);
+      flushRun();
+      plain.push(b);
       i++;
     }
   }
-  return cards.length >= 2 ? { cards, rest } : null;
+  flushRun();
+  flushPlain();
+  return segs;
 }
 
 function toFaqItems(blocks: Block[]): FaqItem[] {
@@ -165,7 +233,31 @@ function SectionHeading({ text }: { text: string }) {
   );
 }
 
-function CardGrid({ cards }: { cards: Card[] }) {
+/** A card's body: its paragraph text, then its list as a real list. */
+function CardBody({ card, className = '' }: { card: Card; className?: string }) {
+  return (
+    <>
+      {card.text && <p className={`text-[15px] leading-relaxed text-gray-600 ${className}`}>{card.text}</p>}
+      {card.items && (
+        <ul className={`space-y-1.5 ${card.text ? 'mt-3' : className}`}>
+          {card.items.map((item, i) => (
+            <li key={i} className="flex items-start gap-2.5 text-[15px] leading-relaxed text-gray-600">
+              <span className="mt-[9px] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand" aria-hidden />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
+}
+
+/**
+ * `titleTag` is chosen by the section from the cards' depth, so cards that sit
+ * under a container heading nest beneath it (h4 under an h3) instead of
+ * reading as the container's siblings.
+ */
+function CardGrid({ cards, titleTag: Tag = 'h3' }: { cards: Card[]; titleTag?: HeadingTag }) {
   return (
     <div className="grid gap-5 sm:grid-cols-2">
       {cards.map((c, i) => (
@@ -174,8 +266,8 @@ function CardGrid({ cards }: { cards: Card[] }) {
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-surface text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white">
               <IconFor text={c.title} className="h-6 w-6" />
             </div>
-            <h3 className="mb-2 text-[17px] font-bold text-gray-900">{c.title}</h3>
-            <p className="text-[15px] leading-relaxed text-gray-600">{c.text}</p>
+            <Tag className="mb-2 text-[17px] font-bold text-gray-900">{c.title}</Tag>
+            <CardBody card={c} />
           </div>
         </Reveal>
       ))}
@@ -183,7 +275,7 @@ function CardGrid({ cards }: { cards: Card[] }) {
   );
 }
 
-function Timeline({ cards }: { cards: Card[] }) {
+function Timeline({ cards, titleTag: Tag = 'h3' }: { cards: Card[]; titleTag?: HeadingTag }) {
   return (
     <ol className="relative space-y-8 border-l-2 border-brand/20 pl-8">
       {cards.map((c, i) => (
@@ -191,20 +283,39 @@ function Timeline({ cards }: { cards: Card[] }) {
           <span className="absolute -left-[41px] flex h-6 w-6 items-center justify-center rounded-full bg-brand text-[11px] font-extrabold text-white ring-4 ring-brand-surface">
             {i + 1}
           </span>
-          <h3 className="text-[16px] font-bold text-gray-900">{c.title}</h3>
-          <p className="mt-1 text-[15px] leading-relaxed text-gray-600">{c.text}</p>
+          <Tag className="text-[16px] font-bold text-gray-900">{c.title}</Tag>
+          <CardBody card={c} className="mt-1" />
         </li>
       ))}
     </ol>
   );
 }
 
-function renderBasicBlock(b: Block, key: number, headingTag: 'h2' | 'h3' = 'h3') {
+type HeadingTag = 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
+/**
+ * Map source heading levels, in document order, to tags that never skip: the
+ * first becomes `base`, a deeper source level steps one down from its parent,
+ * a shallower one returns to the tag its own level last had.
+ */
+function clampLevels(levels: number[], base: number): HeadingTag[] {
+  const out: HeadingTag[] = [];
+  const stack: { level: number; tag: number }[] = [];
+  for (const lv of levels) {
+    while (stack.length && stack[stack.length - 1].level >= lv) stack.pop();
+    const tag = stack.length ? Math.min(6, stack[stack.length - 1].tag + 1) : base;
+    stack.push({ level: lv, tag });
+    out.push(`h${tag}` as HeadingTag);
+  }
+  return out;
+}
+
+function renderBasicBlock(b: Block, key: number, headingTag: HeadingTag = 'h3') {
   switch (b.type) {
     case 'heading': {
-      // In a section that has no <h2> of its own (the lead section, which sits
-      // directly under the page <h1>), an <h3> here skips a level. Render <h2>
-      // there instead — the class, and so the appearance, is identical.
+      // The tag is decided by the caller from the heading's depth within its
+      // section, so a container and the sub-headings under it keep their
+      // relationship without ever skipping a level.
       const Tag = headingTag;
       return (
         <Tag key={key} className="pt-2 text-lg font-bold text-gray-900 md:text-xl">
@@ -307,8 +418,26 @@ export default function Blocks({
         const imageBoxes = section.blocks.filter((b) => b.type === 'imageBox');
         const nonBoxes = section.blocks.filter((b) => b.type !== 'imageBox' && b.type !== 'faq');
         const inlineFaqs = section.blocks.filter((b) => b.type === 'faq') as Extract<Block, { type: 'faq' }>[];
-        const cardDetect = detectCards(nonBoxes);
+        const segments = segment(nonBoxes);
         const showImage = si === 0 && sectionImage;
+        // Heading tags are assigned in document order and clamped so no heading
+        // sits more than one level below the one before it: the first heading
+        // goes directly under the section title, a deeper source level nests one
+        // step down, a shallower one returns to its parent's step. Assigning from
+        // the section's shallowest level instead let an h4 card grid that came
+        // before the section's first h3 render as h4 straight after the h2.
+        const base = section.heading ? 3 : 2;
+        const order: number[] = [];
+        for (const s of segments) {
+          if (s.kind === 'blocks') {
+            for (const b of s.blocks) if (b.type === 'heading') order.push(b.level);
+          } else {
+            order.push(s.cards[0].level);
+          }
+        }
+        const tags = clampLevels(order, base);
+        let hi = 0;
+        const segTags = segments.map((s) => (s.kind === 'blocks' ? s.blocks.map((b) => (b.type === 'heading' ? tags[hi++] : 'h3')) : [tags[hi++]]));
 
         return (
           <section key={si}>
@@ -327,18 +456,21 @@ export default function Blocks({
                 />
               </Reveal>
             )}
-            <div className="space-y-4">{(cardDetect ? cardDetect.rest : nonBoxes).map((b, i) => renderBasicBlock(b, i, section.heading ? 'h3' : 'h2'))}</div>
-
-            {cardDetect &&
-              (isTimeline(cardDetect.cards) ? (
-                <div className="mt-8 rounded-3xl bg-brand-surface p-8">
-                  <Timeline cards={cardDetect.cards} />
-                </div>
-              ) : (
-                <div className="mt-8">
-                  <CardGrid cards={cardDetect.cards} />
-                </div>
-              ))}
+            <div className="space-y-8">
+              {segments.map((seg, gi) =>
+                seg.kind === 'blocks' ? (
+                  <div key={gi} className="space-y-4">
+                    {seg.blocks.map((b, i) => renderBasicBlock(b, i, segTags[gi][i]))}
+                  </div>
+                ) : isTimeline(seg.cards) ? (
+                  <div key={gi} className="rounded-3xl bg-brand-surface p-8">
+                    <Timeline cards={seg.cards} titleTag={segTags[gi][0]} />
+                  </div>
+                ) : (
+                  <CardGrid key={gi} cards={seg.cards} titleTag={segTags[gi][0]} />
+                ),
+              )}
+            </div>
 
             {imageBoxes.length > 0 && (
               <div className="mt-8 grid gap-5 sm:grid-cols-2">

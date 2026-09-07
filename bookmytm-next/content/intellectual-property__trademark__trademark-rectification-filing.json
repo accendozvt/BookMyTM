@@ -35,23 +35,6 @@
       "text": "Apply Now for Rs. 9000!"
     },
     {
-      "type": "paragraph",
-      "text": "Professional Filing Service"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "What is Trademark Rectification?"
@@ -71,79 +54,44 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Related Services"
-    },
-    {
-      "type": "paragraph",
-      "text": "Need expert assistance?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Apply Now for Rs. 9000!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Professional Filing Service"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "Documents Required"
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Applicant Info"
+      "level": 4,
+      "text": "Information of the Applicant"
     },
     {
       "type": "paragraph",
-      "text": "Name, Address and Nationality of each applicant."
+      "text": "Name, Address and Nationality of each applicant"
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Application Details"
+      "level": 4,
+      "text": "Details of the application"
     },
     {
       "type": "paragraph",
-      "text": "Trademark name and its specific application number."
+      "text": "Details of the application like trademark and its application number"
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 4,
       "text": "Grounds for Rectification"
     },
     {
       "type": "paragraph",
-      "text": "Valid reasons and significance for challenging the mark."
+      "text": "One who would like to file a rectification of trademark should furnish the grounds and significance of the rectification of trademark application."
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Power of Attorney"
+      "level": 4,
+      "text": "POA (Power Of Attorney)"
     },
     {
       "type": "paragraph",
-      "text": "To allow our attorneys to file on your behalf."
+      "text": "POA (Power Of Attorney is a legal document that allows attorney to file Trademark application on behalf of the applicant to Trademark Registry. Law professionals of BookMyTM will prepare the form after the receipt of documents."
     },
     {
       "type": "heading",
@@ -152,30 +100,49 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Step 01 · Register & Pay"
     },
     {
-      "type": "paragraph",
-      "text": "Select package, fill details & make payment."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Discussion, Drafting, and Preparation of Application."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Application Filed"
+      "level": 3,
+      "text": "Step 02 · We Will Help"
     },
     {
-      "type": "paragraph",
-      "text": "Filing completed in 15-20 working days*."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Discussion on the stands for Trademark Rectification",
+        "Provide details & upload documents required for Trademark Rectification",
+        "Drafting of Documents and POA",
+        "Sending Drafted documents and POA for getting signed from Applicant",
+        "Receipt of Signed Documents and POA",
+        "Preparation of Application",
+        "Filing of Trademark Rectification Application"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Application Filed"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your Trademark Rectification Filed Successfully",
+        "All it takes 15 – 20 Working Days* *Subjected to Government Processing Time"
+      ]
     },
     {
       "type": "heading",
@@ -185,42 +152,46 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 1 - 5"
+      "text": "Day 1 – 5"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
         "Collection of Information",
-        "Collection & Review of Documents"
+        "Collection of Required Documents",
+        "Review of Documents and Information Provided"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 6 - 15"
+      "text": "Day 6 – 15"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Finalizing stands for Rectification",
-        "Drafting Documents & POA",
-        "Getting signed documents from Applicant"
+        "Discussion on Stands for Rectification with applicant",
+        "Finalizing stands for rectification and conditions",
+        "Drafting of Documents and Power of Attorney",
+        "Sending Documents and POA for getting signed"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 15 - 20"
+      "text": "Day 15 – 20"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Preparation by experienced attorney",
-        "Filing of Rectification Application",
-        "*Subject to Govt Processing Time"
+        "Receipt of Signed Documents & POA",
+        "Preparation of Application by an experienced attorney",
+        "Filing of Trademark Rectification Application",
+        "Your Trademark Rectification Application Filed Successfully",
+        "*Subjected to Government Processing Time"
       ]
     },
     {

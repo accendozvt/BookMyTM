@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { SITE } from '@/lib/site';
 
@@ -8,11 +9,18 @@ export default function PageHero({
   lead,
   price,
   crumbs,
+  aside,
 }: {
   title: string;
   lead?: string;
   price?: string;
   crumbs: Crumb[];
+  /**
+   * Rendered to the right of the title on large screens, beneath it on small.
+   * The service pages put their lead form here so the body below can run the
+   * full width instead of sharing it with a sticky sidebar.
+   */
+  aside?: ReactNode;
 }) {
   return (
     <section className="hero-bg relative overflow-hidden rounded-b-[3rem]">
@@ -41,6 +49,7 @@ export default function PageHero({
           </ol>
         </nav>
 
+        <div className={aside ? 'grid gap-10 lg:grid-cols-[minmax(0,1fr),400px] lg:items-start' : ''}>
         <div className="max-w-3xl">
           <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl">{title}</h1>
           {lead && <p className="mt-5 text-lg leading-relaxed text-green-100/90 md:text-xl">{lead}</p>}
@@ -75,6 +84,8 @@ export default function PageHero({
               {SITE.phone1}
             </a>
           </div>
+        </div>
+        {aside && <div className="lg:pt-1">{aside}</div>}
         </div>
       </div>
     </section>

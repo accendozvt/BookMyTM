@@ -27,19 +27,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Register Online"
-    },
-    {
-      "type": "paragraph",
-      "text": "Get started in minutes"
-    },
-    {
-      "type": "paragraph",
-      "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "Why Convert?"
     },
@@ -50,23 +37,6 @@
     {
       "type": "paragraph",
       "text": "For converting a proprietorship firm to Private Limited Company, promoters of the company must have enter to an agreement which is to be made for selling the business. The conversion from proprietorship to Private Limited Company must have clearly mentioned in the Memorandum of Association as ‘Takeover of a proprietorship firm’."
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Register Online"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fast & Secure Process"
-    },
-    {
-      "type": "paragraph",
-      "text": "Need expert assistance?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Available on WhatsApp"
     },
     {
       "type": "heading",
@@ -139,16 +109,16 @@
     },
     {
       "type": "paragraph",
-      "text": "Aadhaar/Voter ID/Driving License of Directors"
+      "text": "Aadhaar card and Voter ID/ Passport/ Driving License of Shareholders and Directors"
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Address Proof"
+      "text": "Director’s Address Proof"
     },
     {
       "type": "paragraph",
-      "text": "Latest Utility Bill/Bank Statement of Directors"
+      "text": "Latest Telephone Bill /Electricity Bill/ Bank Account Statement of Shareholders and Directors"
     },
     {
       "type": "heading",
@@ -157,25 +127,25 @@
     },
     {
       "type": "paragraph",
-      "text": "Passport size photo of Shareholders and Directors"
+      "text": "Latest Passport size photograph of Shareholders and Directors."
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Business Address"
+      "text": "Business Address Proof"
     },
     {
       "type": "paragraph",
-      "text": "Latest Utility Bill of registered office address"
+      "text": "Latest Electricity Bill/ Telephone Bill of the registered office address"
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "NOC"
+      "text": "NOC from owner"
     },
     {
       "type": "paragraph",
-      "text": "No Objection Certificate from owner of office"
+      "text": "No Objection Certificate to be obtained from the owner(s) of registered office"
     },
     {
       "type": "heading",
@@ -184,7 +154,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Rent Agreement of registered office (if any)"
+      "text": "Rent Agreement of the registered office should be provided if any"
     },
     {
       "type": "heading",
@@ -193,7 +163,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Notarized documents for NRI/Foreign Nationals"
+      "text": "In case of NRI or Foreign National, documents of director (s) must be notarized"
     },
     {
       "type": "heading",
@@ -225,30 +195,47 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Fill Form"
+      "level": 3,
+      "text": "Step 01 · Fill up the registration form"
     },
     {
-      "type": "paragraph",
-      "text": "Select package, fill form in 10 mins & make payment."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Expert Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Consultation, DSC Procurement, Name Application & Drafting."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Incorporation"
+      "level": 3,
+      "text": "Step 02 · BookMyTM is Here to Help"
     },
     {
-      "type": "paragraph",
-      "text": "Certificate of Incorporation, PAN & TAN Application."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Provide details & upload documents required for Pvt. Ltd Company registration",
+        "Procurement of Digital Signatures (DSC)",
+        "Application for company name registration",
+        "Documents drafting including MOA and AOA"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Your Private Limited Company is incorporated."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Certificate of Incorporation",
+        "Application for PAN and TAN",
+        "All it takes 10 to 16 working days*. *Subjected to Government Processing Time."
+      ]
     },
     {
       "type": "heading",
@@ -258,53 +245,74 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 1 - 2"
+      "text": "Day 1 – 2"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Collection & Review of Documents",
+        "Collection of Information",
+        "Collection of required documents (Scanned copies)",
+        "Review of documents and information provided",
         "Application for Digital Signature (DSC)"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 3 - 7"
+      "text": "Day 3 – 7"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Name Availability Check & Finalization",
-        "Drafting MoA, AoA & Other documents"
+        "Checking the availability of Name",
+        "Finalizing the name with the directors",
+        "Drafting MoA, AoA & Other required documents",
+        "Review and confirmation form directors"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 8 - 10"
+      "text": "Day 8 – 10"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Name Reservation (SPICe)",
-        "Filing Registration, DIN, PAN & TAN App"
+        "Name Reservation under SPICe",
+        "Filing company registration application",
+        "DIN allotment application",
+        "Application for PAN and TAN of company"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 11 - 16"
+      "text": "Day 11 – 13"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Private Limited Company Incorporated",
-        "*Subject to Govt Processing Time"
+        "Name reservation application under SPICe",
+        "Filing company registration application",
+        "DIN allotment application",
+        "Application for PAN and TAN of company"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Day 14 – 16"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your Private Limited Company is incorporated.",
+        "*Subjected to Government Processing Time"
       ]
     },
     {

@@ -24,36 +24,84 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Documents required for FSSAI Registration Process"
     },
     {
-      "type": "list",
-      "ordered": false,
-      "items": [
-        "Identity Proof: An identity proof that contains a photograph",
-        "Photograph: A passport sized photograph",
-        "Proof of address: Telephone/ Electricity bill of the office address",
-        "IE Code: Import/export code if any",
-        "List of Directors/Partners: A list of directors or partners",
-        "Certificate of Incorporation: A certificate of incorporation (in case of LLP or Company)",
-        "MoA and AoA: The MoA and AoA of the business (in case of LLP or Company)",
-        "NOC: No Objection Certificate from the local municipality/Local body",
-        "For manufacturing units, besides the above-listed documents, the following are also required: The blueprint of warehouse, plant, etc. A list of all machinery Report of a water test List of all food categories"
-      ]
+      "type": "heading",
+      "level": 4,
+      "text": "Identity Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "An identity proof that contains a photograph"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photograph"
+    },
+    {
+      "type": "paragraph",
+      "text": "A passport sized photograph"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Proof of address"
+    },
+    {
+      "type": "paragraph",
+      "text": "Telephone/ Electricity bill of the office address"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "IE Code"
+    },
+    {
+      "type": "paragraph",
+      "text": "Import/export code if any"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "List of Directors/Partners"
+    },
+    {
+      "type": "paragraph",
+      "text": "A list of directors or partners"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Certificate of Incorporation"
+    },
+    {
+      "type": "paragraph",
+      "text": "A certificate of incorporation (in case of LLP or Company)"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "MoA and AoA"
+    },
+    {
+      "type": "paragraph",
+      "text": "The MoA and AoA of the business (in case of LLP or Company)"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "NOC"
+    },
+    {
+      "type": "paragraph",
+      "text": "No Objection Certificate from the local municipality/Local body"
+    },
+    {
+      "type": "paragraph",
+      "text": "For manufacturing units, besides the above-listed documents, the following are also required: The blueprint of warehouse, plant, etc. A list of all machinery Report of a water test List of all food categories"
     },
     {
       "type": "heading",
@@ -62,30 +110,39 @@
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Fill up the registration form"
     },
     {
-      "type": "paragraph",
-      "text": "Our Experts will suggest you the type of License you require. Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Our Experts will suggest you the type of License you require. Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Make payment"
     },
     {
-      "type": "paragraph",
-      "text": "Make payment through secure payment gateway."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "BookMyTM is Here to Help"
     },
     {
-      "type": "paragraph",
-      "text": "Your queries will be answered quickly and effectively. Provide details & upload documents required for FSSAI registration. Drafting and Filing of Application. We facilitate the follow up required by the Food Safety Department. Allotment of FSSAI License. Once your application is approved, a digital copy of license mailed to your mail id and hard copy mailed to your registered office address. All it takes 25 – 30 working days*."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively. Provide details & upload documents required for FSSAI registration. Drafting and Filing of Application. We facilitate the follow up required by the Food Safety Department. Allotment of FSSAI License. Once your application is approved, a digital copy of license mailed to your mail id and hard copy mailed to your registered office address. All it takes 25 – 30 working days*."
+      ]
     },
     {
       "type": "heading",

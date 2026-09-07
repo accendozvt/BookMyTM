@@ -35,23 +35,6 @@
       "text": "Apply Now for Rs. 6400!"
     },
     {
-      "type": "paragraph",
-      "text": "Get started in minutes"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "What is Trademark Registration?"
@@ -84,28 +67,6 @@
     {
       "type": "paragraph",
       "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Apply Now for Rs. 6400!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Get started in minutes"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -156,16 +117,16 @@
     {
       "type": "heading",
       "level": 4,
-      "text": "Address Proof"
+      "text": "Address Proof of Applicant"
     },
     {
       "type": "paragraph",
-      "text": "Certificate of Registration or Valid Photo ID proof."
+      "text": "Certificate of Registration for other than individual, if an individual applicant – Driving License/ Aadhaar Card/ Passport or any other valid Photo ID proof issued by State/Central Governments."
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Brand Name & Logo"
+      "text": "Brand Name and Logo"
     },
     {
       "type": "paragraph",
@@ -178,7 +139,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Documentary proof if specific user date is claimed."
+      "text": "If a specific user date is to be claimed, the user affidavit is necessary for the application. To claim any specific date of usage, it requires to submit documentary proof such as invoices, registration certificates etc, where the document is reflected with the brand name/the mark has to be registered."
     },
     {
       "type": "heading",
@@ -187,16 +148,16 @@
     },
     {
       "type": "paragraph",
-      "text": "Certificate for 50% rebate on Government fee."
+      "text": "Partnership Firms, Body Corporate (other than individual) shall provide a certificate of registration under MSME (Udyam) or Start-up India Scheme to avail 50% rebate on the Government fee"
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "POA"
+      "text": "POA (Power Of Attorney)"
     },
     {
       "type": "paragraph",
-      "text": "Power of Attorney prepared by our professionals."
+      "text": "POA (Power Of Attorney is a legal document that allows attorney to file Trademark application on behalf of the applicant to Trademark Registry. The form is prepared by Law professionals of BookMyTM after the receipt of documents."
     },
     {
       "type": "heading",
@@ -205,30 +166,48 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Fill Form"
+      "level": 3,
+      "text": "Step 01"
     },
     {
-      "type": "paragraph",
-      "text": "Select package & fill details in 10 mins."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Expert Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Consultation, Search Report & Drafting."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Fill up the registration form",
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Filing"
+      "level": 3,
+      "text": "Step 02"
     },
     {
-      "type": "paragraph",
-      "text": "Preparation & Filing. Start using TM."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "BookMyTM is Here to Help Your queries will be answered quickly and effectively",
+        "Consultation for right Trademark Class",
+        "Provide details & upload documents required for Trademark Registration",
+        "Trademark Search Report",
+        "Drafting of Documents"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Preparation and Filing of Application Start using TM with your mark now.",
+        "All it takes 2 working days*",
+        "*Subjected to registry processing time."
+      ]
     },
     {
       "type": "heading",
@@ -244,9 +223,12 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "Document Collection",
-        "Class Consultation",
-        "Search Report & Drafting"
+        "Collection of Information",
+        "Collection of required documents (Scanned copies)",
+        "Review of documents and information provided",
+        "Consultation for choosing right Trademark Class",
+        "Trademark Search Report",
+        "Drafting of Documents"
       ]
     },
     {
@@ -258,9 +240,12 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "Client Approval",
-        "Signed POA",
-        "Filing Application"
+        "Approval from client",
+        "Receipt of Signed POA from client",
+        "Preparation and Filing of TM Application",
+        "Start Using TM with your applied Mark",
+        "All it takes 2 working days*",
+        "*Subjected to Registry Processing Time."
       ]
     },
     {
@@ -458,11 +443,6 @@
     {
       "type": "paragraph",
       "text": "Prevents aggregators or rivals from bidding on your resort or houseboat brand name in Google Ads."
-    },
-    {
-      "type": "heading",
-      "level": 2,
-      "text": "FAQs on Trademark Registration in Kerala"
     }
   ]
 }

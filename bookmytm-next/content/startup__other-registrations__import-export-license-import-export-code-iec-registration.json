@@ -24,19 +24,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "Benefits of Import Export Code"
     },
@@ -78,19 +65,53 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Documents Required for Register for IEC Online"
     },
     {
-      "type": "list",
-      "ordered": false,
-      "items": [
-        "PAN Card: PAN card of the applicant or the Company",
-        "Address Proof: Rent Agreement/ Latest Electricity Bill/Telephone Bill/Sale Deed in the name of Applicant",
-        "Cancelled Cheque: A cancelled cheque of current account bearing entity’s pre-printed name or Bank Certificate",
-        "PAN card of Director or Partner: For a Partnership/Company, PAN card of the Director/Partner is a must",
-        "Certificate of Registration: The Entity should provide registration certificate with MoA- AoA / LLP Agreement, or a Partnership Deed as applicable"
-      ]
+      "type": "heading",
+      "level": 4,
+      "text": "PAN Card"
+    },
+    {
+      "type": "paragraph",
+      "text": "PAN card of the applicant or the Company"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rent Agreement/ Latest Electricity Bill/Telephone Bill/Sale Deed in the name of Applicant"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Cancelled Cheque"
+    },
+    {
+      "type": "paragraph",
+      "text": "A cancelled cheque of current account bearing entity’s pre-printed name or Bank Certificate"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "PAN card of Director or Partner"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a Partnership/Company, PAN card of the Director/Partner is a must"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Certificate of Registration"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Entity should provide registration certificate with MoA- AoA / LLP Agreement, or a Partnership Deed as applicable"
     },
     {
       "type": "heading",
@@ -113,30 +134,39 @@
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Fill up the registration form"
     },
     {
-      "type": "paragraph",
-      "text": "Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Make payment"
     },
     {
-      "type": "paragraph",
-      "text": "Make payment through secure payment gateway."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "BookMyTM is Here to Help"
     },
     {
-      "type": "paragraph",
-      "text": "Your queries will be answered quickly and effectively. We handle application prep, filing, and allotment. All it takes 4 – 5 working days*."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively. We handle application prep, filing, and allotment. All it takes 4 – 5 working days*."
+      ]
     },
     {
       "type": "heading",

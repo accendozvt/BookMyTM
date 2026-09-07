@@ -33,19 +33,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "Benefits of Udyam Registration"
     },
@@ -123,20 +110,62 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Documents Required for Udyam Registration"
     },
     {
-      "type": "list",
-      "ordered": false,
-      "items": [
-        "Business Address Proof: Electricity / Telephone bill of the Registered Office",
-        "GST Certificate: GST Registration Certificate (If Registered)",
-        "PAN Card: PAN Card Copy of Entity",
-        "Proof of Entity: Partnership Deed/ MoA and AoA",
-        "PRC (for Schedule III): For firms that are listed in Schedule -III of the Industrial Licensing Exemption Notification, no Industrial license is needed. Every other enterprise must obtain it for the PRC (Provisional Registration Certificate) application.",
-        "Statutory Administrative Clearences: For the registration and document process, all statutory and administrative clearances need to be obtained such an NOC from pollution board to prove that no restrictions are being violated."
-      ]
+      "type": "heading",
+      "level": 4,
+      "text": "Business Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electricity / Telephone bill of the Registered Office"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "GST Certificate"
+    },
+    {
+      "type": "paragraph",
+      "text": "GST Registration Certificate (If Registered)"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "PAN Card"
+    },
+    {
+      "type": "paragraph",
+      "text": "PAN Card Copy of Entity"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Proof of Entity"
+    },
+    {
+      "type": "paragraph",
+      "text": "Partnership Deed/ MoA and AoA"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "PRC (for Schedule III)"
+    },
+    {
+      "type": "paragraph",
+      "text": "For firms that are listed in Schedule -III of the Industrial Licensing Exemption Notification, no Industrial license is needed. Every other enterprise must obtain it for the PRC (Provisional Registration Certificate) application."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Statutory Administrative Clearences"
+    },
+    {
+      "type": "paragraph",
+      "text": "For the registration and document process, all statutory and administrative clearances need to be obtained such an NOC from pollution board to prove that no restrictions are being violated."
     },
     {
       "type": "heading",
@@ -181,30 +210,39 @@
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Fill up the registration form"
     },
     {
-      "type": "paragraph",
-      "text": "Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Make payment"
     },
     {
-      "type": "paragraph",
-      "text": "Make payment through secure payment gateway."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "BookMyTM is Here to Help"
     },
     {
-      "type": "paragraph",
-      "text": "Your queries will be answered quickly and effectively. Provide details & upload documents required for Udyam (MSME) registration. Review of Documents and Information provided. Application for Udyam (MSME) Registration. Your Udyam Registration Certificate Generated. All this in 15 – 20 working days*."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively. Provide details & upload documents required for Udyam (MSME) registration. Review of Documents and Information provided. Application for Udyam (MSME) Registration. Your Udyam Registration Certificate Generated. All this in 15 – 20 working days*."
+      ]
     },
     {
       "type": "heading",

@@ -23,9 +23,6 @@
       "text": "Apply Now for Rs. 13500!"
     },
     {
-      "type": "form"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "Differences Between LLP and Private Limited Company"
@@ -122,26 +119,74 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register a LLP Online"
+      "text": "Documents Required for Registration of a LLP"
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Documents Required for Registration of a LLP"
+      "text": "PAN Card"
     },
     {
-      "type": "list",
-      "ordered": true,
-      "items": [
-        "PAN Card: PAN Card of all the partners",
-        "Passport: Foreign Nationals may provide Passport.",
-        "Address Proof of the designated Partners: Address Proof of all the designated partners (Aadhaar Card/ Voter ID / Passport/ Driving License or any other valid address proof issued by State/Central Governments)",
-        "Photograph: Latest Passport Size Photograph of all Partners.",
-        "Business Address Proof: Latest Electricity Bill/Telephone Bill of the Registered Office",
-        "NOC: NOC from the Owner of Office Buliding (If the proposed registered office premises is rented)",
-        "Rental Agreement: Rental agreement of the registered office if the office is rented",
-        "Notarization If any partner of the LLP is a foreign citizen, documents of that partner should be notarized or apostilled."
-      ]
+      "type": "paragraph",
+      "text": "PAN Card of all the partners"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Passport"
+    },
+    {
+      "type": "paragraph",
+      "text": "Foreign Nationals may provide Passport."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Address Proof of the designated Partners"
+    },
+    {
+      "type": "paragraph",
+      "text": "Address Proof of all the designated partners (Aadhaar Card/ Voter ID / Passport/ Driving License or any other valid address proof issued by State/Central Governments)"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photograph"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Passport Size Photograph of all Partners."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Business Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Electricity Bill/Telephone Bill of the Registered Office"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "NOC"
+    },
+    {
+      "type": "paragraph",
+      "text": "NOC from the Owner of Office Buliding (If the proposed registered office premises is rented)"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Rental Agreement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rental agreement of the registered office if the office is rented"
+    },
+    {
+      "type": "paragraph",
+      "text": "Notarization If any partner of the LLP is a foreign citizen, documents of that partner should be notarized or apostilled."
     },
     {
       "type": "heading",
@@ -150,7 +195,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Build a Unique Identity"
     },
     {
@@ -163,7 +208,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Mention Constitution Type on Your Brand Name"
     },
     {
@@ -173,16 +218,11 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register Online"
-    },
-    {
-      "type": "heading",
-      "level": 2,
       "text": "Register your LLP Firm in 3 Easy Steps"
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 01"
     },
     {
@@ -200,7 +240,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 02"
     },
     {
@@ -221,7 +261,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 03"
     },
     {
@@ -243,7 +283,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 1 – 2"
     },
     {
@@ -258,7 +298,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 3 – 4"
     },
     {
@@ -272,7 +312,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 5 - 10"
     },
     {
@@ -288,7 +328,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 11 - 13"
     },
     {
@@ -302,7 +342,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 11 - 13"
     },
     {

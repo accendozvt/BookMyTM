@@ -31,28 +31,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Certified!"
-    },
-    {
-      "type": "paragraph",
-      "text": "ISO 45001 Experts"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "What is ISO 45001:2018?"
     },
@@ -78,29 +56,7 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Certified!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fast & Professional"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Benefits of ISO 45001:2018 Certification"
     },
     {
@@ -141,7 +97,7 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Documents Required for ISO 45001:2018 Certification"
     },
     {
@@ -182,71 +138,101 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Register for ISO 45001:2018 in 3 Easy Steps"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Step 01 · Register & Pay"
     },
     {
-      "type": "paragraph",
-      "text": "Select any package suits your requirement. Fill up the form, which will take less than 10 minutes. Provide details & upload documents required for ISO 45001:2018 Certification. Make payment through secure payment gateway."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Your queries will be answered quickly and effectively. Consultation on Scope of Certification. Discussion on Quality Policy Vision and Mission of the organization. Preparation of documents and reports."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Certification Issued"
-    },
-    {
-      "type": "paragraph",
-      "text": "Issuance of ISO 45001:2018 Certificate. (All it takes 10 – 15 working days*)"
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form, which will take less than 10 minutes",
+        "Provide details & upload documents required for ISO 45001:2018 Certification",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
       "level": 3,
+      "text": "Step 02 · We Will Help"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Consultation on Scope of Certification",
+        "Discussion on Quality Policy Vision and Mission of the organization",
+        "Preparation of documents and reports"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Certification Issued"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Issuance of ISO 45001:2018 Certificate.",
+        "All it takes 10 – 15 working days* *Subjected to Certification Bodies’ processing time."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
       "text": "The Process of ISO Certification"
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Day 1-4"
+      "level": 3,
+      "text": "Day 1 – 4"
     },
     {
-      "type": "paragraph",
-      "text": "Collection of Information. Collection of required documents (Scanned copies). Review of documents and information provided. Consultation on scope of Certification."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Day 5-8"
-    },
-    {
-      "type": "paragraph",
-      "text": "Drafting of Documents. Approval from client."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Day 9-15"
-    },
-    {
-      "type": "paragraph",
-      "text": "Issuance of ISO 45001:2018 Certification (*Subjected Certification Body's Processing Time)."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Collection of Information",
+        "Collection of required documents (Scanned copies)",
+        "Review of documents and information provided",
+        "Consultation on scope of Certification"
+      ]
     },
     {
       "type": "heading",
       "level": 3,
+      "text": "Day 5 – 8"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Drafting of Documents",
+        "Approval from client"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Day 9 – 15"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Issuance of ISO 45001:2018 Certification",
+        "*Subjected Certification Body’s Processing Time."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
       "text": "Frequently Asked Questions"
     },
     {
@@ -419,11 +405,6 @@
     {
       "type": "paragraph",
       "text": "ISO 45001, therefore, transitions safety from being a necessary cost to a demonstrable commitment to human capital and a strategic management tool."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Explore Other ISO Services"
     }
   ]
 }

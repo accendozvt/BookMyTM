@@ -27,9 +27,6 @@
       "text": "Apply Now for Rs. 14500!"
     },
     {
-      "type": "form"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "Benefits of One Person Company Registration"
@@ -65,25 +62,70 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register One Person Company Online"
+      "text": "Documents Required Registering a One Person Company Online."
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Documents Required Registering a One Person Company Online."
+      "text": "PAN Card"
     },
     {
-      "type": "list",
-      "ordered": true,
-      "items": [
-        "PAN Card PAN card of shareholder, nominee and directors if any",
-        "Identity Proof Aadhaar card/ Voters ID/ Passport/ Driving License or any other valid Identity proof issued by State/Central Governments of Shareholder, Nominee and Directors if any.",
-        "Directors Address Proof Latest telephone bill/ Electricity bill /Bank account statement of Share Holder, Nominee and Directors if any.",
-        "Photograph Latest passport size photograph of Shareholder, Nominee and Directors if any.",
-        "Business Address Proof Latest electricity bill/ Telephone bill of the registered office address.",
-        "NOC from Owner No objection certificate obtained from the owner/s of the registered office.",
-        "Rent Agreement Rent agreement of the registered office if the office is rented."
-      ]
+      "type": "paragraph",
+      "text": "PAN card of shareholder, nominee and directors if any"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Identity Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aadhaar card/ Voters ID/ Passport/ Driving License or any other valid Identity proof issued by State/Central Governments of Shareholder, Nominee and Directors if any."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Directors Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest telephone bill/ Electricity bill /Bank account statement of Share Holder, Nominee and Directors if any."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photograph"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest passport size photograph of Shareholder, Nominee and Directors if any."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Business Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest electricity bill/ Telephone bill of the registered office address."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "NOC from Owner"
+    },
+    {
+      "type": "paragraph",
+      "text": "No objection certificate obtained from the owner/s of the registered office."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Rent Agreement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rent agreement of the registered office if the office is rented."
     },
     {
       "type": "heading",
@@ -92,7 +134,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Build a Unique Identity"
     },
     {
@@ -105,7 +147,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Mention Constitution Type on Your Brand Name"
     },
     {
@@ -115,16 +157,11 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register Online"
-    },
-    {
-      "type": "heading",
-      "level": 2,
       "text": "Register a One Person Company in 3 easy steps."
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 01"
     },
     {
@@ -142,7 +179,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 02"
     },
     {
@@ -164,7 +201,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 03"
     },
     {
@@ -186,7 +223,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 1 – 2"
     },
     {
@@ -200,7 +237,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 3 – 8"
     },
     {
@@ -214,7 +251,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 9 – 12"
     },
     {
@@ -229,7 +266,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 13 - 18"
     },
     {

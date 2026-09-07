@@ -24,19 +24,6 @@
     },
     {
       "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
-      "type": "heading",
       "level": 2,
       "text": "Benefits of International Barcode Registration"
     },
@@ -114,30 +101,39 @@
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Fill up the registration form"
     },
     {
-      "type": "paragraph",
-      "text": "Select any package suits your requirement. Fill up the form which will take less than 10 minutes"
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement. Fill up the form which will take less than 10 minutes"
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "Make Payment"
     },
     {
-      "type": "paragraph",
-      "text": "Make payment through our secure payment gateway."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Make payment through our secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
+      "level": 3,
       "text": "BookMyTM is Here to Help"
     },
     {
-      "type": "paragraph",
-      "text": "Our experts will handle application preparation, filing, and follow-up for barcode allotment."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Our experts will handle application preparation, filing, and follow-up for barcode allotment."
+      ]
     },
     {
       "type": "heading",

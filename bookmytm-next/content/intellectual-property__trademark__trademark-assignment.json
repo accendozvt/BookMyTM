@@ -35,23 +35,6 @@
       "text": "Register for Rs. 9000!"
     },
     {
-      "type": "paragraph",
-      "text": "Get started in minutes"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "What is Trademark Assignment?"
@@ -63,11 +46,6 @@
     {
       "type": "paragraph",
       "text": "With a trademark assignment, the ownership of registered trademark changed to the assignee. Trademark Assignment can be made with or without transferring business goodwill. In case of assigning a registered trademark, the transaction required to be recorded in the register of trademarks."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Related Services"
     },
     {
       "type": "heading",
@@ -89,28 +67,6 @@
     {
       "type": "paragraph",
       "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Register for Rs. 9000!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Legal Transfer Service"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -200,31 +156,21 @@
       "text": "Documents Required"
     },
     {
-      "type": "heading",
-      "level": 4,
-      "text": "TM Certificate"
-    },
-    {
-      "type": "paragraph",
-      "text": "Copy of Registration Certificate."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Party Details"
-    },
-    {
-      "type": "paragraph",
-      "text": "Details of Assignor and Assignee."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Trademark Registration Certificate Copy of Trademark Registration Certificate",
+        "Details of the party Details of the Assignor and Assignee"
+      ]
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "NOC"
+      "text": "No Objection Certificate"
     },
     {
       "type": "paragraph",
-      "text": "No Objection Certificate from owner."
+      "text": "No Objection Certificate from the registered owner of Trademark"
     },
     {
       "type": "heading",
@@ -233,30 +179,47 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Step 01 · Register & Pay"
     },
     {
-      "type": "paragraph",
-      "text": "Select package, fill form in 10 mins & make payment."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Consultation, Drafting Agreement & Collecting Docs."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Assignment Filed"
+      "level": 3,
+      "text": "Step 02 · We Will Help"
     },
     {
-      "type": "paragraph",
-      "text": "Filed in 7-9 working days*. (Subject to Govt timelines)"
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Consultation for selecting right type of Assignment",
+        "Provide details & upload documents required for Trademark Assignment",
+        "Drafting of Documents & Agreements",
+        "Receipt of signed documents and Agreement by the parties",
+        "Preparation and filing of Trademark Assignment Application"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Assignment Filed"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your Assignment Agreement is filed",
+        "All it takes 7 – 9 Working Days* *Subjected to Government Processing Time"
+      ]
     },
     {
       "type": "heading",
@@ -266,40 +229,45 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 1 - 3"
+      "text": "Day 1 – 3"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Collection of Info & Docs",
-        "Finalizing terms & conditions"
+        "Collection of Information",
+        "Collection of required Documents",
+        "Discussion on type of Trademark Assignment Agreement",
+        "Finalizing terms and conditions"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 4 - 7"
+      "text": "Day 4 – 7"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Drafting Assignment Agreement",
-        "Receipt of signed documents"
+        "Drafting of Documents by professionals",
+        "Drafting of Trademark Assignment Agreement",
+        "Sending the documents and agreement to parties for getting signed",
+        "Receipt of signed documents and agreement"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 8 - 9"
+      "text": "Day 8 – 9"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Filing Assignment Application",
-        "*Subject to Govt Processing Time"
+        "Preparation and filing of Trademark Assignment Application",
+        "Your Assignment Agreement is filed",
+        "*Subjected to Government Processing Time"
       ]
     },
     {

@@ -187,9 +187,33 @@ export default async function Page({ params }: Props) {
   // on descriptionFor's fallback).
   const pageDescription = descriptionFor(slug, seo?.description || '');
 
+  // The lead form and the "why us" box sit beside the hero title rather than in
+  // a sidebar, so the body content below runs the full width of the page.
+  const heroAside =
+    !isHub && !isLegal ? (
+      <>
+        <LeadForm service={title} price={price || undefined} />
+        <div className="mt-5 rounded-3xl bg-white/95 p-6 shadow-xl ring-1 ring-gray-200/70">
+          {/* A label for the box, not a document section: as an h3 directly after
+              the h1 it registered as a skipped heading level on every service page. */}
+          <p className="mb-3 text-sm font-extrabold uppercase tracking-wide text-gray-700">Why BookMyTM?</p>
+          <ul className="space-y-2.5">
+            {['10,000+ trademarks filed', '100% digital process', 'Expert support at every step', 'Transparent pricing'].map((t) => (
+              <li key={t} className="flex items-center gap-2.5 text-sm font-medium text-gray-600">
+                <svg className="h-4 w-4 flex-shrink-0 stroke-brand" fill="none" strokeWidth={3} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                {t}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </>
+    ) : undefined;
+
   return (
     <>
-      <PageHero title={title} lead={heroLead || undefined} price={price || undefined} crumbs={crumbs} />
+      <PageHero title={title} lead={heroLead || undefined} price={price || undefined} crumbs={crumbs} aside={heroAside} />
 
       {isHub ? (
         <section className="bg-white">
@@ -236,25 +260,7 @@ export default async function Page({ params }: Props) {
       ) : (
         <section className="bg-white">
           <div className="container-site py-16 md:py-20">
-            <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr),380px]">
-              <Blocks blocks={body} sectionImage={serviceImageFor(path)} />
-              <aside className="lg:sticky lg:top-28">
-                <LeadForm service={title} price={price || undefined} />
-                <div className="mt-5 rounded-3xl border border-gray-100 bg-brand-surface p-6">
-                  <h3 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-gray-700">Why BookMyTM?</h3>
-                  <ul className="space-y-2.5">
-                    {['10,000+ trademarks filed', '100% digital process', 'Expert support at every step', 'Transparent pricing'].map((t) => (
-                      <li key={t} className="flex items-center gap-2.5 text-sm font-medium text-gray-600">
-                        <svg className="h-4 w-4 flex-shrink-0 stroke-brand" fill="none" strokeWidth={3} viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                        {t}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </aside>
-            </div>
+            <Blocks blocks={body} sectionImage={serviceImageFor(path)} />
           </div>
         </section>
       )}

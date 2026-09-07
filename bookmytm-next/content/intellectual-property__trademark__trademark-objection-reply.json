@@ -35,23 +35,6 @@
       "text": "File for Rs. 2800"
     },
     {
-      "type": "paragraph",
-      "text": "Expert Drafting Service"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "Purpose of Objection Reply"
@@ -63,11 +46,6 @@
     {
       "type": "paragraph",
       "text": "Failure to reply within the prescribed time can lead to rejection. A professionally drafted reply addresses these objections, arguing why your mark is distinctive and valid, allowing it to proceed to publication."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "Related Services"
     },
     {
       "type": "heading",
@@ -85,28 +63,6 @@
     {
       "type": "paragraph",
       "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "File for Rs. 2800"
-    },
-    {
-      "type": "paragraph",
-      "text": "Expert Drafting Service"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -152,7 +108,7 @@
     },
     {
       "type": "paragraph",
-      "text": "The specific Trademark Application Number."
+      "text": "Trademark Application Number"
     },
     {
       "type": "heading",
@@ -161,7 +117,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Required if original application wasn't filed by us."
+      "text": "Duly Signed POA (Power Of Attorney) is required, if the trademark application is not filed by BookMyTM."
     },
     {
       "type": "heading",
@@ -170,30 +126,47 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Fill up the registration form"
     },
     {
-      "type": "paragraph",
-      "text": "Select package, fill form & make payment."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Consultation, Analysis of Report & Drafting."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement. Fill up the form which will take less than 10 minutes."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Reply Filed"
+      "level": 3,
+      "text": "Make payment"
     },
     {
-      "type": "paragraph",
-      "text": "Filed within 4 working days*. (Subject to Registry)"
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Make payment through secure payment gateway."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "BookMyTM is Here to Help"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Provide the Application Number & Examination Report issued for your TM.",
+        "Provide details & upload documents required if any for filing Trademark Objection Reply",
+        "Know the grounds of objection by registry",
+        "Consultation for examination and search report",
+        "Drafting reply to objections on examination report",
+        "Filing of reply online by a registered attorney",
+        "Your Trademark Objection Reply is submitted!",
+        "All it takes 4 working days* *Subjected to Registry Processing Time"
+      ]
     },
     {
       "type": "heading",
@@ -209,21 +182,22 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "Consultation on grounds of objection",
-        "Discussing suitable reply strategy"
+        "Collection of Information",
+        "Consultation for grounds of objection raised by the registry",
+        "Discussing the suitable reply to the objection in the examination report"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 2 - 3"
+      "text": "Day 2 – 3"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Drafting of Legal Reply by Attorneys",
-        "Finalizing the reply with customer"
+        "Drafting of Reply for Objection by Experienced Layers",
+        "Finalizing the reply to be submitted with customer"
       ]
     },
     {
@@ -235,7 +209,7 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "Filing Objection Reply Online"
+        "Filing Trademark Objection Reply Online"
       ]
     },
     {

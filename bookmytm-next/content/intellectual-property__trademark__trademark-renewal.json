@@ -35,23 +35,6 @@
       "text": "Apply Now for Rs. 3500!"
     },
     {
-      "type": "paragraph",
-      "text": "Get started in minutes"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "What is Trademark Renewal?"
@@ -80,28 +63,6 @@
     {
       "type": "paragraph",
       "text": "Available on WhatsApp"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Apply Now for Rs. 3500!"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fast & Secure Process"
-    },
-    {
-      "type": "heading",
-      "level": 3,
-      "text": "Get Expert Advice"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fill the details below for a callback."
-    },
-    {
-      "type": "paragraph",
-      "text": "Request Callback"
     },
     {
       "type": "heading",
@@ -152,11 +113,11 @@
     {
       "type": "heading",
       "level": 4,
-      "text": "PAN Card"
+      "text": "PAN"
     },
     {
       "type": "paragraph",
-      "text": "Proof of applicant's name"
+      "text": "PAN Card of the applicant for the proof of name"
     },
     {
       "type": "heading",
@@ -165,7 +126,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Aadhaar/Voter ID/Driving License"
+      "text": "of Applicant Driving License/ Voters ID/ Passport/ Any other valid government ID proof for individual applicant."
     },
     {
       "type": "heading",
@@ -174,7 +135,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Registration Certificate issued by registry"
+      "text": "Trademark Registration Certificate issued by registry"
     },
     {
       "type": "heading",
@@ -183,7 +144,7 @@
     },
     {
       "type": "paragraph",
-      "text": "To allow attorney to file renewal"
+      "text": "It allows the attorney to file trademark renewal application on behalf of owner of the mark"
     },
     {
       "type": "heading",
@@ -192,30 +153,48 @@
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Register & Pay"
+      "level": 3,
+      "text": "Step 01 · Register & Pay"
     },
     {
-      "type": "paragraph",
-      "text": "Select package, fill form & make payment."
-    },
-    {
-      "type": "heading",
-      "level": 4,
-      "text": "We Will Help"
-    },
-    {
-      "type": "paragraph",
-      "text": "Consultation, Drafting POA & Document Review."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Select any package suits your requirement",
+        "Fill up the form which will take less than 10 minutes",
+        "Make payment through secure payment gateway."
+      ]
     },
     {
       "type": "heading",
-      "level": 4,
-      "text": "Application Filed"
+      "level": 3,
+      "text": "Step 02 · We Will Help"
     },
     {
-      "type": "paragraph",
-      "text": "Renewal filed within 4-5 working days*."
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your queries will be answered quickly and effectively",
+        "Consultation regarding Renewal",
+        "Provide details & upload documents required for Trademark Renewal",
+        "Drafting of Documents and POA",
+        "Sending Documents and POA which have to returned with duly signed to customer",
+        "Receipt of Signed POA and Documents",
+        "Preparation and filing of renewal application"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 03 · Application Filed"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Your Trademark Renewal Application is filed",
+        "All this in 4 – 5 Working Days* *Subjected to Government Processing Time"
+      ]
     },
     {
       "type": "heading",
@@ -225,27 +204,30 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 1 - 2"
+      "text": "Day 1 – 2"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
-        "Collection of Information & Docs",
+        "Collection of Information",
+        "Collection of required documents (Scanned copies)",
+        "Review of documents and information provided",
         "Consultation regarding renewal"
       ]
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Day 3 - 4"
+      "text": "Day 3 – 4"
     },
     {
       "type": "list",
       "ordered": false,
       "items": [
         "Drafting of Documents & POA",
-        "Receipt of Signed Documents"
+        "Sending Documents and POA for getting signed from applicant",
+        "Receipt of Signed Documents and POA from Applicant"
       ]
     },
     {
@@ -257,9 +239,10 @@
       "type": "list",
       "ordered": false,
       "items": [
-        "Filing of Trademark Renewal Application",
+        "Preparation and Filing of Trademark Renewal Application",
+        "Your Trademark Renewal Application is filed",
         "Sharing of Acknowledgement",
-        "*Subject to Govt Processing Time"
+        "*Subjected to Government Processing Time"
       ]
     },
     {
@@ -354,7 +337,7 @@
     },
     {
       "type": "heading",
-      "level": 3,
+      "level": 2,
       "text": "Why Trademark Renewal is Strategic, Not Just Administrative"
     },
     {

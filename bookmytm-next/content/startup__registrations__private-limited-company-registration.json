@@ -40,9 +40,6 @@
       "text": "Apply Now for Rs. 16000!"
     },
     {
-      "type": "form"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "Private Limited Company vs. LLP"
@@ -100,27 +97,88 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register a Private Limited Company Online"
+      "text": "Documents required to register a Private Limited Company"
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Documents required to register a Private Limited Company"
+      "text": "PAN Card"
     },
     {
-      "type": "list",
-      "ordered": true,
-      "items": [
-        "PAN Card PAN Card of shareholders and Directors.",
-        "Passport In case of foreign nationals, must provide a valid passport.",
-        "Identity Proof Aadhaar card and Voter ID/ Passport/ Driving License of Shareholders and Directors",
-        "Director’s Address Proof Latest Telephone Bill /Electricity Bill/ Bank Account Statement of Shareholders and Directors.",
-        "Photograph Latest Passport size photograph of Shareholders and Directors.",
-        "Business Address Proof Latest Electricity Bill/ Telephone Bill of the registered office address",
-        "NOC from owner No Objection Certificate to be obtained from the owner(s) of registered office",
-        "Rent Agreement Rent Agreement of the registered office should be provided if any",
-        "Notarization In case of NRI or Foreign National, documents of director (s) must be notarized"
-      ]
+      "type": "paragraph",
+      "text": "PAN Card of shareholders and Directors."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Passport"
+    },
+    {
+      "type": "paragraph",
+      "text": "In case of foreign nationals, must provide a valid passport."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Identity Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aadhaar card and Voter ID/ Passport/ Driving License of Shareholders and Directors"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Director’s Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Telephone Bill /Electricity Bill/ Bank Account Statement of Shareholders and Directors."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Photograph"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Passport size photograph of Shareholders and Directors."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Business Address Proof"
+    },
+    {
+      "type": "paragraph",
+      "text": "Latest Electricity Bill/ Telephone Bill of the registered office address"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "NOC from owner"
+    },
+    {
+      "type": "paragraph",
+      "text": "No Objection Certificate to be obtained from the owner(s) of registered office"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Rent Agreement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rent Agreement of the registered office should be provided if any"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Notarization"
+    },
+    {
+      "type": "paragraph",
+      "text": "In case of NRI or Foreign National, documents of director (s) must be notarized"
     },
     {
       "type": "heading",
@@ -129,7 +187,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Build a Unique Identity"
     },
     {
@@ -142,7 +200,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Constitution Type"
     },
     {
@@ -152,16 +210,11 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Register Online"
-    },
-    {
-      "type": "heading",
-      "level": 2,
       "text": "Register Your Pvt. Ltd Company in 3 Easy Steps"
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 01"
     },
     {
@@ -179,7 +232,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 02"
     },
     {
@@ -201,7 +254,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Step 03"
     },
     {
@@ -223,7 +276,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 1 – 2"
     },
     {
@@ -237,7 +290,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 3 – 7"
     },
     {
@@ -253,7 +306,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 8 – 10"
     },
     {
@@ -268,7 +321,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 11 - 13"
     },
     {
@@ -283,7 +336,7 @@
     },
     {
       "type": "heading",
-      "level": 2,
+      "level": 3,
       "text": "Day 14 – 16"
     },
     {
