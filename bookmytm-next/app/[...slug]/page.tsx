@@ -187,10 +187,10 @@ export default async function Page({ params }: Props) {
   // on descriptionFor's fallback).
   const pageDescription = descriptionFor(slug, seo?.description || '');
 
-  // The lead form sits beside the hero title rather than in a sidebar, hanging
-  // past the hero's bottom edge, so the body content below runs the full width.
-  // The trust points go under the hero buttons, where the title column had
-  // empty space against the taller form.
+  // The lead form sits beside the hero title, inside the hero, rather than in a
+  // sidebar, so the body content below runs the full width. The trust points go
+  // under the hero buttons, where the title column had empty space against the
+  // taller form.
   const isService = !isHub && !isLegal;
   const heroAside = isService ? <LeadForm service={title} price={price || undefined} /> : undefined;
   const heroPoints = isService
@@ -252,8 +252,7 @@ export default async function Page({ params }: Props) {
         </section>
       ) : (
         <section className="bg-white">
-          {/* lg:pt clears the form hanging down from the hero (translate-y-36 there). */}
-          <div className="container-site py-16 md:py-20 lg:pt-48">
+          <div className="container-site py-16 md:py-20">
             <Blocks blocks={body} sectionImage={serviceImageFor(path)} />
           </div>
         </section>
