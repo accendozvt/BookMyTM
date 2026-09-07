@@ -32,13 +32,8 @@
     },
     {
       "type": "image",
-      "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
-      "alt": "BookMyTM Corporate Office in Kochi"
-    },
-    {
-      "type": "image",
-      "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
-      "alt": "BookMyTM Legal Consultants Team Discussion"
+      "src": "/images/about/bookmytm-advisory-team-kochi.webp",
+      "alt": "BookMyTM advisory team reviewing brand and compliance documents at the Kochi office"
     },
     {
       "type": "heading",
@@ -98,8 +93,8 @@
     },
     {
       "type": "image",
-      "src": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1200&auto=format&fit=crop",
-      "alt": "Kerala Business Landscape and Backwaters"
+      "src": "/images/about/kerala-spice-exporter-trading-street.webp",
+      "alt": "Kerala spice exporter and shopkeeper at work in a Kochi trading street"
     },
     {
       "type": "heading",
@@ -112,8 +107,8 @@
     },
     {
       "type": "image",
-      "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop",
-      "alt": "Comprehensive Business Legal Shield"
+      "src": "/images/about/business-protection-ip-compliance.webp",
+      "alt": "Brand, product and compliance records arranged as a protective ring around a business"
     },
     {
       "type": "heading",
@@ -218,14 +213,14 @@
       "text": "As your business evolves, so do your legal needs. We assist with Changing Entity Types (e.g., converting a Partnership to an LLP or Pvt Ltd), Changing Master Data (Address, Directors, Capital), and even Winding Up entities (Closing LLPs/OPCs) efficiently when it's time to move on."
     },
     {
-      "type": "image",
-      "src": "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
-      "alt": "BookMyTM Client Partnership Promise"
-    },
-    {
       "type": "heading",
       "level": 2,
       "text": "The BookMyTM Promise: \"Hassle-Free\" Is Our Mantra"
+    },
+    {
+      "type": "image",
+      "src": "/images/about/bookmytm-client-partnership.webp",
+      "alt": "Business owner and BookMyTM adviser shaking hands after completing a filing"
     },
     {
       "type": "paragraph",
