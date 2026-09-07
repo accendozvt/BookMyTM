@@ -187,33 +187,26 @@ export default async function Page({ params }: Props) {
   // on descriptionFor's fallback).
   const pageDescription = descriptionFor(slug, seo?.description || '');
 
-  // The lead form and the "why us" box sit beside the hero title rather than in
-  // a sidebar, so the body content below runs the full width of the page.
-  const heroAside =
-    !isHub && !isLegal ? (
-      <>
-        <LeadForm service={title} price={price || undefined} />
-        <div className="mt-5 rounded-3xl bg-white/95 p-6 shadow-xl ring-1 ring-gray-200/70">
-          {/* A label for the box, not a document section: as an h3 directly after
-              the h1 it registered as a skipped heading level on every service page. */}
-          <p className="mb-3 text-sm font-extrabold uppercase tracking-wide text-gray-700">Why BookMyTM?</p>
-          <ul className="space-y-2.5">
-            {['10,000+ trademarks filed', '100% digital process', 'Expert support at every step', 'Transparent pricing'].map((t) => (
-              <li key={t} className="flex items-center gap-2.5 text-sm font-medium text-gray-600">
-                <svg className="h-4 w-4 flex-shrink-0 stroke-brand" fill="none" strokeWidth={3} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-                {t}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </>
-    ) : undefined;
+  // The lead form sits beside the hero title rather than in a sidebar, hanging
+  // past the hero's bottom edge, so the body content below runs the full width.
+  // The trust points go under the hero buttons, where the title column had
+  // empty space against the taller form.
+  const isService = !isHub && !isLegal;
+  const heroAside = isService ? <LeadForm service={title} price={price || undefined} /> : undefined;
+  const heroPoints = isService
+    ? ['10,000+ trademarks filed', '100% digital process', 'Expert support at every step', 'Transparent pricing']
+    : undefined;
 
   return (
     <>
-      <PageHero title={title} lead={heroLead || undefined} price={price || undefined} crumbs={crumbs} aside={heroAside} />
+      <PageHero
+        title={title}
+        lead={heroLead || undefined}
+        price={price || undefined}
+        crumbs={crumbs}
+        aside={heroAside}
+        points={heroPoints}
+      />
 
       {isHub ? (
         <section className="bg-white">
@@ -259,7 +252,8 @@ export default async function Page({ params }: Props) {
         </section>
       ) : (
         <section className="bg-white">
-          <div className="container-site py-16 md:py-20">
+          {/* lg:pt clears the form hanging down from the hero (translate-y-36 there). */}
+          <div className="container-site py-16 md:py-20 lg:pt-48">
             <Blocks blocks={body} sectionImage={serviceImageFor(path)} />
           </div>
         </section>

@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next';
 import { Manrope } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ContactBand from '@/components/ContactBand';
 import Analytics from '@/components/Analytics';
 import { SITE } from '@/lib/site';
 import './globals.css';
@@ -52,7 +51,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <Header />
         <main id="main">{children}</main>
-        <ContactBand />
         <Footer />
         <a
           href={SITE.whatsapp}

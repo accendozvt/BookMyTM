@@ -10,6 +10,7 @@ export default function PageHero({
   price,
   crumbs,
   aside,
+  points,
 }: {
   title: string;
   lead?: string;
@@ -18,19 +19,25 @@ export default function PageHero({
   /**
    * Rendered to the right of the title on large screens, beneath it on small.
    * The service pages put their lead form here so the body below can run the
-   * full width instead of sharing it with a sticky sidebar.
+   * full width instead of sharing it with a sticky sidebar. On large screens it
+   * hangs past the hero's bottom edge into the content area, so the section that
+   * follows must leave room for it (see the lg: top padding in [...slug]/page).
    */
   aside?: ReactNode;
+  /** Short trust points, laid out under the buttons to fill the title column. */
+  points?: string[];
 }) {
   return (
-    <section className="hero-bg relative overflow-hidden rounded-b-[3rem]">
+    // No overflow-hidden: the aside is allowed to hang below the section. The
+    // blobs are clipped by their own wrapper instead.
+    <section className="hero-bg relative rounded-b-[3rem]">
       {/* decorative blobs */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-b-[3rem]" aria-hidden>
         <div className="animate-blob absolute -left-4 top-0 h-96 w-96 rounded-full bg-green-300 opacity-5 blur-3xl" />
         <div className="animate-blob-2 absolute right-0 top-1/4 h-72 w-72 rounded-full bg-green-400 opacity-5 blur-3xl" />
       </div>
 
-      <div className="container-site relative z-10 py-16 md:py-24">
+      <div className={`container-site relative z-10 py-16 md:py-24 ${aside ? 'lg:pb-14' : ''}`}>
         {/* Breadcrumbs */}
         <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white/50">
@@ -49,7 +56,7 @@ export default function PageHero({
           </ol>
         </nav>
 
-        <div className={aside ? 'grid gap-10 lg:grid-cols-[minmax(0,1fr),400px] lg:items-start' : ''}>
+        <div className={aside ? 'grid gap-10 lg:grid-cols-[minmax(0,1fr),440px] lg:items-start lg:gap-16' : ''}>
         <div className="max-w-3xl">
           <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl">{title}</h1>
           {lead && <p className="mt-5 text-lg leading-relaxed text-green-100/90 md:text-xl">{lead}</p>}
@@ -84,8 +91,26 @@ export default function PageHero({
               {SITE.phone1}
             </a>
           </div>
+
+          {points && points.length > 0 && (
+            <div className="mt-10">
+              <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-brand-light">Why BookMyTM?</p>
+              <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
+                {points.map((t) => (
+                  <li key={t} className="flex items-center gap-2.5 text-[15px] font-medium text-green-50/90">
+                    <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/10 text-brand-light">
+                      <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-        {aside && <div className="lg:pt-1">{aside}</div>}
+        {aside && <div className="relative z-10 lg:-mb-36 lg:translate-y-36">{aside}</div>}
         </div>
       </div>
     </section>

@@ -1,5 +1,8 @@
 import Link from 'next/link';
-import Faq, { FaqItem } from '@/components/Faq';
+import type { FaqItem } from '@/components/Faq';
+// Two columns, as on the home page: a service page's FAQ runs to a dozen items
+// and a single column of them was most of the page's scroll height.
+import FaqColumns from '@/components/FaqColumns';
 import Reveal from '@/components/Reveal';
 import { IconFor } from '@/components/icons';
 import type { Block } from '@/lib/content';
@@ -224,6 +227,29 @@ export function collectFaqItems(blocks: Block[]): FaqItem[] {
 
 const isTimeline = (cards: Card[]) => cards.length >= 2 && cards.every((c) => /^(day|step|week)\s*\d/i.test(c.title));
 
+const isStepsHeading = (t: string | null) => !!t && /\b(?:3|three)\s+(?:easy\s+)?steps\b/i.test(t);
+const isProcessHeading = (t: string | null) => !!t && /^(?:the\s+)?process\b|process\s+timeline|^process\s+(?:of|to)\b/i.test(t);
+
+/**
+ * Group section indices for rendering. "…in 3 Easy Steps" directly followed by
+ * "The Process…" (or the reverse) becomes a pair rendered side by side on large
+ * screens, which is how the old site laid the two timelines out. Everything
+ * else stays a single full-width section.
+ */
+function pairStepsAndProcess(sections: Section[]): number[][] {
+  const groups: number[][] = [];
+  for (let i = 0; i < sections.length; i++) {
+    const a = sections[i].heading;
+    const b = sections[i + 1]?.heading ?? null;
+    const pair = (isStepsHeading(a) && isProcessHeading(b)) || (isProcessHeading(a) && isStepsHeading(b));
+    if (pair) {
+      groups.push([i, i + 1]);
+      i++;
+    } else groups.push([i]);
+  }
+  return groups;
+}
+
 function SectionHeading({ text }: { text: string }) {
   return (
     <div className="mb-8">
@@ -396,9 +422,7 @@ export default function Blocks({
 }) {
   const sections = groupSections(blocks);
 
-  return (
-    <div className="space-y-14">
-      {sections.map((section, si) => {
+  const renderSection = (section: Section, si: number) => {
         const isFaq = section.heading && /frequently asked|faq/i.test(section.heading);
 
         if (isFaq) {
@@ -410,7 +434,7 @@ export default function Blocks({
           return (
             <section key={si} {...(isFirstFaq ? { id: 'faq' } : {})}>
               <SectionHeading text={section.heading!} />
-              {items.length ? <Faq items={items} /> : <div className="space-y-4">{section.blocks.map((b, i) => renderBasicBlock(b, i, section.heading ? 'h3' : 'h2'))}</div>}
+              {items.length ? <FaqColumns items={items} /> : <div className="space-y-4">{section.blocks.map((b, i) => renderBasicBlock(b, i, section.heading ? 'h3' : 'h2'))}</div>}
             </section>
           );
         }
@@ -484,12 +508,25 @@ export default function Blocks({
 
             {inlineFaqs.length > 0 && (
               <div className="mt-8">
-                <Faq items={inlineFaqs.flatMap((f) => f.items)} />
+                <FaqColumns items={inlineFaqs.flatMap((f) => f.items)} />
               </div>
             )}
           </section>
         );
-      })}
+  };
+
+  return (
+    <div className="space-y-14">
+      {pairStepsAndProcess(sections).map((g) =>
+        g.length === 2 ? (
+          <div key={g[0]} className="grid gap-10 lg:grid-cols-2 lg:items-start">
+            {renderSection(sections[g[0]], g[0])}
+            {renderSection(sections[g[1]], g[1])}
+          </div>
+        ) : (
+          renderSection(sections[g[0]], g[0])
+        ),
+      )}
     </div>
   );
 }
