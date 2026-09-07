@@ -35,9 +35,11 @@ export default function PageHero({
         <div className="animate-blob-2 absolute right-0 top-1/4 h-72 w-72 rounded-full bg-green-400 opacity-5 blur-3xl" />
       </div>
 
-      <div className="container-site relative z-10 py-16 md:py-24">
+      {/* With a form beside the title the form sets the height, so the hero's own
+          padding is trimmed on large screens to keep the whole block compact. */}
+      <div className={`container-site relative z-10 py-16 md:py-24 ${aside ? 'lg:py-12' : ''}`}>
         {/* Breadcrumbs */}
-        <nav aria-label="Breadcrumb" className="mb-6">
+        <nav aria-label="Breadcrumb" className={aside ? 'mb-4' : 'mb-6'}>
           <ol className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white/50">
             {crumbs.map((c, i) => (
               <li key={c.href} className="flex items-center gap-2">
@@ -91,7 +93,7 @@ export default function PageHero({
           </div>
 
           {points && points.length > 0 && (
-            <div className="mt-10">
+            <div className="mt-8">
               <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-brand-light">Why BookMyTM?</p>
               <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
                 {points.map((t) => (
