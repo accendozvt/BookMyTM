@@ -8,7 +8,7 @@
 // Source is images/bookmytm-white.png (white on transparent, the header
 // variant). The green original was never in the repo, and white-on-brand-green
 // is the same identity inverted, so nothing is invented here.
-import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import sharp from 'sharp';
 
@@ -81,6 +81,11 @@ for (const size of [192, 512]) {
   console.log(`public/icons/icon-${size}.png`);
 }
 
-// The old favicon at public/favicon.ico would compete with app/favicon.ico.
-const old = join(APP, 'public/favicon.ico');
-if (existsSync(old)) { unlinkSync(old); console.log('removed superseded public/favicon.ico'); }
+// Copies into public/ as well, deliberately. app/ is what Next serves, but only
+// public/ is packaged into public_html - and public_html is served ahead of the
+// Node app, so a stale favicon.ico left there would shadow the new one at the
+// same URL forever. Next builds cleanly with both present.
+for (const name of ['favicon.ico', 'apple-icon.png']) {
+  writeFileSync(join(APP, 'public', name), readFileSync(join(APP, 'app', name)));
+  console.log(`public/${name}  (copy so public_html overwrites any stale one)`);
+}
